@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Webdevelopement</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../../Reveal/dist/reset.css">
+		<link rel="stylesheet" href="../../Reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../../Reveal/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../Reveal/plugin/highlight/monokai.css">
+
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+		<link rel="stylesheet" href="../../general.css" type="text/css" media="screen" />
+
+	</head>
+
+
+	<body>
+
+		<div class="reveal">
+
+			<div style="position:absolute; top: 20px; right: 20px; z-index: 10; font-size: 20px;"> 
+				<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <i class="bi bi-bicycle"></i>
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" onclick="toggle('random');" href="#">Random</a>
+				    <a class="dropdown-item" onclick="toggle('noise');" href="#">Lautstärke</a>
+				    <a class="dropdown-item" onclick="toggle('rules');" href="#">Regeln Gruppe</a>
+				    <a class="dropdown-item" href="#">Regeln Vorstellen</a>
+				    <a class="dropdown-item" href="../../computer_science.html">Zurück</a>
+
+				  </div>
+				</div>
+			</div>
+
+
+			<!-- RANDOM -->
+			<div class="row floating-box img-thumbnail" id="random">
+				<div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-primary">
+						Zufall .... 
+				</div>
+				<div class="col-lg-12 col-sm-12 col-12 box-lower-section">
+						Auswahl
+				</div>
+				<div class="label">
+					<h4><span class="badge badge-pill bg-primary">Zufall</span></h4>
+				</div>
+			</div>
+
+
+			<!-- NOISE -->
+			<div class="row floating-box img-thumbnail" id="noise">
+				<div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-info">
+					Noise ....
+				</div>
+				<div class="col-lg-12 col-sm-12 col-12 box-lower-section">
+						Level???
+				</div>
+				<div class="label">
+					<h4><span class="badge badge-pill bg-info">Lautstärke</span></h4>
+				</div>
+			</div>
+
+
+			<!-- RULES -->
+			<div class="row floating-box img-thumbnail" id="rules">
+				<div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-danger">
+					<ol>
+						<li>Kurz</li>
+						<li>Klar</li>
+						<li>Einfach</li>
+					</ol>
+				</div>
+				<div class="col-lg-12 col-sm-12 col-12 box-lower-section">
+						Mehr???
+				</div>
+				<div class="label">
+					<h4><span class="badge badge-pill bg-danger">Was ist wichtig?</span></h4>
+				</div>
+			</div>
+
+
+
+
+
+
+			
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section data-background-transition="zoom">
+						<a href="https://www.johannes-gymnasium.de/johannes_gymnasium/Home/" title="description">Johnny Website</a>
+
+					</section>
+
+					<section data-background-transition="zoom">
+						<img src="img/1_intro/showSrcCode.png" width="300">
+						<i class="bi bi-arrow-right-square-fill"></i>
+						<img src="img/1_intro/srcCode.png" width="600">
+
+						<aside class="notes">
+							Option 1: Quelltext anzeigen .... anschauen ... sammeln ... kompliziert .....
+						</aside>
+					</section>
+					<section data-background-transition="zoom">
+						
+						<img src="img/1_intro/inspect.png" width="300">
+						<i class="bi bi-arrow-right-square-fill"></i>
+						<img src="img/1_intro/inspectView.png" width="600">
+
+						<aside class="notes">
+							Option 2: Untersuchen .... detailiert ansehen ... kann man mehr mit anfangen .... 
+						</aside>
+
+					</section>
+				</section>
+
+
+				<section data-background-transition="zoom">
+					
+					
+					<p class="codepen" data-height="700" data-default-tab="html,result" data-slug-hash="mdQGyvw" data-editable="true" style="height: 1000px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"></p>
+					<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+					<aside class="notes">
+						 .... 
+					</aside>
+
+				</section>
+
+				<section data-background-transition="zoom">
+						
+						
+						
+				</section>
+		
+
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Workshops</h2>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 500px; height: 130px; margin: 10px; border-radius: 5px;">Citizen Sensing</div>
+						<div data-id="box2" style="background: #999; width: 500px; height: 130px; margin: 10px; border-radius: 5px;">Everything about 3D printing</div>
+	
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 500px; height: 130px; margin: 10px;">Citizen Sensing</div>
+						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 500px; height: 130px; margin: 10px;">Everything about 3D printing</div>
+					</div>
+					<h2 style="margin-top: 20px;">Workshops</h2>
+					<aside class="notes">
+						Ich habe zwei Workshops von je einer Woche besucht, einmal Citizen Sensing und einmal Everything about 3D printing.
+					</aside>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Buinho Education</h2>
+					<aside class="notes">
+						Im Grunde sind beide etwas ineinander übergeganben, da sie beide von Buinho Education gehalten wurden, genauer gesagt von Carlos.
+					</aside>
+				</section>
+
+				
+
+				
+				<section>
+					<section>
+							Das Konzept des <h2>Makerspaces</h2>
+					</section>
+					<section>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);" data-src="img/Maker.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);" data-src="img/Maker2.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);"  data-src="img/Maker4.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<img class="r-frame fade-in-then-out" style="background: rgba(255,255,255,0.1);" data-src="img/Maker6.jpeg" alt="Down arrow">
+					</section>
+
+						<aside class="notes">
+							Makerspaces sind <b>Werkstätte</b>die es überall auf der Welt gibt und die für jeden zugänglich sind. Es wird vor allem das Equipment, aber auch das Knowhow bereitgestellt. Es sind Orte an denen man Bastler treffen kann und jeder so ein bisschen probieren kann. 
+							<br><br>
+							Ich kannte das Konzept überhaupt nicht werde aber ab jetzt regelmäßig Makerspaces besuchen, es gibt auch einige in Koblenz, Mayen etc.
+						</aside>
+				</section>
+
+
+				<section>
+					<section>
+							Was ist <h2>Citizen Sensing?</h2>
+					</section>
+					<section>
+						<h5> Micro:Bit & MakeBlocks</h5>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);" data-src="img/Microbit.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<h5> Arduino & Projekte</h5>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);" data-src="img/Arduino.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<h5> Cultural Day </h5>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);"  data-src="img/Us3.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<img class="r-frame fade-in-then-out" style="background: rgba(255,255,255,0.1);" data-src="img/Lisboa4.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<h5> Daten Sammeln in Lissabon </h5>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);"  data-src="img/Out.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);"  width="400" data-src="img/Out1.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);"  width="400" data-src="img/Out2.jpeg" alt="Down arrow">
+					</section>
+						<section>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);"  width="400" data-src="img/Out3.jpeg" alt="Down arrow">
+					</section>
+					<section>
+						<h5> Daten auswerten, 3D Modellieren, Lösungen suchen </h5>
+						<img class="r-frame" style="background: rgba(255,255,255,0.1);"  data-src="img/?.jpeg" alt="Down arrow">
+					</section>
+				</section>
+
+				<section>
+					<h2>Was habe ich mitgenommen?</h2>
+					
+					<ul style="text-align: left; margin-left: 20px">
+						<li class="fragment fade-in-then-out">						
+							unglaublich viel <b>Motivation</b>
+						</li>
+						<li class="fragment fade-in-then-out">
+							tolle, praktische Unterrichtsideen
+						 </li>
+						<li  class="fragment fade-in-then-out">
+							neue Wege Schüler:innen zu motivieren <br>(selbst erlebt)
+						</li>
+						<li class="fragment fade-in-then-out">
+							so viele neue Projektideen <br>(für die natürlich die Zeit fehlen wird)
+						</li>
+					</ul>	
+				</section>
+
+				<section>
+					<blockquote style="display: inline-block;">
+						<br>&ldquo;Think by your own head&rdquo; <br><p style="color: red">- Carlos - </p>
+					
+					<img class="r-frame" style="background: rgba(255,255,255,0.1); " width="178" data-src="img/Carlos.jpeg" alt="Down arrow">
+					</blockquote>
+
+				</section>
+
+
+
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li><a href="https://revealjs.com/api/">Shool Education Gateway</a></li>
+						<li><a href="https://revealjs.com/auto-slide/">Buinho Education</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: center;">
+
+
+					<h4>Nehmt am Erasmus Programm teil!</h4>
+					<table>
+						<tr>
+							<td><img data-src="img/Lisboa3.jpeg"></td>
+							<td><img data-src="img/Us.jpeg"></td>
+						</tr>
+					</table>
+				</section>
+
+			</div>
+
+		</div>
+		<script>
+			document.addEventListener('keydown', function(event) {
+				// on I go back to higher layer
+			    if(event.keyCode == 73) { 
+			        window.location.href = "../../computer_science.html";
+			    }
+			    // on 1 toggle random box
+			    if(event.keyCode == 49) { 
+			        toggle('random');
+			    }
+			    // on 2 toggle noise box
+			    if(event.keyCode == 50) { 
+			        toggle('noise');
+			    }
+			    // on 3 toggle rules box
+			    if(event.keyCode == 51) { 
+			        toggle('rules');
+			    }
+
+			});
+
+			function toggle(id) {
+
+				/*let classes = document.getElementsByClassName("floating-box");
+
+				for(c in classes) {
+					c.style.display = "none";
+				}*/
+
+				let el = document.getElementById(id);
+				el.style.display = (el.style.display == "block") ? "none" : "block";
+			}
+
+		</script>
+
+
+		<script src="../../Reveal/dist/reveal.js"></script>
+		<script src="../../Reveal/plugin/zoom/zoom.js"></script>
+		<script src="../../Reveal/plugin/notes/notes.js"></script>
+		<script src="../../Reveal/plugin/search/search.js"></script>
+		<script src="../../Reveal/plugin/markdown/markdown.js"></script>
+		<script src=" ../../Reveal/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
