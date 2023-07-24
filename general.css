@@ -1,8 +1,18 @@
-#random, #noise, #rules {
+#random, #noise, #soundeffect, #rule {
 	display: none;
 }
 
 .floating-box{
+	margin: 0px;
+	position: fixed;
+	top: 4%;
+	right: 6%;
+	font-size: 18pt;
+	box-shadow: -3px 3px 3px 0px #c1c1c1;
+	width: 15%;
+}
+
+.right-butto{
 	margin: 0px;
 	position: fixed;
 	top: 20%;
@@ -11,6 +21,7 @@
 	box-shadow: -3px 3px 3px 0px #c1c1c1;
 	width: 15%;
 }
+
 
 .label .badge{
 	position: absolute;

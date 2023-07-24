@@ -20,6 +20,8 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../../Reveal/plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="../../Reveal/plugin/chalkboard/style.css">
+		<link rel="stylesheet" href="../../Reveal/plugin/customcontrols/style.css">
 
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -32,6 +34,7 @@
 
 
 		<link rel="stylesheet" href="../../general.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
 
 	</head>
 
@@ -40,7 +43,7 @@
 
 		<div class="reveal">
 
-			<div style="position:absolute; top: 20px; right: 20px; z-index: 10; font-size: 20px;"> 
+			<!--<div style="position:absolute; top: 20px; right: 20px; z-index: 10; font-size: 20px;"> 
 				<div class="dropdown">
 				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    <i class="bi bi-bicycle"></i>
@@ -54,8 +57,33 @@
 
 				  </div>
 				</div>
-			</div>
+			</div>-->
 
+			<a href="../../computer_science.html style="z-index: 10">
+				<span class="badge badge-pill bg-secondary" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 1%; right: 1%; padding: 1px; height: 6%; width:3%">
+					<img src="../../general_img/back.png" width="40px" style="margin: 0px">
+				</span>
+			</a>
+			<a href="#" onclick="toggle('random');" style="z-index: 10">
+				<span class="badge badge-pill bg-primary" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 8%; right: 1%; padding: 1px; height: 6%; width:3%">
+					<img src="../../general_img/random.png" width="25px" style="margin: 0px">
+				</span>
+			</a>
+			<a href="#" onclick="toggle('noise');" style="z-index: 10">
+				<span class="badge badge-pill bg-info" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 15%; right: 1%; padding: 1px; height: 6%; width:3%">
+					<img src="../../general_img/noise.png" width="25px" style="margin: 0px">
+				</span>
+			</a>
+			<a href="#" onclick="toggle('soundeffect');" style="z-index: 10">
+				<span class="badge badge-pill bg-danger" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 22%; right: 1%; padding: 1px; height: 6%; width:3%">
+					<img src="../../general_img/soundeffect.png" width="20px" style="margin: 0px">
+				</span>
+			</a>
+			<a href="#" onclick="toggle('rule');" style="z-index: 10">
+				<span class="badge badge-pill bg-success" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 29%; right: 1%; padding: 1px; height: 6%; width:3%">
+					<img src="../../general_img/rule.png" width="20px" style="margin: 0px">
+				</span>
+			</a>
 
 			<!-- RANDOM -->
 			<div class="row floating-box img-thumbnail" id="random">
@@ -84,10 +112,23 @@
 				</div>
 			</div>
 
+			<!-- NOISE -->
+			<div class="row floating-box img-thumbnail" id="soundeffect">
+				<div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-danger">
+					Soundeffect ....
+				</div>
+				<div class="col-lg-12 col-sm-12 col-12 box-lower-section">
+						Music 1
+				</div>
+				<div class="label">
+					<h4><span class="badge badge-pill bg-danger">Soundeffect</span></h4>
+				</div>
+			</div>
+
 
 			<!-- RULES -->
-			<div class="row floating-box img-thumbnail" id="rules">
-				<div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-danger">
+			<div class="row floating-box img-thumbnail" id="rule">
+				<div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-success">
 					<ol>
 						<li>Kurz</li>
 						<li>Klar</li>
@@ -98,19 +139,33 @@
 						Mehr???
 				</div>
 				<div class="label">
-					<h4><span class="badge badge-pill bg-danger">Was ist wichtig?</span></h4>
+					<h4><span class="badge badge-pill bg-success">Was ist wichtig?</span></h4>
 				</div>
 			</div>
 
 
 
 
+			<!----------- SLIDES ---------------------------------------------------------------->
+
 
 
 			
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				<section data-background-transition="zoom" data-background-size="contain" data-background="../../general_img/spiral_slow.gif">
+					
+				</section>
+				<!--<section data-background-transition="zoom" 
+					data-background-size="contain" data-background="../../general_img/ball1.gif">
+
+				</section>
+				<section data-background-transition="zoom">
+					<iframe src="https://giphy.com/embed/8wtYXaKeUyc4QpclIB" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+				</section>-->
+
+
+
 				<section>
 					<section data-background-transition="zoom">
 						<a href="https://www.johannes-gymnasium.de/johannes_gymnasium/Home/" title="description">Johnny Website</a>
@@ -320,9 +375,13 @@
 			    if(event.keyCode == 50) { 
 			        toggle('noise');
 			    }
-			    // on 3 toggle rules box
+			    // on 3 toggle soundeffect box
 			    if(event.keyCode == 51) { 
-			        toggle('rules');
+			        toggle('soundeffect');
+			     }
+			    // on 4 toggle rules box
+			    if(event.keyCode == 52) { 
+			        toggle('rule');
 			    }
 
 			});
@@ -347,7 +406,10 @@
 		<script src="../../Reveal/plugin/notes/notes.js"></script>
 		<script src="../../Reveal/plugin/search/search.js"></script>
 		<script src="../../Reveal/plugin/markdown/markdown.js"></script>
-		<script src=" ../../Reveal/plugin/highlight/highlight.js"></script>
+		<script src="../../Reveal/plugin/highlight/highlight.js"></script>
+		<script src="../../Reveal/plugin/chalkboard/plugin.js"></script>
+		<script src="../../Reveal/plugin/customcontrols/plugin.js"></script>
+
 		<script>
 
 			// Also available as an ES module, see:
@@ -359,9 +421,8 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChalkboard],
 			});
-
 		</script>
 
 	</body>
