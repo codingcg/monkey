@@ -1,148 +1,35 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
-
-		<title>Index</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
+		<meta name="description" content="My Copy Monkey">
+		<meta name="author" content="Vera Christ">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<link rel="stylesheet" href="../../Reveal/dist/reset.css">
+		<link rel="stylesheet" href="../../Reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../../Reveal/dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="../../Reveal/plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="../../Reveal/plugin/chalkboard/style.css">
+		<link rel="stylesheet" href="../../Reveal/plugin/customcontrols/style.css">
+
+
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-  		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+		<link rel="stylesheet" href="general.css" type="text/css" media="screen" />
 	</head>
 
-	<style>
-		/*Pen styling*/
-		.container {
-		  margin-top: 50px;
-		}
-
-		/*alert styling*/
-		.alert-success {
-		  border-color: #e6e6e6;
-		  border-left: 5px solid #00986a;
-		  background-color: #fff;
-		  color: #888;
-		}
-
-		.alert-info {
-		  border-color: #e6e6e6;
-		  border-left: 5px solid #00b3c8;
-		  background-color: #fff;
-		  color: #888;
-		}
-
-		.alert-warning {
-		  border-color: #e6e6e6;
-		  border-left: 5px solid #f9af2c;
-		  background-color: #fff;
-		  color: #888;
-		}
-
-		.alert-danger {
-		  border-color: #e6e6e6;
-		  border-left: 5px solid #c82630;
-		  background-color: #fff;
-		  color: #888;
-		}
-
-		@media (min-width: 768px) {
-		  .alert {
-		    border-radius: 6px;
-		    display: table;
-		    width: 100%;
-		    padding-left: 78px;
-		    position: relative;
-		    padding-right: 60px;
-		    border: 1px solid #e6e6e6;
-		  }
-
-		  .alert .close {
-		    color: #888;
-		    opacity: 1;
-		    float: none;
-		    position: absolute;
-		    right: 18px;
-		    top: 50%;
-		    margin-top: -12px;
-		    font-size: 25px;
-		  }
-
-		  .alert .icon {
-		    text-align: center;
-		    width: 58px;
-		    height: 100%;
-		    position: absolute;
-		    top: 0;
-		    left: 0;
-		    border: 1px solid #bdbdbd;
-		    padding-top: 15px;
-		    border-radius: 6px 0 0 6px;
-		  }
-
-		  .alert .icon i {
-		    font-size: 20px;
-		    color: #fff;
-		    left: 21px;
-		    margin-top: -10px;
-		    position: absolute;
-		    top: 50%;
-		  }
-
-		  .alert .icon img {
-		    font-size: 20px;
-		    color: #fff;
-		    left: 18px;
-		    margin-top: -10px;
-		    position: absolute;
-		    top: 50%;
-		  }
-		  /*============ colors ========*/
-		  .alert.alert-success .icon,
-		  .alert.alert-success .icon:after {
-		    border-color: none;
-		    background: #00986a;
-		  }
-
-		  .alert.alert-info .icon,
-		  .alert.alert-info .icon:after {
-		    border-color: none;
-		    background: #00b3c8;
-		  }
-
-		  .alert.alert-warning .icon,
-		  .alert.alert-warning .icon:after {
-		    border: none;
-		    background: #f9af2c;
-		  }
-
-		  .alert.alert-danger .icon,
-		  .alert.alert-danger .icon:after {
-		    border-color: none;
-		    background: #c82630;
-		  }
-		}
-
-		a {
-			color: rgb(255,160,122);
-		}
-
-	</style>
 	<body>
-		<div class="container">
+	<div class="container">
+
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+
 		<div class="alert alert-warning">
 		    <div class="icon hidden-xs">
 		      <i class="bi bi-cpu"></i>
@@ -171,8 +58,12 @@
 				* Projektbasiert
 				<br>
 				* Pokemon überall auf der Welt Sammeln, Pokestopps, auf Schiffe etc. Idee
-		  </div>
-		  <div class="alert alert-info">
+		</div>
+
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		
+		<div class="alert alert-info">
 		    <div class="icon hidden-xs">
 				<i class="bi bi-browser-chrome"></i>
 		    </div>
@@ -187,7 +78,7 @@
 						li, table, img, link ... alles in erster Stunde zeigen ... anwenden lassen
 						HA: 10 Mal Grundgerüst aufschreiben
 						die nächsten Stunden, ganz oft Aufgaben wie, alles Blank, schreibt es auf, schreibt eine Liste auf in ein leeres Feld, schreibt ein Bild in ein leeres Feld
-						<li><a href="demo.html"> Aufgaben </a></li>
+						<li><a href="computer_science/webdev/1_intro_ex.html" style="color: rgb(0,0,205)"> Aufgaben </a></li>
 						<li> Merkblatt </li>
 						<li>Interaktives Quizz, mit Aufgaben und HTML Code runterschreiben</li>
 					</ul>
@@ -217,8 +108,12 @@
 					</ul>
 				</li>
 			</ol>
-		  </div>
-		  <div class="alert alert-success">
+		</div>
+
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		
+		<div class="alert alert-success">
 		    <div class="icon hidden-xs">
 		      <i class="bi bi-buildings"></i>
 		    </div>
@@ -233,10 +128,12 @@
 		    <strong>Thema G: Blender</strong>
 		    <img src="computer_science/blender/blender.png" width="150px" class="rounded float-right">
 		    <Br /> model, texture, animate ==> make a movie
-		  </div>
+		</div>
 
-
-		  <div class="alert alert-success">
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		
+		<div class="alert alert-success">
 		    <div class="icon hidden-xs">
 		      <i class="bi bi-badge-3d"></i>
 		    </div>
@@ -260,19 +157,24 @@
 		    <strong>Thema Y: Toyhacking</strong>
 		    <Br /> Pickachuuuuuu
 
-		  </div>
+		</div>
 
-		  <div class="alert alert-success">
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		
+		<div class="alert alert-success">
 		    <div class="icon hidden-xs">
 		      <i class="bi bi-database"></i>
 		    </div>
 		    <strong>Thema X: Datenbanken</strong>
 		   	<img src="computer_science/sql/database.jpeg" width="200px" class="rounded float-right">
 		    <Br /> Wow! Great job! Whatever you were doing works!
-		  </div>
+		</div>
 
-
-		  <div class="alert alert-danger">
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		
+		<div class="alert alert-danger">
 		    <div class="icon hidden-xs">
 		      <i class="bi bi-laptop"></i>
 		    </div>
@@ -309,17 +211,13 @@
 		  </div>
 		</div>
 
-
-
-
-
-
-
-
-
-
-
-
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+		<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 
 		<script>
 			document.addEventListener('keydown', function(event) {
