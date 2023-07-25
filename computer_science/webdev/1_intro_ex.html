@@ -28,26 +28,93 @@
 
 			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+
+			<div class="card alert alert-warning" style="margin: 0px; padding: 10px">
+                <div class="card-header border" style="margin: 0px; padding: 10px;">
+                    <h3 class="float-left">Aufgabe 1</h3>
+                </div>
+
+                <div class="card-body">
+                	<img src="img/1_intro/ThemePictures/Travel.webp" width="20%" style="float: left">
+
+
+                    <h5 class="card-title float-left mx-4">
+                        Fülle die Lücken mit den richtigen Begriffen. 
+                    </h5>
+                    <br><br><br><br>
+                    <div class="card-text float-left pt-4">
+                        <p>Einer griechischen 
+                                <span class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
+                            zufolge war Europa eine phönizische 
+                                <span class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></span>, 
+                            die vom Göttervater  
+                                <span class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></span> 
+                            entführt wurde.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer border">
+
+                    <span id="drag1" class="draggable" draggable="true" ondragstart="drag(event)">Zeus</span>
+                    <span id="drag2" class="draggable" draggable="true" ondragstart="drag(event)">Königstochter</span>
+                    <span id="drag3" class="draggable"draggable="true" ondragstart="drag(event)">Sage</span>
+
+                    <button class="btn btn btn-outline-secondary float-right" type="button">
+                        Überprüfen
+                    </button>
+
+                </div>
+                    <div class="card-body">
+                    
+                    <p class="card-text">
+                    	<h5>Merke:</h5> 
+                    	<form class="form-inline">  
+	                        Europa und 
+	                        <input class="form-control mx-2" type="text" placeholder="(seain)"> 
+	                        bilden den Doppelkontinent 
+	                        <input class="form-control mx-2" type="text" placeholder="(nsaieeur)">. 
+	                        Das 
+	                        <input class="form-control mx-2" type="text" placeholder="(aulr)"> 
+	                        gebirge und der 
+	                        <input class="form-control mx-2" type="text" placeholder="(luar)">
+	                        fluss sind die Grenze zwischen beiden Teilkontinenten.
+	                   	</form>
+                    </p>
+
+                    <button class="btn btn btn-outline-secondary float-right" type="button">
+                        Überprüfen
+                    </button>
+                </div>
+            </div>
+
+            <br><br><br><br>
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 			
-			<div class="alert alert-warning">
+			<div class="card alert alert-success">
 			    
 			    <i class="bi bi-cpu"></i>
 
 			    <img src="computer_science/intro/cs.png" width="200px" class="rounded float-right">
 
-			    <strong>Aufgabe 1</strong>
+			    <strong>Aufgabe 2</strong>
 			    
-			</div>
+			    <br>
+			    <a href="fuchs.html">Fuchs</a>
+			    <br>
+			    <a href="random.html">Random</a>
+			</div>	
 
+            <br><br><br><br>
 			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 			
-			<div class="alert alert-info">
+			<div class="card alert alert-info">
 
 				<i class="bi bi-browser-chrome"></i>
 
 			    <img src="computer_science/webdev/img/web_design.png" width="200px" class="rounded float-right">
-			    
+
 			    <strong>Aufgabe 2</strong>
 			    
 			</div>
@@ -76,5 +143,76 @@
 			    }
 			});
 		</script>
+
+
+
+		<script type="text/javascript">
+
+            function allowDrop(ev){
+                ev.preventDefault();
+            }
+            function drag(ev){
+                ev.dataTransfer.setData("Text",ev.target.id);
+            }
+            function drop(ev){
+                ev.preventDefault();
+                var data=ev.dataTransfer.getData("Text");
+                ev.target.parentNode.replaceChild(document.getElementById(data), ev.target);
+                document.getElementById(data).className = "";
+            }
+
+            /*function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }*/
+
+
+            let countries = [["Portugal", "west"], ["Spanien", "west"], ["Deutschland", "center"], ["Italien", "south"], ["Griechenland", "east"], ["Schottland", "north"]];
+            let randomNumber = 0;
+            let wrongCounter = 0;
+            let rightCounter = 0;
+
+            function showRandomCountry() {
+
+                randomNumber = Math.floor(Math.random() * (countries.length));
+                document.getElementById("country").innerHTML = '<h2>' + countries[randomNumber][0] + '</h2>';
+                document.getElementById("map").style.visibility = "hidden";
+
+                console.log(countries[randomNumber][1]);
+
+            }
+
+
+            function validateRandomCounty(region) {
+                
+                let country = document.getElementById("country").innerHTML;
+
+                console.log(region);
+                console.log(country);
+
+                if (region == countries[randomNumber][1]) {
+                    console.log("correct");
+                    rightCounter++;
+                } else {
+                    console.log("wrong");
+                    wrongCounter++;
+                }
+                document.getElementById("wrongCounter").innerHTML = wrongCounter;
+                document.getElementById("rightCounter").innerHTML = rightCounter;
+
+                showRandomCountry();
+            }
+
+
+        </script>
 	</body>
 </html>
