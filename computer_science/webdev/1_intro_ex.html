@@ -125,6 +125,8 @@
 			    Es gibt Tags die geöffnet und irgendwann wieder geschlossen werden. Es gibt auch Tags, die nicht geschlossen werden müssen. Der Unterschied wird meißt aus dem Kontext ersichtlich.
 
 
+
+			    !!!! Das hier sollte eine Bootstrap Tabelle werden ...... !!!!!
 			    Lückentextvorschau:
 
 			    <!doctype html>
@@ -310,9 +312,44 @@
 
 
 			 	Textformatierung:
-			 	<b> Fett gedruckter Text </b>
-			 	<i> Kursiv gedruckter Text </i>
+			 	
+			 	<p><em>Betonter Text</em></p>
+              	<p>Der <b>b Tag</b> druckt den Text fett.</p>
+              	<p>Der <i>i Tag</i> druckt den Text kursiv.</p>
+              	<p>Der <u>u Tag</u> unterstreicht den Text.</p>
+              	<p><del>Das gelöschte</del> Element wird durchgestrichen.</p>
+              	<p>Wir können auch Formeln schreiben, wie H<sub>2</sub>O.</p>
+              	<p><small>Dieser Text ist kleiner gedruckt</small></p>
+              	<p>Abkürzung: <abbr title="HyperText Markup Language">HTML</abbr></p>
+	            <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">Das ist ein kurzes inline Zitat.</q></p>
 
+
+
+
+			 	<table border="4"> ... </table>
+			 	Der TABLE Tag leitet eine Tabelle ein. Mit dem Border Attribut kann man die Breite des Rahmens bestimmen.
+
+			 	<thead> .... </thead>
+			 	THEAD bezeichnet die Kopfzeile der Tabelle.
+
+			 	<tr> ... </tr>
+			 	Zeilen einer Tabelle: TABLE ROW
+
+			 	<td> ... </td>
+			 	Spalten einer Tabelle
+
+
+			 	<details>
+	              <summary>Datenschutzrichtlinien anzeigen</summary>
+	              <p>
+	              	Hier könnte ein langer Text zum Datenschutz in Peniche stehen, aber eigentlich ist uns das ziemlich egal, wir möchten nur, dass die Leute Spaß haben.
+	              </p>
+	            </details>
+	            Der DETAILS TAG zusammen mit dem SUMMARY Tag erlaubt das Ausklappen von Informationen.
+
+
+	            <address> ... </address>
+	            Mit ADDRESS können wir Adressen schön darstellen.
 
 
 		        <audio controls autoplay muted> ... </audio>
@@ -351,6 +388,24 @@
 				<canvas> ... </canvas>
 				Der CANVAS Tag ist neu in HTML5. Hier können Zeichnungen eingefügt werden. Genaueres kannst du hier nachlesen: https://www.w3schools.com/html/html5_canvas.asp
 				Wir benötigen JavaScript für dieses Element, also schauen wir uns das erst später an.
+
+
+
+
+
+				<progress></progress>
+	         	Kann z.B. genutzt werden um das Laden eines bestimmten Elements anzuzeigen.
+	          	
+	          	<meter value="2" min="0" max="10"> .... </meter>
+	          	Der METER Tag kann genutzt werden um den Fortschritt anzuzeigen.
+
+
+	          	<form> ... </form>
+	          	Alle Optionen für Formulare sind in der Beispielseite zu Peniche ausführlich dargestellt.
+
+
+
+
 
 
 			 	<footer> ... </footer>
