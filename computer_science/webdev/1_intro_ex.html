@@ -117,7 +117,265 @@
 
 			    <strong>Aufgabe 2</strong>
 			    
+
+
+
+			    Allgemein: 
+
+			    Es gibt Tags die geöffnet und irgendwann wieder geschlossen werden. Es gibt auch Tags, die nicht geschlossen werden müssen. Der Unterschied wird meißt aus dem Kontext ersichtlich.
+
+
+			    Lückentextvorschau:
+
+			    <!doctype html>
+			   	<html lang="de"> ... </html>
+			    Diese beiden Tags eröffnen das HTML Dokument und stehen immer am Anfang.
+			    Das LANG Attribut bezeichnet die Sprache. Hier können en (Englisch), de (Deutsch) und so weiter ausgewählt werden. Der zweite HTML Tag muss in der allerletzten Zeile des Dokuments wieder geschlossen werden.
+
+			    HTML Dokumente sind ab hier in KOPF und KÖRPER eingeteilt. Der Kopf denkt nur, er enthält all die META Informationen, aber bewirkt im Grunde nichts. Der Körper führt aus. Nur was im Körper Teil steht erscheint auch auf deiner Webseite.
+
+			    <head> .... </head>
+			    Der HEAD Tag ist der Kopf mit den META Informationen. META Tags sind für das automatische Lesen von Webseiten notwendig. Z.B. Suchmaschinen suchen nach META Tags, aber auch Text-to-Speach Software. Hier sind folgende META Tags enthalten:
+
+			    <meta charset="utf-8">
+			    Das Attribut CHARSET legt die Kodierung fest. In UTF-8 sind nicht nur alle Zeichen des lateinischen Alphabets, sondern auch z.B. unserer deutschen Sonderzeichen enthalten.
+
+				<meta name="description" content="WorumGehtEsHier">
+				Hier wird der Inhalt der Seite kurz erklärt.
+
+				<meta name="author" content="HierStehtDeinName">
+				Hier steht dein Name
+
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				Der Viewport sagt aus, auf welchem Gerät die Seite am besten dargestellt wird. Diese Einstellung hier ist Standard.
+
+				<title> Hier steht der Titel, der aber nicht angezeigt wird. </title>
+				Dieser Titel taucht in der Suchleiste oben im Browser auf, nicht auf der Webseite selbst.
+
+
+
+			    <body> ... </body>
+			 	Der BODY Tag enthält alles .... wirklich alles was jetzt folgt.
+
+			 	<body bgcolor="eineFarbe"> ... </body>
+			 	Es besteht die Option mit bgcolor eine Hintergrundfarbe für den Body Tag festzulegen.
+			 	Lerne mehr über Farben <a href="colors.html"> hier ..... </a>.
+
+		 		<div id="Irgendwas"> .... </div>
+	 			Der DIV Tag ist immer eine Box, ein Container, der andere Dinge enthalten kann.
+
+	 			Das ID Attribut sogt dafür, dass man egal wo man sich auf der Seite befindet an diese Stelle springen kann indem man die ID, hier Irgendwas, angibt. 
+
+
+		 		<header> ... </header>
+		 		Der HEADER Tag wird nur zur Strukturierung benötigt, er hat keinerlei Auswirkung auf die Seite. Hier werden allgemeine Informationen, wie z.B. das Logo, die Überschrift, der Autor etc. plaziert. Durch Drücken der Bild hoch Taste kann man hierhin springen.
+
+
+		 		<img src="DerOrdnerInDemDasBildLiegt/derNameDerDatei.DieDateiendung" width="eine Zahl mit % - Zeichen" alt="Die Beschreibung des Bildes">
+		 		Der IMG Tag ist ein Tag der nicht wieder geschlossen werden muss. Mit dem SRC (kurz für Source also Quelle) Attribut wird die Bilddatei geladen. Hier muss auf den richtigen Ordner und die richtige Dateiendung geachtet werden. ACHTUNG: Groß- und Kleinschreibung ist relevant.
+		 		Das WIDTH Attribut gibt die Breite an. Am besten man wählt hier eine Prozentangabe, da diese sich dann dynamisch an kleinere Displays wie Handys oder Tabletts anpassen kann.
+		 		Das ALT Attribut beschreibt jedes Bild. Dies ermöglicht blinden Personen mit Hilfe der Vorlesefunktion die Webseite zu verstehen.
+
+
+		 		<figure>
+	          		<img src="OrdnerName/BildName.jpeg" width="40%" alt="Beschreibung">
+	          		<figcaption>
+	          			Hier steht die Bildunterschrift.
+	          		</figcaption>
+	          	</figure>
+	          	Mit dem FIGURE Tag in Kombination mit dem FIGCAPTION Tag können Bilder ein wenig abgesettz formatiert werden und es ist möglich eine Bildunterschrift hinzuzufügen, die auch immer unterhalb des Bildes erscheinen wird.
+
+
+			 	<h1> ..... </h1>
+			 	<h2> ..... </h2>
+			 	<h3> ..... </h3>
+			 	<h4> ..... </h4>
+			 	<h5> ..... </h5>
+			 	<h6> ..... </h6>
+			 	Der H1 Tag bezeichnet eine Überschrift. Sie ist größer und fett gedruckt. Es gibt die Tags H1, H2, H3, H4, H5, H6 für verschiedene größen.
+
+
+
+			 	<p> ... </p>
+			 	Paragraphen teilen Texte in logische Abschnitte ein. Sie sollten eine Idee enthalten und aus wenigen Sätzen bestehen. Sie sind in keiner menschnlichen Sprache syntaktisch verpflichtend, aber in jeder Sprache üblich zur Strukturierung von Texten.
+   
+   				<br>
+   				Der BR Tag (kurz für BREAK) erzeugt einen Zeilenumbruch, sodass der nachfolgende Text in die nächste Zeile rutscht.
+
+			 	<hr>
+			 	Der HR Tag (kurz für HORIZONTAL) zeichnet eine horizontale Linie. Hier wurde er der Übersichtlichkeit halber verwendet.
+
+			 	<nav> ... </nav>
+			 	Im NAV Tag platzieren wir die Navigationselemente, also eine Liste mit Links.
+
+            	<ul> ... </ul>
+            	Der UL Tag leitet eine unsortierte Liste (UNORDERED LIST, also Bulletpoints) ein.
+            	Sein Äquivalent die sortierte LISTE (ORDERED LIST, also 1, 2, 3, 4 ...) ist:
+            	<ol> ... </ol>
+
+            	Innerhalb von UL und OL werden nun die einzelnen Listenelemente mit LI gekennzeichnet.
+            	<li> Element 1 </li>
+	            <li> Element 2 </li>
+            	<li> Element 3 </li>
+            	Listen können verschachtelt werden, und verschiedene Aufzähungszeichen enthalten. Hier ein Überblick ..... 
+            	<ol type="1">
+	                <li>List Item 1</li>
+	                <li>
+	                  List Item 2
+	                  <ol type="A">
+	                    <li>List Item 1</li>
+	                    <li>
+	                      List Item 2
+	                      <ol type="a">
+	                        <li>List Item 1</li>
+	                        <li>
+	                          List Item 2
+	                          <ol type="I">
+	                            <li>List Item 1</li>
+	                            <li>
+	                              List Item 2
+	                              <ol type="i">
+	                                <li>List Item 1</li>
+	                                <li>List Item 2</li>
+	                                <li>List Item 3</li>
+	                              </ol>
+	                            </li>
+	                            <li>List Item 3</li>
+	                          </ol>
+	                        </li>
+	                        <li>List Item 3</li>
+	                      </ol>
+	                    </li>
+	                    <li>List Item 3</li>
+	                  </ol>
+	                </li>
+	                <li>List Item 3</li>
+	              </ol>
+	              --------
+	              <ul>
+	                <li>List Item 1</li>
+	                <li>
+	                  List Item 2
+	                  <ul>
+	                    <li>List Item 1</li>
+	                    <li>
+	                      List Item 2
+	                      <ul>
+	                        <li>List Item 1</li>
+	                        <li>
+	                          List Item 2
+	                          <ul>
+	                            <li>List Item 1</li>
+	                            <li>
+	                              List Item 2
+	                              <ul>
+	                                <li>List Item 1</li>
+	                                <li>List Item 2</li>
+	                                <li>List Item 3</li>
+	                              </ul>
+	                            </li>
+	                            <li>List Item 3</li>
+	                          </ul>
+	                        </li>
+	                        <li>List Item 3</li>
+	                      </ul>
+	                    </li>
+	                    <li>List Item 3</li>
+	                  </ul>
+	                </li>
+	                <li>List Item 3</li>
+	              </ul>
+
+
+	            <a href="#NameEinerSektionHier"> .... </a>
+	           	<a href="https://wikipedia.org"> .... </a>
+	           	<a href="einOrdner/NameEinerAnderenDatei.html"> .... </a>
+	            Ein Link wird mit dem A Tag eingeleitet. Das HREF Attribut zeigt worauf verlinkt wird.
+	            In Fall eins wird auf eine Sektion auf der gleichen Seite verlinkt (die iregendwo mit id gekennzeichnet ist).
+	            In Fall zwei verlinken wir auf eine externe Seite, hier Wikipedia.
+	            In Fall drei verlinken wir auf eine unsere eigenen Seiten, die im Ornder einOrdner liegt und einen Namen hat. Die Datei hat die Dateiendung .html.
+
+	           	<a href="https://wikipedia.org" target="_blank"> .... </a>
+	           	Mit dem TARGET-Attribut bestimmt man wo der Link sich öffnen soll, z.B. in einem neuen Tab, neuen Fenster etc. Alle Optionen findest du hier: https://www.w3schools.com/tags/att_a_target.asp 
+
+	            <a href="Ordnername/Dateiname.pdf" download> ... </a>
+	            Mit Hilfe des Attributes DOWNLOAD können auch z.B. PDF Dateien zum Download zur Verfügung gestellt werden.
+
+	            <code> ... </code>
+	            Der CODE Tag erlaubt uns einen Text so aussehen zu lassen als ob es ein programmierter Text wäre.
+
+			 	<main> ... </main>
+			 	Mit dem MAIN Tag leiten wir sozusagen den Hauptteil der Seite ein. Hier stehen fast alle Inhalte.
+
+
+
+			 	Textformatierung:
+			 	<b> Fett gedruckter Text </b>
+			 	<i> Kursiv gedruckter Text </i>
+
+
+
+		        <audio controls autoplay muted> ... </audio>
+		        <audio controls autoplay> ... </audio>
+		        <audio controls> ... </audio>
+		        <audio> ... </audio>
+		        Der AUDIO Tag spiel Audiodatein, man kann wählen ob ohne Kontrollelemente (Play, stop etc.), ob automatisch abgespielt wird, ob auf stumm geschaltet ist etc.
+
+		        <audio controls autoplay muted>
+  						<source src="hello.ogg" type="audio/ogg">
+  						<source src="hello.mp3" type="audio/mpeg">
+						Dein Browser untersützt dieses Audioelement nicht.
+				</audio>
+				Es sollte immer eine Fehlermeldung anzeigbar sein.
+				Mit dem SOURCE Tag können jetzt die Dateien geladen werden. Hier gibt es die Option mp3 (also audio/mpeg) oder ogg (also audio/ogg) Dateien zu laden.
+
+
+				<video controls width="600" autoplay>
+				  	<source src="pictures/surfer.mp4" type="video/mp4">
+					Dein Browser untersützt dieses Audioelement nicht.
+				</video>
+				Der VIDEO Tag erlaubt die Verwendung von Videos. Die Verwendung entspricht der von Audio Dateien.
+
+
+				YOUTUBE VIDEOS
+				Wenn du Youtube Videos einbinden möchtest, schaue dir diese Seite an: https://www.w3schools.com/html/html_youtube.asp
+				Die einfchste Variante ist es unter dem Youtube Video auf Teilen, dann auf Einbetten zu klicken und dann en iframe zu kopieren.
+
+				Mit dem SVG Tags SVG in Kombination mit CIRCLE, RECT und POLYGOn können interessante Formen erzeugt werden, wie z.B. hier
+				<svg width="315" height="315">
+	         		<circle cx="157.5" cy="157.5" r="100" fill="#1fa3ec"></circle>
+	         		<circle cx="157.5" cy="157.5" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+	         	</svg>
+	         	Für mehr Beispiele ist diese Seite empfehlenswert: https://www.w3schools.com/html/html5_svg.asp
+
+				<canvas> ... </canvas>
+				Der CANVAS Tag ist neu in HTML5. Hier können Zeichnungen eingefügt werden. Genaueres kannst du hier nachlesen: https://www.w3schools.com/html/html5_canvas.asp
+				Wir benötigen JavaScript für dieses Element, also schauen wir uns das erst später an.
+
+
+			 	<footer> ... </footer>
+			 	Der FOOTER Tag beinhaltet noch einmal einige abschließende Informationen, wie ersteller, Impressum, Datenschutz, Kontakt etc.
+			 	Durch Drücken der Bild hoch Taste kann man hierhin springen.
+
+			 	&nbsp; 
+			 	Erzeugt ein Leerzeichen.
+			 	&ensp;
+			 	Erzeugt zwei Leerzeichen.
+			 	&emsp;
+			 	Erzeugt vier Leerzeichen.
 			</div>
+
+
+
+			<ol>
+				<li>Erzeuge eine horizontale Line unterhalb des Logos </li>
+
+				<li>Erzeuge eine doppelte horizontale Line unterhalb Introtextes </li>
+
+
+				<li>Erzeuge eine zwei horizontale Line oberhalb des Möwenbildes. Zwischen den Linien sollen zwei Zeilenumbrüche Platz gelassen werden.</li>
+
+			</ol>
 
 			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
