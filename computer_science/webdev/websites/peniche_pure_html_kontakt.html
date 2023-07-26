@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Peniche">
+		<meta name="author" content="Vera Christ">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title> Die portugiesische Stadt Peniche </title>
+	</head>
+
+  	<body bgcolor="#fffff6"> 
+      	<h4>
+			<a href="peniche_pure_html.html">
+				Zurück zur Hauptseite 
+			</a>
+		</h4>
+
+        <!-- jetzt folgen sehr, sehr viele Formularelemente, die braucht man alle nur sehr selten -->
+        <section id="sec_formulare">
+          	<h2>Bitte nehmen sie gerne Kontakt zu uns auf: </h2>
+          	
+  
+          	<p>
+          		Eventuell müssen Teile dieses Formulares nachgeladen werden ... 
+          	</p>
+          	<progress></progress>
+         	
+          	<p>
+          		Nutzen Sie gerne diese Formulare um mit uns in Kontakt zu treten. Die Formulare müssen komplett ausgefüllt werden. Aktuell ausgefüllt: 
+          	</p>
+          	<meter value="2" min="0" max="10">2 out of 10</meter>
+	        
+	        <br><br>
+
+	        <form>
+	            <fieldset>
+	              	<legend>Kontaktformular</legend>
+	              	<p>
+	                	<label for="input__text">Vorname, Name</label>
+	                	<input id="input__text" type="text" placeholder="Text Input">
+	              	</p>
+		            <p>
+		                <label for="input__password">Password</label>
+		                <input id="input__password" type="password" placeholder="Type your Password">
+		            </p>
+		            <p>
+		                <label for="input__webaddress">Web Addresse</label>
+		                <input id="input__webaddress" type="url" placeholder="https://yoursite.com">
+		            </p>
+		            <p>
+		                <label for="input__emailaddress">Email Addresse</label>
+		                <input id="input__emailaddress" type="email" placeholder="name@email.com">
+		            </p>
+		            <p>
+		                <label for="input__phone">Telefon Number</label>
+		                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+		            </p>
+		            <p>
+		                <label for="input__file">Foto hochladen</label>
+		                <input id="input__file" type="file">
+		            </p>
+		        </fieldset>
+	            <br><br>
+            	<fieldset id="forms__select">
+		            <legend>Auswahl</legend>
+	              	<p>
+	                	<label for="select">Warum nehmen Sie mit uns Kontakt auf?</label>
+	                	<br>
+	                	<select id="select">
+	                  		<optgroup label="Option Group">
+	                    		<option>Ich hätte gerne mehr Informationen zu Peniche.</option>
+	                    		<option>Ich möchte eine mich in Peniche engagieren.</option>
+	                    		<option>Ich möchte etwas buchen.</option>
+	                  		</optgroup>
+	                	</select>
+	              	</p>
+		        </fieldset>
+	            <br><br>
+	            <fieldset id="forms__checkbox">
+		            <legend>Was sind Ihre Interessen?</legend>
+		            <label for="checkbox1">
+		                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+		                Die Strände
+		            </label>
+		            <label for="checkbox1">
+		                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+		                Surfen in Peniche
+		            </label>
+		            <label for="checkbox1">
+		                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+		                Leute in Peniche
+		            </label>
+		            <label for="checkbox1">
+		                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+		                Kultur in Peniche
+		            </label>
+		            <label for="checkbox1">
+		                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+		                Wandern in der Region
+		            </label>
+		            <label for="checkbox1">
+		                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+		                Geschichte und Entstehung
+		            </label>
+	            </fieldset>
+	            <br><br>
+	            <fieldset id="forms__radio">
+	              	<legend>Wo möchten Sie wohnen?</legend>
+	              	<label for="radio1">
+	              		<input id="radio1" name="radio" type="radio" checked="checked"> 
+	              		Nach am Meer
+	              	</label>
+	              	<label for="radio1">
+	              		<input id="radio1" name="radio" type="radio" checked="checked"> 
+	              		Nach am Stadtzentrum
+	              	</label>
+	            </fieldset>
+	            <br><br>
+	            <fieldset id="forms__textareas">
+	              	<legend>Möchten Sie uns noch etwas mitteilen?</legend>
+		            <p>
+		                <textarea id="textarea" rows="8" cols="48" placeholder="Nachricht hier eingeben"></textarea>
+		            </p>
+	            </fieldset>
+
+
+
+
+	            <br><br>
+
+	            <fieldset id="forms__html5">
+	              	<legend>Wählen Sie aus</legend>
+		            <p>
+		                <label for="ic">Ihre Lieblingsfarbe</label>
+		                <input type="color" id="ic" value="#000000">
+		            </p>
+		            <p>
+		                <label for="in">Ihre Lieblingszahl</label>
+		                <input type="number" id="in" min="0" max="10" value="5">
+		            </p>
+		            <p>
+		                <label for="ir">Wie wichtig ist Ihnen die Natur?</label>
+		                <input type="range" id="ir" value="10">
+		            </p>
+		            <p>
+		                <label for="idd">Ihr Geburtstag</label>
+		                <input type="date" id="idd" value="1970-01-01">
+		            </p>
+		            <p>
+		                <label for="idm">Ihr bevorzugter Reisemonat</label>
+		                <input type="month" id="idm" value="1970-01">
+		            </p>
+		            <p>
+		                <label for="idw">Ihre bevorzugte Reisewoche</label>
+		                <input type="week" id="idw" value="1970-W01">
+		            </p>
+		            <p>
+		                <label for="idt">Startzeit</label>
+		                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+		            </p>
+		            <p>
+		                <label for="idtl">Endzeit</label>
+		                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+		            </p>
+		            <p>
+		                <label for="idl">Mit wie vielen Personen reisen Sie?</label>
+		                <input type="text" id="idl" list="example-list">
+		                <datalist id="example-list">
+		                  <option value="1 Person" />
+		                  <option value="2 Personen" />
+		                  <option value="3 Personen" />
+		                </datalist>
+		            </p>
+		        </fieldset>
+
+		        <br><br>
+
+		        <fieldset id="forms__action">
+
+		           	<legend>Haben Sie ihre Eingabe beendet?</legend>
+		            
+		            <p>
+		                <button type="reset">Alle Eingaben zurücksetzen</button>
+
+		                <button type="submit">Überprüfen</button>
+
+		                <button type="button" disabled>Final abgeben</button>
+		            </p>
+	            </fieldset>
+	        </form>
+        </section>	          
+
+        <br>
+        <hr>
+        <br>
+
+
+
+			<section id="sec_kontakt">
+          	
+  			<h2>Öffnungszeiten der Tourist-Information</h2>
+
+  			<br><br>
+
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Montag</th>
+                  <th>Dienstag</th>
+                  <th>Mittwoch</th>
+                  <th>Donnerstag</th>
+                  <th>Freitag</th>
+                  <th>Samstag & Sonntag</th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                <tr>
+                  <td>8:00 bis 12:00</td>
+                  <td>8:00 bis 12:00</td>
+                  <td>8:00 bis 12:00</td>
+                  <td>8:00 bis 12:00</td>
+                  <td>8:00 bis 12:00</td>
+                  <td>geschlossen</td>
+                </tr>
+                <tr>
+                  <td>14:00 bis 18:00</td>
+                  <td>14:00 bis 18:00</td>
+                  <td>14:00 bis 18:00</td>
+                  <td>14:00 bis 18:00</td>
+                  <td>14:00 bis 18:00</td>
+                  <td>geschlossen</td>
+                </tr>
+                 	               	                	                
+              </tbody>
+            </table>
+
+
+            <br><br>
+
+            <details>
+              <summary>Datenschutzrichtlinien anzeigen</summary>
+              <p>
+              	Hier könnte ein langer Text zum Datenschutz in Peniche stehen, aber eigentlich ist uns das ziemlich egal, wir möchten nur, dass die Leute Spaß haben.
+              </p>
+            </details>
+
+            <h1>Kontakt</h1>
+
+            <address>
+              Geschrieben von <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+              peniche.pt<br>
+              Straße 5, Peniche<br>
+              Portugal
+            </address>
+        </section>
+	        
+	    </main>
+
+
+	    <br>
+	    <hr>
+
+
+	    <footer>
+	        Erstellt von John Doe. 
+	        &emsp;
+	        <a href="peniche_pure_html_kontakt.html">Kontakt</a> 
+	        &emsp;
+	        <a href="peniche_pure_html_kontakt.html">Impressum</a> 
+	        &emsp; 
+	        <a href="peniche_pure_html_kontakt.html">Datenschutz</a> 
+	    </footer>
+	
+	</body>
+</html>

@@ -12,8 +12,18 @@
 
 
 
+	<!-- Farben, die mit # beginn stehen in der Hexadezimalschreibweise. Das Schema ist RGB.
+		Die ersten beiden Stellen bezeichnen den Rotanteil in der Mischung, die zweiten beiden Stellen den Gelbanteil und die letzten Beiden den Blauanteil.
 
-  	<body bgcolor="#fffff6">
+		Eine andere mögliche Schreibweise ist rgb(1, 0 , 0). Das wäre die Farbe rot.
+
+		rgb(0, 0.5, 0.5) wäre somit grün und blau zu gleichen Teilen, also gelb.
+
+		Man kann auch rgba(0, 0, 1, 0.1) schreiben, dann benutzt man auch den alphakanal. Damit macht man Farben transparent. Ist der letzte Wert 0, ist die Farbe komplett durchsichtig, bei 1 komplett sichtbar. Hier haben wir also ein fast durchsichtiges blau.
+
+		Für die Standdardfarbben kann man übrigens auch einfach die englischen Begriffe verwenden. HTML kennt einige: blue, white, black, cyan etc.
+	-->
+  	<body bgcolor="#fffff6"> 
       	<header>
         	<div id="top">
 
@@ -41,8 +51,8 @@
               	<li><a href="#sec_language">Die Sprache - Portugisisch</a></li>
               	<li><a href="#sec_region">Großregion</a></li>
               	<li><a href="#sec_interessant">Interessante Fakten</a></li>
-              	<li><a href="#sec_formulare">und zum Schluss die Wichtigen Formulare</a></li>
-              	<li><a href="#sec_kontakt">Kontaktinfromationen</a></li>
+              	<li><a href="peniche_pure_html_kontakt.html">Formulare</a></li>
+              	<li><a href="peniche_pure_html_kontakt.html">Kontaktinfromationen</a></li>
             </ul>
       	</nav>
 
@@ -98,18 +108,23 @@
 
 
 	        <section id="sec_surfer">
+
 	          	<h2>Peniche und das Meer - die Surfer</h2>
 	          	
 	          	<b> Praia do Medão Grande – der Surfer Strand in Peniche</b>	
 	          	<br><br>
-				<video controls width="600" autoplay>
-				  	<source src="pictures/surfer.mp4" type="video/mp4">
-					Dein Browser untersützt dieses Audioelement nicht.
-				</video>
-				<p>
-					Im Süden der Halbinsel erstreckt sich dieser Strand auch bekannt als Superturbos. Die ausgezeichnete Kombination aus dem flachen Abhang, Nordwind sowie Meeresströmungen lässt eine hohe, perfekt hohle Welle entstehen. Daher zählt dieser Strand zu den Surfer Hotspots in Portugal.
-				</p>
+
+	          	<!-- zur Abwechslung ist es ganz nett mal etwas zentriert darzustellen, das Video hier eignet sich dafür gut, bei dem Text sieht es etwas komisch aus. -->
+	          	<center>
+					<video controls width="600" autoplay>
+					  	<source src="pictures/surfer.mp4" type="video/mp4">
+						Dein Browser untersützt dieses Audioelement nicht.
+					</video>
+					<p>
+						Im Süden der Halbinsel erstreckt sich dieser Strand auch bekannt als Superturbos. Die ausgezeichnete Kombination aus dem flachen Abhang, Nordwind sowie Meeresströmungen lässt eine hohe, perfekt hohle Welle entstehen. Daher zählt dieser Strand zu den Surfer Hotspots in Portugal.
+					</p>
 	         	
+	         	</center>
 	        </section>	
 
 
@@ -128,6 +143,7 @@
 		          		<ul>
 		                	<li>
 		                		Hallo <br>
+		                		<!-- entschuldigung, das hier sind nicht die echten Audiodateien, ich konnte keine passenden zum Download finden -->
 		                		<audio controls autoplay muted>
   									<source src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.ogg" type="audio/ogg">
 									Dein Browser untersützt dieses Audioelement nicht.
@@ -225,18 +241,7 @@
 
 
 					<abbr title="Liebe Grüße">LG</abbr> 
-					.... von einem überlebenden.
-
-
-	            <div>
-	              <p>There is comment here: <!--This comment should not be displayed--></p>
-	              <p>There is a comment spanning multiple tags and lines below here.</p>
-	              <!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
-	              <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
-	              <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
-	
-
-
+					.... von einem überlebenden.	              
 
 
 	               	<cite>
@@ -245,7 +250,7 @@
 	            </blockquote>
 
 	            Diese Rakete findet sich auf deinem der Felsen als Gemälde wieder.....
-
+	            <!-- nicht wirklich, aber irgendwie musste der pre-Tag ja erklärt werden .... -->
 	            <br><br>
 	            <pre>
 
@@ -274,7 +279,7 @@
 
 				</pre>
 
-				... der Autor unterzeichnet wie folgt.
+				... der Autor unterzeichnet wie folgt:
 
 				<br><br>
 				<pre role="img" aria-label="ASCII COW">
@@ -295,246 +300,16 @@
 
 
 
+	        <!-- jetzt folgen sehr, sehr viele Formularelemente, die braucht man alle nur sehr selten -->
 	        <section id="sec_formulare">
-	          	<h2>Und zum Schluss die Wichtigen Formulare</h2>
-	          	
-	  
-	          	<p>
-	          		Eventuell müssen Teile dieses Formulares nachgeladen werden ... 
-	          	</p>
-	          	<progress></progress>
-	         	
-	          	<p>
-	          		Nutzen Sie gerne diese Formulare um mit uns in Kontakt zu treten. Die Formulare müssen komplett ausgefüllt werden. Aktuell ausgefüllt: 
-	          	</p>
-	          	<meter value="2" min="0" max="10">2 out of 10</meter>
-		        
-		        <br><br>
-
-		        <form>
-		            <fieldset>
-		              	<legend>Kontaktformular</legend>
-		              	<p>
-		                	<label for="input__text">Vorname, Name</label>
-		                	<input id="input__text" type="text" placeholder="Text Input">
-		              	</p>
-			            <p>
-			                <label for="input__password">Password</label>
-			                <input id="input__password" type="password" placeholder="Type your Password">
-			            </p>
-			            <p>
-			                <label for="input__webaddress">Web Addresse</label>
-			                <input id="input__webaddress" type="url" placeholder="https://yoursite.com">
-			            </p>
-			            <p>
-			                <label for="input__emailaddress">Email Addresse</label>
-			                <input id="input__emailaddress" type="email" placeholder="name@email.com">
-			            </p>
-			            <p>
-			                <label for="input__phone">Telefon Number</label>
-			                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
-			            </p>
-			            <p>
-			                <label for="input__file">Foto hochladen</label>
-			                <input id="input__file" type="file">
-			            </p>
-			        </fieldset>
-		            <br><br>
-	            	<fieldset id="forms__select">
-			            <legend>Auswahl</legend>
-		              	<p>
-		                	<label for="select">Warum nehmen Sie mit uns Kontakt auf?</label>
-		                	<br>
-		                	<select id="select">
-		                  		<optgroup label="Option Group">
-		                    		<option>Ich hätte gerne mehr Informationen zu Peniche.</option>
-		                    		<option>Ich möchte eine mich in Peniche engagieren.</option>
-		                    		<option>Ich möchte etwas buchen.</option>
-		                  		</optgroup>
-		                	</select>
-		              	</p>
-			        </fieldset>
-		            <br><br>
-		            <fieldset id="forms__checkbox">
-			            <legend>Was sind Ihre Interessen?</legend>
-			            <label for="checkbox1">
-			                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
-			                Die Strände
-			            </label>
-			            <label for="checkbox1">
-			                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
-			                Surfen in Peniche
-			            </label>
-			            <label for="checkbox1">
-			                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
-			                Leute in Peniche
-			            </label>
-			            <label for="checkbox1">
-			                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
-			                Kultur in Peniche
-			            </label>
-			            <label for="checkbox1">
-			                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
-			                Wandern in der Region
-			            </label>
-			            <label for="checkbox1">
-			                <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
-			                Geschichte und Entstehung
-			            </label>
-		            </fieldset>
-		            <br><br>
-		            <fieldset id="forms__radio">
-		              	<legend>Wo möchten Sie wohnen?</legend>
-		              	<label for="radio1">
-		              		<input id="radio1" name="radio" type="radio" checked="checked"> 
-		              		Nach am Meer
-		              	</label>
-		              	<label for="radio1">
-		              		<input id="radio1" name="radio" type="radio" checked="checked"> 
-		              		Nach am Stadtzentrum
-		              	</label>
-		            </fieldset>
-		            <br><br>
-		            <fieldset id="forms__textareas">
-		              	<legend>Möchten Sie uns noch etwas mitteilen?</legend>
-				            <p>
-				                <textarea id="textarea" rows="8" cols="48" placeholder="Nachricht hier eingeben"></textarea>
-				            </p>
-		            	</fieldset>
-
-
-
-
-
-
-		            <fieldset id="forms__html5">
-		              	<legend>Wählen Sie aus</legend>
-			            <p>
-			                <label for="ic">Ihre Lieblingsfarbe</label>
-			                <input type="color" id="ic" value="#000000">
-			            </p>
-			            <p>
-			                <label for="in">Ihre Lieblingszahl</label>
-			                <input type="number" id="in" min="0" max="10" value="5">
-			            </p>
-			            <p>
-			                <label for="ir">Wie wichtig ist Ihnen die Natur?</label>
-			                <input type="range" id="ir" value="10">
-			            </p>
-			            <p>
-			                <label for="idd">Ihr Geburtstag</label>
-			                <input type="date" id="idd" value="1970-01-01">
-			            </p>
-			            <p>
-			                <label for="idm">Ihr bevorzugter Reisemonat</label>
-			                <input type="month" id="idm" value="1970-01">
-			            </p>
-			            <p>
-			                <label for="idw">Ihre bevorzugte Reisewoche</label>
-			                <input type="week" id="idw" value="1970-W01">
-			            </p>
-			            <p>
-			                <label for="idt">Startzeit</label>
-			                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
-			            </p>
-			            <p>
-			                <label for="idtl">Endzeit</label>
-			                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
-			            </p>
-			            <p>
-			                <label for="idl">Mit wie vielen Personen reisen Sie?</label>
-			                <input type="text" id="idl" list="example-list">
-			                <datalist id="example-list">
-			                  <option value="1 Person" />
-			                  <option value="2 Personen" />
-			                  <option value="3 Personen" />
-			                </datalist>
-			            </p>
-			        </fieldset>
-
-			        <br><br>
-
-			        <fieldset id="forms__action">
-
-			           	<legend>Haben Sie ihre Eingabe beendet?</legend>
-			            
-			            <p>
-			                <button type="reset">Alle Eingaben zurücksetzen</button>
-
-			                <button type="submit">Überprüfen</button>
-
-			                <button type="button" disabled>Final abgeben</button>
-			            </p>
-		            </fieldset>
-		        </form>
-	        </section>	          
-
-
-	        <hr>
-	        <br>
-
-	
-
- 			<section id="sec_kontakt">
-	          	<h2>Kontaktinfromationen</h2>
-	          	
-	  			Öffnungszeiten der Tourist Information	
-
-	  			<br><br>
-
-	            <table border="4">
-	              <thead>
-	                <tr>
-	                  <th>Montag</th>
-	                  <th>Dienstag</th>
-	                  <th>Mittwoch</th>
-	                  <th>Donnerstag</th>
-	                  <th>Freitag</th>
-	                  <th>Samstag & Sonntag</th>
-	                </tr>
-	              </thead>
-	              
-	              <tbody>
-	                <tr>
-	                  <td>8:00 bis 12:00</td>
-	                  <td>8:00 bis 12:00</td>
-	                  <td>8:00 bis 12:00</td>
-	                  <td>8:00 bis 12:00</td>
-	                  <td>8:00 bis 12:00</td>
-	                  <td>geschlossen</td>
-	                </tr>
-	                <tr>
-	                  <td>14:00 bis 18:00</td>
-	                  <td>14:00 bis 18:00</td>
-	                  <td>14:00 bis 18:00</td>
-	                  <td>14:00 bis 18:00</td>
-	                  <td>14:00 bis 18:00</td>
-	                  <td>geschlossen</td>
-	                </tr>
-	                 	               	                	                
-	              </tbody>
-	            </table>
-
-
-	            <br><br>
-
-	            <details>
-	              <summary>Datenschutzrichtlinien anzeigen</summary>
-	              <p>
-	              	Hier könnte ein langer Text zum Datenschutz in Peniche stehen, aber eigentlich ist uns das ziemlich egal, wir möchten nur, dass die Leute Spaß haben.
-	              </p>
-	            </details>
-
-	            <h1>Addresse</h1>
-
-	            <address>
-	              Geschrieben von <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
-	              peniche.pt<br>
-	              Straße 5, Peniche<br>
-	              Portugal
-	            </address>
+	        	<center>
+	        		<h4> 
+		        		<a href="peniche_pure_html_kontakt.html">
+		        			Hier geht es zur Formular- und Kontaktseite 
+		        		</a>
+	        		</h4>
+	        	</center>
 	        </section>
-	        
 	    </main>
 
 
@@ -543,13 +318,13 @@
 
 
 	    <footer>
-	        Erstellt von @vc. 
+	        Erstellt von John Doe. 
 	        &emsp;
-	        <a href="#">Kontakt</a> 
+	        <a href="peniche_pure_html_kontakt.html">Kontakt</a> 
 	        &emsp;
-	        <a href="#">Impressum</a> 
+	        <a href="peniche_pure_html_kontakt.html">Impressum</a> 
 	        &emsp; 
-	        <a href="#">Datenschutz</a> 
+	        <a href="peniche_pure_html_kontakt.html">Datenschutz</a> 
 	    </footer>
 	
 	</body>
