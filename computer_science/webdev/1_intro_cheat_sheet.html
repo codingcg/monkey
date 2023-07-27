@@ -42,7 +42,7 @@
                     
                     <b>Allgemein: </b>
 
-			   		Es gibt Tags die geöffnet und irgendwann wieder geschlossen werden. Es gibt auch Tags, die nicht geschlossen werden müssen. Der Unterschied wird meißt aus dem Kontext ersichtlich.
+			   		Es gibt <code>TAGS</code> die geöffnet und irgendwann wieder geschlossen werden. Es gibt auch <code>TAGS</code>, die nicht geschlossen werden müssen. Der Unterschied wird meißt aus dem Kontext ersichtlich.
 					
 					<br><br>
                     
@@ -103,7 +103,6 @@
 
 
 
-
 					    	<tr>
 					      		<td> 
 									<div class="myDiv">&lt;meta charset="utf-8"&gt;</div>
@@ -112,11 +111,6 @@
 					      			Das Attribut <code>CHARSET</code> legt die Kodierung fest. In <code>UTF-8</code> sind nicht nur alle Zeichen des lateinischen Alphabets, sondern auch z.B. unserer deutschen Sonderzeichen enthalten.
 			    				</td>
 					    	</tr>
-
-
-
-
-
 
 					    	<tr>
 					      		<td> 
@@ -209,12 +203,12 @@
 
 					    	<tr>
 					      		<td> 
-									<div class="myDiv">&lt;figure&gt;
+									<div class="myDiv">&lt;figure&gt;<br>
 										&lt;img src="OrdnerName/BildName.jpeg" 
 										width="40%" alt="Beschreibung"&gt;
-										    &lt;figcaption&gt;
-										        Hier steht die Bildunterschrift.
-										    &lt;/figcaption&gt;
+										    <br>&lt;figcaption&gt;
+										        <br>Hier steht die Bildunterschrift.
+										    <br>&lt;/figcaption&gt;<br>
 										&lt;/figure&gt;</div>
 					      		</td>
 					      		<td>
@@ -222,279 +216,532 @@
 			    				</td>
 					    	</tr>
 
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;h1&gt; ..... &lt;/h1&gt;<br>
+								 	&lt;h2&gt; ..... &lt;/h2&gt;<br>
+								 	&lt;h3&gt; ..... &lt;/h3&gt;<br>
+								 	&lt;h4&gt; ..... &lt;/h4&gt;<br>
+								 	&lt;h5&gt; ..... &lt;/h5&gt;<br>
+								 	&lt;h6&gt; ..... &lt;/h6&gt;</div>
+					      		</td>
+					      		<td>
+			 						Der <code>H1</code> Tag bezeichnet eine Überschrift. Sie ist größer und fett gedruckt. Es gibt die Tags <code>H1, H2, H3, H4, H5, H6</code> für verschiedene größen.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">
+			 							&lt;p&gt; ... &lt;/p&gt;</div>
+					      		</td>
+					      		<td>
+			 						Paragraphen teilen Texte in logische Abschnitte ein. Sie sollten eine Idee enthalten und aus wenigen Sätzen bestehen. Sie sind in keiner menschnlichen Sprache syntaktisch verpflichtend, aber in jeder Sprache üblich zur Strukturierung von Texten.
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;br&gt;</div>
+					      		</td>
+					      		<td>
+   									Der <code>BR</code> Tag (kurz für BREAK) erzeugt einen Zeilenumbruch, sodass der nachfolgende Text in die nächste Zeile rutscht.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;hr&gt;</div>
+					      		</td>
+					      		<td>
+			 						Der <code>HR</code> Tag (kurz für HORIZONTAL) zeichnet eine horizontale Linie. Hier wurde er der Übersichtlichkeit halber verwendet.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;nav&gt; ... &lt;/nav&gt;</div>
+					      		</td>
+					      		<td>
+			 						Im <code>NAV</code> Tag platzieren wir die Navigationselemente, also eine Liste mit Links.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;ul&gt; ... &lt;/ul&gt;</div>
+					      		</td>
+					      		<td>
+            						Der <code>UL</code> Tag leitet eine unsortierte Liste (UNORDERED LIST, also Bulletpoints) ein.
+            						Sein Äquivalent die sortierte Liste (ORDERED LIST, also 1, 2, 3, 4 ...) ist:
+			 					</td>
+			 				</tr>
+			 									    	
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;ol&gt; ... &lt;/ol&gt;</div>
+					      		</td>
+					      		<td>
+
+            						Innerhalb von <code>UL</code> und <code>OL</code> werden nun die einzelnen Listenelemente mit <code>LI</code> gekennzeichnet.
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;li&gt; Element 1 &lt;/li&gt;<br>
+							            &lt;li&gt; Element 2 &lt;/li&gt;<br>
+						            	&lt;li&gt; Element 3 &lt;/li&gt;
+						            </div>
+					      		</td>
+					      		<td>
+            						Listen können verschachtelt werden, und verschiedene Aufzähungszeichen enthalten. Hier ein Überblick ..... 
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;ol type="1"&gt;<br>
+								                &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                &lt;li&gt;<br>
+								                  List Item 2<br>
+								                  &lt;ol type="A"&gt;<br>
+								                    &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                    &lt;li&gt;<br>
+								                      List Item 2<br>
+								                      &lt;ol type="a"&gt;<br>
+								                        &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                        &lt;li&gt;<br>
+								                          List Item 2<br>
+								                          &lt;ol type="I"&gt;<br>
+								                            &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                            &lt;li&gt;<br>
+								                              List Item 2<br>
+								                              &lt;ol type="i"&gt;<br>
+								                                &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                                &lt;li&gt;List Item 2&lt;/li&gt;<br>
+								                                &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								                              &lt;/ol&gt;<br>
+								                            &lt;/li&gt;<br>
+								                            &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								                          &lt;/ol&gt;<br>
+								                        &lt;/li&gt;<br>
+								                        &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								                      &lt;/ol&gt;<br>
+								                    &lt;/li&gt;<br>
+								                    &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								                  &lt;/ol&gt;<br>
+								                &lt;/li&gt;<br>
+								                &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								              &lt;/ol&gt;<br>
+								              --------<br>
+								              &lt;ul&gt;<br>
+								                &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                &lt;li&gt;<br>
+								                  List Item 2<br>
+								                  &lt;ul&gt;<br>
+								                    &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                    &lt;li&gt;<br>
+								                      List Item 2<br>
+								                      &lt;ul&gt;<br>
+								                        &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                        &lt;li&gt;<br>
+								                          List Item 2<br>
+								                          &lt;ul&gt;<br>
+								                            &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                            &lt;li&gt;<br>
+								                              List Item 2<br>
+								                              &lt;ul&gt;<br>
+								                                &lt;li&gt;List Item 1&lt;/li&gt;<br>
+								                                &lt;li&gt;List Item 2&lt;/li&gt;<br>
+								                                &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								                              &lt;/ul&gt;<br>
+								                            &lt;/li&gt;<br>
+								                            &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								                          &lt;/ul&gt;<br>
+								                        &lt;/li&gt;<br>
+								                        &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								                      &lt;/ul&gt;<br>
+								                    &lt;/li&gt;<br>
+								                    &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								                  &lt;/ul&gt;<br>
+								                &lt;/li&gt;<br>
+								                &lt;li&gt;List Item 3&lt;/li&gt;<br>
+								              &lt;/ul&gt;</div>
+					      		</td>
+					      		<td>  
+					      			<ol type="1">
+						                <li>List Item 1</li>
+						                <li>
+						                  List Item 2
+
+						                  <ol type="A">
+						                    <li>List Item 1</li>
+						                    <li>
+						                      List Item 2
+
+						                      <ol type="a">
+						                        <li>List Item 1</li>
+						                       	<li>
+						                          List Item 2
+
+						                          <ol type="I">
+						                            <li>List Item 1</li>
+						                            <li>
+						                              List Item 2
+
+						                              <ol type="i">
+						                                <li>List Item 1</li>
+						                                <li>List Item 2</li>
+						                                <li>List Item 3</li>
+						                              </ol>
+						                            </li>
+						                           <li>List Item 3</li>
+						                          </ol>
+						                        </li>
+						                        <li>List Item 3</li>
+						                      </ol>
+						                    </li>
+						                    <li>List Item 3</li>
+						                  </ol>
+						                </li>
+						                <li>List Item 3</li>
+						              </ol>
+								              --------<br>
+								              <ul>
+								                <li>List Item 1</li>
+								                <li>
+								                  List Item 2
+								                  <ul>
+								                    <li>List Item 1</li>
+								                    <li>
+								                      List Item 2
+								                      <ul>
+								                        <li>List Item 1</li>
+								                        <li>
+								                          List Item 2
+								                          <ul>
+								                            <li>List Item 1</li>
+								                            <li>
+								                              List Item 2
+								                              <ul>
+								                                <li>List Item 1</li>
+								                                <li>List Item 2</li>
+								                                <li>List Item 3</li>
+								                              </ul>
+								                            </li>
+								                            <li>List Item 3</li>
+								                          </ul>
+								                        </li>
+								                        <li>List Item 3</li>
+								                      </ul>
+								                    </li>
+								                    <li>List Item 3</li>
+								                  </ul>
+								                </li>
+								                <li>List Item 3</li>
+								              </ul>
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;a href="#NameEinerSektionHier"&gt; .... &lt;/a&gt;<br>
+							           	&lt;a href="https://wikipedia.org"&gt; .... &lt;/a&gt;<br>
+							           	&lt;a href="einOrdner/NameEinerAnderenDatei.html"&gt; .... &lt;/a 
+							           &gt;</div>
+					      		</td>
+					      		<td>
+						            Ein Link wird mit dem <code>A</code> Tag eingeleitet. Das <code>HREF</code> Attribut zeigt worauf verlinkt wird.
+						            In Fall eins wird auf eine Sektion auf der gleichen Seite verlinkt (die iregendwo mit id gekennzeichnet ist).
+						            In Fall zwei verlinken wir auf eine externe Seite, hier Wikipedia.
+						            In Fall drei verlinken wir auf eine unsere eigenen Seiten, die im Ornder einOrdner liegt und einen Namen hat. Die Datei hat die Dateiendung .html.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;a href="https://wikipedia.org" target="_blank"&gt; .... &lt;/a&gt;</div>
+					      		</td>
+					      		<td>
+	           						Mit dem <code>TARGET</code>-Attribut bestimmt man wo der Link sich öffnen soll, z.B. in einem neuen Tab, neuen Fenster etc. Alle Optionen findest du hier: <code>https://www.w3schools.com/tags/att_a_target.asp </code>
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;a href="Ordnername/Dateiname.pdf" download&gt; ... &lt;/a&gt;</div>
+					      		</td>
+					      		<td>
+	            					Mit Hilfe des Attributes <code>DOWNLOAD</code> können auch z.B. PDF Dateien zum Download zur Verfügung gestellt werden.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;code&gt; ... &lt;/code&gt;</div>
+					      		</td>
+					      		<td>
+	            					Der <code>CODE</code> Tag erlaubt uns einen Text so aussehen zu lassen als ob es ein programmierter Text wäre.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;main&gt; ... &lt;/main&gt;</div>
+					      		</td>
+					      		<td>
+			 						Mit dem <code>MAIN</code> Tag leiten wir sozusagen den Hauptteil der Seite ein. Hier stehen fast alle Inhalte.
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;center&gt; .... &lt;/center&gt;</div>
+					      		</td>
+					      		<td>
+			 						Der <code>CENTER</code> Tag ist extrem wichtig, denn hiermit können wir Text zentriert, also mittig auf der Seite plazieren.
+			 					</td>
+			 				</tr>
+			 				
+			 	
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;em&gt;Betonter Text&lt;/em&gt;<br><br>
+
+
+						              	Der &lt;b&gt;b Tag&lt;/b&gt; druckt den Text fett.<br><br>
+
+						              	Der &lt;i&gt;i Tag&lt;/i&gt; druckt den Text kursiv.<br><br>
+						              	Der &lt;u&gt;u Tag&lt;/u&gt; unterstreicht den Text.<br><br>
+						              	&lt;del&gt;Das gelöschte&lt;/del&gt; Element wird durchgestrichen.<br><br>
+						              	Wir können auch Formeln schreiben, wie H&lt;sub&gt;2&lt;/sub&gt;O.<br><br>
+						              	&lt;small&gt;Dieser Text ist kleiner gedruckt&lt;/small&gt;<br><br>
+						              	Abkürzung: &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;<br><br>
+							            &lt;q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q"&gt;Das ist ein kurzes inline Zitat.&lt;/q&gt;<br><br>
+							            &lt;mark&gt;Markierter Text&lt;/mark&gt; findet sich hier.<br><br>
+							            Das hier ist ein Kommentar &lt;!--der aber natürlich nicht angezeigt wird--&gt;<br><br>
+										In einem Kommentar kann echt alles stehen, auch Tags, er kann sich auch über viele Zeilen erstecken. Wir nutzen ihn um für uns selbst kleine Hinweise im Code zu hinterlassen.<br><br>
+										&lt;!--Z.B. könnten wir aufschreiben, dass hier die Informationen für die Textformatierung endet und jetzt mit dem &lt;table&gt; Tag Tabellen erklärt werden.
+										--&gt;</div>
+					      		</td>
+					      		<td>
+					      			<b>Textformatierung:</b><br><br>
+					      				<em>Betonter Text</em><br><br>
+						              	<p>Der <b>b Tag</b> druckt den Text fett.</p>
+						              	<p>Der <i>i Tag</i> druckt den Text kursiv.</p>
+						              	<p>Der <u>u Tag</u> unterstreicht den Text.</p>
+						              	<p><del>Das gelöschte</del> Element wird durchgestrichen.</p>
+						              	<p>Wir können auch Formeln schreiben, wie H<sub>2</sub>O.</p>
+						              	<p><small>Dieser Text ist kleiner gedruckt</small></p>
+						              	<p>Abkürzung: <abbr title="HyperText Markup Language">HTML</abbr></p>
+							            <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">Das ist ein kurzes inline Zitat.</q></p>
+							            <p><mark>Markierter Text</mark> findet sich hier.</p>
+							            <p>Das hier ist ein Kommentar <!--der aber natürlich nicht angezeigt wird--></p>
+										<p>In einem Kommentar kann echt alles stehen, auch Tags, er kann sich auch über viele Zeilen erstecken. Wir nutzen ihn um für uns selbst kleine Hinweise im Code zu hinterlassen.
+										<!--Z.B. könnten wir aufschreiben, dass hier die Informationen für die Textformatierung endet und jetzt mit dem <table> Tag Tabellen erklärt werden.
+										-->
+			 					</td>
+			 				</tr>
+	
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;table border="4"&gt; ... &lt;/table&gt;</div>
+					      		</td>
+					      		<td>
+			 						Der <code>TABLE</code> Tag leitet eine Tabelle ein. Mit dem Border Attribut kann man die Breite des Rahmens bestimmen.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;thead&gt; .... &lt;/thead&gt;</div>
+					      		</td>
+					      		<td>
+			 						<code>THEAD</code> (table head) bezeichnet die Kopfzeile der Tabelle.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;tr&gt; ... &lt;/tr&gt;</div>
+					      		</td>
+					      		<td>
+			 						Zeilen einer Tabelle: <code>TABLE ROW</code>
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;td&gt; ... &lt;/td&gt;</div>
+					      		</td>
+					      		<td>
+			 						Spalten einer Tabelle
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;details&gt;<br>
+							              &lt;summary&gt;<br>Datenschutzrichtlinien anzeigen&lt;<br>/summary&gt;<br>
+							              &lt;p&gt;<br>
+							              	Hier könnte ein langer Text zum Datenschutz in Peniche stehen, aber eigentlich ist uns das ziemlich egal, wir möchten nur, dass die Leute Spaß haben.<br>
+							              &lt;/p&gt;<br>
+							            &lt;/details&gt;</div>
+					      		</td>
+					      		<td>
+	           	 					Der <code>DETAILS</code> Tag zusammen mit dem <code>SUMMARY</code> Tag erlaubt das Ausklappen von Informationen.
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;address&gt; ... &lt;/address&gt;</div>
+					      		</td>
+					      		<td>
+	            					Mit <code>ADDRESS</code> können wir Adressen schön darstellen.
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;audio controls autoplay muted&gt; ... &lt;/audio&gt;<br>
+								        &lt;audio controls autoplay> ... &lt;/audio&gt;<br>
+								        &lt;audio controls&gt; ... &lt;/audio&gt;<br>
+								        &lt;audio> ... &lt;/audio&gt;</div>
+					      		</td>
+					      		<td>
+		        					Der <code>AUDIO</code> Tag spiel Audiodatein, man kann wählen ob ohne Kontrollelemente (Play, stop etc.), ob automatisch abgespielt wird, ob auf stumm geschaltet ist etc.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;audio controls autoplay muted&gt;<br>
+						  						&lt;source src="hello.ogg" type="audio/ogg"&gt;<br>
+						  						&lt;source src="hello.mp3" type="audio/mpeg"&gt;<br>
+												Dein Browser untersützt dieses Audioelement nicht.&lt;/audio 
+									&gt;</div>
+					      		</td>
+					      		<td>
+									Es sollte immer eine Fehlermeldung anzeigbar sein.
+									<br>
+									Mit dem <code>SOURCE</code> Tag können jetzt die Dateien geladen werden. Hier gibt es die Option mp3 (also audio/mpeg) oder ogg (also audio/ogg) Dateien zu laden.
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;video controls width="600" autoplay&gt;<br>
+										  	&lt;source src="pictures/surfer.mp4" type="video/mp4"&gt;<br>
+											Dein Browser untersützt dieses Audioelement nicht.&lt;/video 
+									&gt;</div>
+					      		</td>
+					      		<td>
+									Der <code>VIDEO</code> Tag erlaubt die Verwendung von Videos. Die Verwendung entspricht der von Audio Dateien.
+
+									<br><br>
+									<b>YOUTUBE VIDEOS</b>
+									Wenn du Youtube Videos einbinden möchtest, schaue dir diese Seite an: <code>https://www.w3schools.com/html/html_youtube.asp</code>
+									Die einfchste Variante ist es unter dem Youtube Video auf Teilen, dann auf Einbetten zu klicken und dann en iframe zu kopieren.
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;svg width="315" height="315"&gt;<br>
+							         		&lt;circle cx="157.5" cy="157.5" r="100" fill="#1fa3ec"&gt;&lt;/circle&gt;<br>
+							         		&lt;circle cx="157.5" cy="157.5" r="40" stroke="green" stroke-width="4" fill="yellow"&gt;&lt;/circle&gt;<br>
+							         	&lt;/svg&gt;</div>
+					      		</td>
+					      		<td>
+					      			Mit dem <code>SVG</code> Tags in Kombination mit <code>CIRCLE</code>, <code>RECT</code> und <code>POLYGON</code> können interessante Formen erzeugt werden, wie z.B. hier
+					      			<br>
+	         						Für mehr Beispiele ist diese Seite empfehlenswert: 
+	         						<code>https://www.w3schools.com/html/html5_svg.asp</code>
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;canvas&gt; ... &lt;/canvas&gt;</div>
+					      		</td>
+					      		<td>
+									Der <code>CANVAS</code> Tag ist neu in HTML5. Hier können Zeichnungen eingefügt werden. Genaueres kannst du hier nachlesen: 
+									<code>https://www.w3schools.com/html/html5_canvas.asp</code>
+									<br>
+									Wir benötigen JavaScript für dieses Element, also schauen wir uns das erst später an.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;progress&gt;&lt;/progress&gt;</div>
+					      		</td>
+					      		<td>
+	         						Kann z.B. genutzt werden um das Laden eines bestimmten Elements anzuzeigen.
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;meter value="2" min="0" max="10"&gt; .... &lt;/meter&gt;</div>
+					      		</td>
+					      		<td>
+	          						Der <code>METER</code> Tag kann genutzt werden um den Fortschritt anzuzeigen.
+			 					</td>
+			 				</tr>
+			 				
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;form&gt; ... &lt;/form&gt;</div>
+					      		</td>
+					      		<td>
+	          						Alle Optionen für Formulare sind in der Beispielseite zu Peniche ausführlich dargestellt.
+
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">&lt;footer&gt; ... &lt;/footer&gt;</div>
+					      		</td>
+					      		<td>
+			 						Der <code>FOOTER</code> Tag beinhaltet noch einmal einige abschließende Informationen, wie ersteller, Impressum, Datenschutz, Kontakt etc.
+			 						<br>
+			 						Durch Drücken der <code>Bild hoch</code> Taste kann man hierhin springen.
+			 					</td>
+			 				</tr>
+
+					    	<tr>
+					      		<td> 
+									<div class="myDiv">
+			 							& nbsp;
+			 						</div>
+					      		</td>
+					      		<td>
+			 						Erzeugt ein Leerzeichen. (kein Leerzeichen zwischen & und dem ersten Buchstaben, das ist nur hier für die Darstellung nötig)
+			 					</td>
+			 				</tr>
+			 				
+			 				<tr>
+					      		<td> 
+									<div class="myDiv"> & ensp; </div>
+					      		</td>
+					      		<td>
+			 						Erzeugt zwei Leerzeichen.
+			 					</td>
+			 				</tr>
+
+			 				<tr>
+					      		<td> 
+									<div class="myDiv">& emsp; </div>
+					      		</td>
+					      		<td>
+			 						Erzeugt vier Leerzeichen.
+			 					</td>
+			 				</tr>
 						</tbody>
 					</table>
-             
-
-
-		 	
-
-		 		
-	          	
-
-
-			 	<h1> ..... </h1>
-			 	<h2> ..... </h2>
-			 	<h3> ..... </h3>
-			 	<h4> ..... </h4>
-			 	<h5> ..... </h5>
-			 	<h6> ..... </h6>
-			 	Der H1 Tag bezeichnet eine Überschrift. Sie ist größer und fett gedruckt. Es gibt die Tags H1, H2, H3, H4, H5, H6 für verschiedene größen.
-
-
-
-			 	<p> ... </p>
-			 	Paragraphen teilen Texte in logische Abschnitte ein. Sie sollten eine Idee enthalten und aus wenigen Sätzen bestehen. Sie sind in keiner menschnlichen Sprache syntaktisch verpflichtend, aber in jeder Sprache üblich zur Strukturierung von Texten.
-   
-   				<br>
-   				Der BR Tag (kurz für BREAK) erzeugt einen Zeilenumbruch, sodass der nachfolgende Text in die nächste Zeile rutscht.
-
-			 	<hr>
-			 	Der HR Tag (kurz für HORIZONTAL) zeichnet eine horizontale Linie. Hier wurde er der Übersichtlichkeit halber verwendet.
-
-			 	<nav> ... </nav>
-			 	Im NAV Tag platzieren wir die Navigationselemente, also eine Liste mit Links.
-
-            	<ul> ... </ul>
-            	Der UL Tag leitet eine unsortierte Liste (UNORDERED LIST, also Bulletpoints) ein.
-            	Sein Äquivalent die sortierte LISTE (ORDERED LIST, also 1, 2, 3, 4 ...) ist:
-            	<ol> ... </ol>
-
-            	Innerhalb von UL und OL werden nun die einzelnen Listenelemente mit LI gekennzeichnet.
-            	<li> Element 1 </li>
-	            <li> Element 2 </li>
-            	<li> Element 3 </li>
-            	Listen können verschachtelt werden, und verschiedene Aufzähungszeichen enthalten. Hier ein Überblick ..... 
-            	<ol type="1">
-	                <li>List Item 1</li>
-	                <li>
-	                  List Item 2
-	                  <ol type="A">
-	                    <li>List Item 1</li>
-	                    <li>
-	                      List Item 2
-	                      <ol type="a">
-	                        <li>List Item 1</li>
-	                        <li>
-	                          List Item 2
-	                          <ol type="I">
-	                            <li>List Item 1</li>
-	                            <li>
-	                              List Item 2
-	                              <ol type="i">
-	                                <li>List Item 1</li>
-	                                <li>List Item 2</li>
-	                                <li>List Item 3</li>
-	                              </ol>
-	                            </li>
-	                            <li>List Item 3</li>
-	                          </ol>
-	                        </li>
-	                        <li>List Item 3</li>
-	                      </ol>
-	                    </li>
-	                    <li>List Item 3</li>
-	                  </ol>
-	                </li>
-	                <li>List Item 3</li>
-	              </ol>
-	              --------
-	              <ul>
-	                <li>List Item 1</li>
-	                <li>
-	                  List Item 2
-	                  <ul>
-	                    <li>List Item 1</li>
-	                    <li>
-	                      List Item 2
-	                      <ul>
-	                        <li>List Item 1</li>
-	                        <li>
-	                          List Item 2
-	                          <ul>
-	                            <li>List Item 1</li>
-	                            <li>
-	                              List Item 2
-	                              <ul>
-	                                <li>List Item 1</li>
-	                                <li>List Item 2</li>
-	                                <li>List Item 3</li>
-	                              </ul>
-	                            </li>
-	                            <li>List Item 3</li>
-	                          </ul>
-	                        </li>
-	                        <li>List Item 3</li>
-	                      </ul>
-	                    </li>
-	                    <li>List Item 3</li>
-	                  </ul>
-	                </li>
-	                <li>List Item 3</li>
-	              </ul>
-
-
-	            <a href="#NameEinerSektionHier"> .... </a>
-	           	<a href="https://wikipedia.org"> .... </a>
-	           	<a href="einOrdner/NameEinerAnderenDatei.html"> .... </a>
-	            Ein Link wird mit dem A Tag eingeleitet. Das HREF Attribut zeigt worauf verlinkt wird.
-	            In Fall eins wird auf eine Sektion auf der gleichen Seite verlinkt (die iregendwo mit id gekennzeichnet ist).
-	            In Fall zwei verlinken wir auf eine externe Seite, hier Wikipedia.
-	            In Fall drei verlinken wir auf eine unsere eigenen Seiten, die im Ornder einOrdner liegt und einen Namen hat. Die Datei hat die Dateiendung .html.
-
-	           	<a href="https://wikipedia.org" target="_blank"> .... </a>
-	           	Mit dem TARGET-Attribut bestimmt man wo der Link sich öffnen soll, z.B. in einem neuen Tab, neuen Fenster etc. Alle Optionen findest du hier: https://www.w3schools.com/tags/att_a_target.asp 
-
-	            <a href="Ordnername/Dateiname.pdf" download> ... </a>
-	            Mit Hilfe des Attributes DOWNLOAD können auch z.B. PDF Dateien zum Download zur Verfügung gestellt werden.
-
-	            <code> ... </code>
-	            Der CODE Tag erlaubt uns einen Text so aussehen zu lassen als ob es ein programmierter Text wäre.
-
-			 	<main> ... </main>
-			 	Mit dem MAIN Tag leiten wir sozusagen den Hauptteil der Seite ein. Hier stehen fast alle Inhalte.
-
-
-			 	<center> .... </center>
-			 	Der CENTER-Tag ist extrem wichtig, denn hiermit können wir Text zentriert, also mittig auf der Seite plazieren.
-
-			 	Textformatierung:
-			 	
-			 	<p><em>Betonter Text</em></p>
-              	<p>Der <b>b Tag</b> druckt den Text fett.</p>
-              	<p>Der <i>i Tag</i> druckt den Text kursiv.</p>
-              	<p>Der <u>u Tag</u> unterstreicht den Text.</p>
-              	<p><del>Das gelöschte</del> Element wird durchgestrichen.</p>
-              	<p>Wir können auch Formeln schreiben, wie H<sub>2</sub>O.</p>
-              	<p><small>Dieser Text ist kleiner gedruckt</small></p>
-              	<p>Abkürzung: <abbr title="HyperText Markup Language">HTML</abbr></p>
-	            <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">Das ist ein kurzes inline Zitat.</q></p>
-	            <p><mark>Markierter Text</mark> findet sich hier.</p>
-	            <p>Das hier ist ein Kommentar <!--der aber natürlich nicht angezeigt wird--></p>
-				<p>In einem Kommentar kann echt alles stehen, auch Tags, er kann sich auch über viele Zeilen erstecken. Wir nutzen ihn um für uns selbst kleine Hinweise im Code zu hinterlassen.
-				<!--Z.B. könnten wir aufschreiben, dass hier die Informationen für die Textformatierung endet und jetzt mit dem <table> Tag Tabellen erklärt werden.
-				-->
-				<p>
-
-
-
-			 	<table border="4"> ... </table>
-			 	Der TABLE Tag leitet eine Tabelle ein. Mit dem Border Attribut kann man die Breite des Rahmens bestimmen.
-
-			 	<thead> .... </thead>
-			 	THEAD bezeichnet die Kopfzeile der Tabelle.
-
-			 	<tr> ... </tr>
-			 	Zeilen einer Tabelle: TABLE ROW
-
-			 	<td> ... </td>
-			 	Spalten einer Tabelle
-
-
-			 	<details>
-	              <summary>Datenschutzrichtlinien anzeigen</summary>
-	              <p>
-	              	Hier könnte ein langer Text zum Datenschutz in Peniche stehen, aber eigentlich ist uns das ziemlich egal, wir möchten nur, dass die Leute Spaß haben.
-	              </p>
-	            </details>
-	            Der DETAILS TAG zusammen mit dem SUMMARY Tag erlaubt das Ausklappen von Informationen.
-
-
-	            <address> ... </address>
-	            Mit ADDRESS können wir Adressen schön darstellen.
-
-
-		        <audio controls autoplay muted> ... </audio>
-		        <audio controls autoplay> ... </audio>
-		        <audio controls> ... </audio>
-		        <audio> ... </audio>
-		        Der AUDIO Tag spiel Audiodatein, man kann wählen ob ohne Kontrollelemente (Play, stop etc.), ob automatisch abgespielt wird, ob auf stumm geschaltet ist etc.
-
-		        <audio controls autoplay muted>
-  						<source src="hello.ogg" type="audio/ogg">
-  						<source src="hello.mp3" type="audio/mpeg">
-						Dein Browser untersützt dieses Audioelement nicht.
-				</audio>
-				Es sollte immer eine Fehlermeldung anzeigbar sein.
-				Mit dem SOURCE Tag können jetzt die Dateien geladen werden. Hier gibt es die Option mp3 (also audio/mpeg) oder ogg (also audio/ogg) Dateien zu laden.
-
-
-				<video controls width="600" autoplay>
-				  	<source src="pictures/surfer.mp4" type="video/mp4">
-					Dein Browser untersützt dieses Audioelement nicht.
-				</video>
-				Der VIDEO Tag erlaubt die Verwendung von Videos. Die Verwendung entspricht der von Audio Dateien.
-
-
-				YOUTUBE VIDEOS
-				Wenn du Youtube Videos einbinden möchtest, schaue dir diese Seite an: https://www.w3schools.com/html/html_youtube.asp
-				Die einfchste Variante ist es unter dem Youtube Video auf Teilen, dann auf Einbetten zu klicken und dann en iframe zu kopieren.
-
-				Mit dem SVG Tags SVG in Kombination mit CIRCLE, RECT und POLYGOn können interessante Formen erzeugt werden, wie z.B. hier
-				<svg width="315" height="315">
-	         		<circle cx="157.5" cy="157.5" r="100" fill="#1fa3ec"></circle>
-	         		<circle cx="157.5" cy="157.5" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
-	         	</svg>
-	         	Für mehr Beispiele ist diese Seite empfehlenswert: https://www.w3schools.com/html/html5_svg.asp
-
-				<canvas> ... </canvas>
-				Der CANVAS Tag ist neu in HTML5. Hier können Zeichnungen eingefügt werden. Genaueres kannst du hier nachlesen: https://www.w3schools.com/html/html5_canvas.asp
-				Wir benötigen JavaScript für dieses Element, also schauen wir uns das erst später an.
-
-
-
-
-
-				<progress></progress>
-	         	Kann z.B. genutzt werden um das Laden eines bestimmten Elements anzuzeigen.
-	          	
-	          	<meter value="2" min="0" max="10"> .... </meter>
-	          	Der METER Tag kann genutzt werden um den Fortschritt anzuzeigen.
-
-
-	          	<form> ... </form>
-	          	Alle Optionen für Formulare sind in der Beispielseite zu Peniche ausführlich dargestellt.
-
-
-
-
-
-
-			 	<footer> ... </footer>
-			 	Der FOOTER Tag beinhaltet noch einmal einige abschließende Informationen, wie ersteller, Impressum, Datenschutz, Kontakt etc.
-			 	Durch Drücken der Bild hoch Taste kann man hierhin springen.
-
-			 	&nbsp; 
-			 	Erzeugt ein Leerzeichen.
-			 	&ensp;
-			 	Erzeugt zwei Leerzeichen.
-			 	&emsp;
-			 	Erzeugt vier Leerzeichen.
-			</div>
-
-
-
-			<ol>
-				<li>Erzeuge eine horizontale Line unterhalb des Logos </li>
-
-				<li>Erzeuge eine doppelte horizontale Line unterhalb Introtextes </li>
-
-
-				<li>Erzeuge eine zwei horizontale Line oberhalb des Möwenbildes. Zwischen den Linien sollen zwei Zeilenumbrüche Platz gelassen werden.</li>
-
-			</ol>
-
-			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-		
 		</div>
 
 
 		<script>
-			/*let elements = document.getElementsByClassName("myDiv");
-			for(el in elements) {
-				w3CodeColor(el);
-			}*/
+
 			var elements = document.getElementsByClassName("myDiv");
 			for (var i = 0; i < elements.length; i++) {
 			   w3CodeColor(elements.item(i));
