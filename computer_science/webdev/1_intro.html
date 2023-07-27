@@ -28,22 +28,6 @@
 
 		<div class="reveal">
 
-			<!--<div style="position:absolute; top: 20px; right: 20px; z-index: 10; font-size: 20px;"> 
-				<div class="dropdown">
-				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    <i class="bi bi-bicycle"></i>
-				  </button>
-				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				    <a class="dropdown-item" onclick="toggle('random');" href="#">Random</a>
-				    <a class="dropdown-item" onclick="toggle('noise');" href="#">Lautstärke</a>
-				    <a class="dropdown-item" onclick="toggle('rules');" href="#">Regeln Gruppe</a>
-				    <a class="dropdown-item" href="#">Regeln Vorstellen</a>
-				    <a class="dropdown-item" href="../../computer_science.html">Zurück</a>
-
-				  </div>
-				</div>
-			</div>-->
-
 			<a href="../../computer_science.html style="z-index: 10">
 				<span class="badge badge-pill bg-secondary" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 1%; right: 1%; padding: 1px; height: 6%; width:3%">
 					<img src="../../general_img/back.png" width="40px" style="margin: 0px">
@@ -137,37 +121,113 @@
 			<!----------- SLIDES ---------------------------------------------------------------->
 			<!----------- SLIDES ---------------------------------------------------------------->
 
-
-
-			
-
 			<div class="slides">
 				
-				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-				<section data-background-transition="zoom" data-background-size="contain" data-background="../../general_img/spiral_slow.gif">
+				<section data-background-size="contain" data-background="../../general_img/spiral_slow.gif">
 				</section>
-				<!--<section data-background-transition="zoom" 
-					data-background-size="contain" data-background="../../general_img/ball1.gif">
-
-				</section>
-				<section data-background-transition="zoom">
-					<iframe src="https://giphy.com/embed/8wtYXaKeUyc4QpclIB" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-				</section>-->
-
+	
 				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-
-				<section data-background-transition="zoom">
-						<p> 
-							Wir lernen zuerst die Skriptsprache HTML, danach eine zweite Skriptsprache CSS und einige Libraries kennen, mit der man viel erweitern kann. Möglicherweise schauen wir auch kurz in JavaScript rein.
-
-						<aside class="notes">
-							 
-						</aside>
-				</section>
 
 				<section>
+					<section>
+						Web Stack - Die Sprachen des Internets
+						<br>
+						<img data-src="websites/pictures/webStack.png" width="600" style="background: rgba(255,255,255,0.3); ">
+
+						<aside class="notes">
+							 HTML - Hyper Text Markup Language
+
+							 CSS - Cascading Style Sheets
+
+							 JS - Java Script
+						</aside>
+					</section>
+
+
+					<section>
+						<img data-src="websites/pictures/HTML.png" width="200" style="background: rgba(255,255,255,0.3); padding: 20px;">
+
+						<br>
+						HTML - Hyper Text Markup Language
+
+						<aside class="notes">
+							 Fokus für die nächsten zwei Wochen
+						</aside>
+					</section>
+
+
+					<section>
+						<img data-src="websites/pictures/CSS.png" width="200" style="background: rgba(255,255,255,0.3); padding: 20px;">
+
+						<br>
+						CSS - Cascading Style Sheets
+
+						<aside class="notes">
+							 Fokus danach
+						</aside>
+					</section>
+
+
+					<section>
+						<img data-src="websites/pictures/JS.png" width="200" style="background: rgba(255,255,255,0.3); padding: 20px;">
+
+						<br>
+						JS - Java Script
+
+						<aside class="notes">
+							 Werden wir in großen Teilen außen vor lassen -- zumindest dieses Schuljahr.
+						</aside>
+					</section>
+
+
+					<section>
+						<p> 
+							Warum sind HTML und CSS keine echten Programmiersprachn?
+						</p>
+						<br><br>
+						<span class="fragment">
+							<h5>Besondere Sprachen: </h5>
+
+							<h3>Die Skriptsprachen</h3>
+						</span>
+
+					</section>
+
+					<section>
+						<ul> 
+							<li>
+								Es handelt sich um Auszeichnungssprachen bzw. Skriptsprachen
+							</li>
+							<br>
+							<li class="fragment">
+								Sie legen das Erscheinungsbild, <b style="color:red"><u>nicht die Funktionalität</u></b> fest
+							</li>
+							<br>
+							<li class="fragment">
+								Berechnungen benötigen echte Programmiersprachen
+
+								<a href="https://www.amazon.de/">Beispiel 1</a>, 
+								<a href="https://www.convertworld.com/de/">Beispiel 2</a>
+							</li>
+						</ul>
+
+						<aside class="notes">
+							<b> 
+								Beginnen wir mit einer ersten Seite in reinem HTML.
+							</b>
+						</aside>
+					</section>
+				</section>
+
+				
+
+				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+
+
+				<section>
+
 					<section data-background-transition="zoom">
 						<a href="peniche_pure_html.html">Peniche (nur HTML)</a>
 
@@ -177,7 +237,7 @@
 								Downloadlink der ZIP Datei
 							</a>
 							<br>
-							<span style="font-size: 12pt; text-transform: none;">(Wie öffne ich ZIP Datein?)</span>
+							<a href="../general/general_cheat_sheet.html"><span style="font-size: 10pt; text-transform: none; color: white">(Wie öffne ich ZIP Datein?)</span></a>
 						</h6>
 
 
@@ -273,35 +333,10 @@
 				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 
 				<section>
-					<a href="1_intro_ex.html">
-						<h4> Noch Fragen offen?</h4>
-						<img data-src="../../general_img/question.png" width="200px">
-						<p>Dann viel Spaß beim selbst ausprobieren .... </p>
-
-					</a>
+					Betonung: Formatierung ... erzwingen???
 				</section>
 
-				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-
-				<section>
-					<h2>Was habe ich mitgenommen?</h2>
-					
-					<ul style="text-align: left; margin-left: 20px">
-						<li class="fragment fade-in-then-out">						
-							unglaublich viel <b>Motivation</b>
-						</li>
-						<li class="fragment fade-in-then-out">
-							tolle, praktische Unterrichtsideen
-						 </li>
-						<li  class="fragment fade-in-then-out">
-							neue Wege Schüler:innen zu motivieren <br>(selbst erlebt)
-						</li>
-						<li class="fragment fade-in-then-out">
-							so viele neue Projektideen <br>(für die natürlich die Zeit fehlen wird)
-						</li>
-					</ul>	
-				</section>
+				
 
 				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
 				<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
