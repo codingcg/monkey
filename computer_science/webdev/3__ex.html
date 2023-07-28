@@ -32,6 +32,21 @@
                     <h3 class="float-left">Aufgaben</h3>
                 </div>
                 <div class="card-body">
+                	<details>
+                		<summary>
+							<b> WICHTIGE Hinweise zur Formatierung</b>
+						</summary>
+						<ol class="mx-5">
+							<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
+
+							<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
+
+							<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
+
+							<li>Drücke STRG + ENTER um deine Ergebnisse zu überprüfen </li>.
+						</ol>
+					</details>
+					<br><br>
                     <ol class="mx-5" id="ex_easy"></ol>
                 </div>
                
@@ -99,31 +114,14 @@
   									exercises[i][0] +`<br><br>
   								</span>
   								<!--<textarea class="form-control z-depth-1" id="`+ i +`" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off autofocus /></textarea>-->
-									<textarea class="form-control z-depth-1" id="`+ i +`" rows="10" placeholder="HTML Code" autofocus /></textarea>
-  									<br><p id="sol_`+ i +`"></p>
-  								<br>
-  								<details style="position: absolute">
-	  									<summary>
-	  										<b> WICHTIGE Hinweise zur Formatierung</b>
-	  									</summary>
-  										<ol class="mx-5">
-  											<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
-
-  											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
-
-  											<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
-
-  											<li>Drücke STRG + ENTER um deine Ergebnisse zu überprüfen </li>.
-  										</ol>
-	  								</details>
-
-	  								<br>
+									<textarea class="form-control z-depth-1" id="`+ i +`" rows="5" placeholder="HTML Code" autofocus /></textarea>
+  									<br><span id="sol_`+ i +`"></span>
   								<!--<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateForm()">Weiter</button>-->
 							</div>
 						</form>
                     </li>
 
-                    <br><br><br><br>
+                    
 				`
 			}
 			/*********************/
@@ -165,7 +163,7 @@
 				if(active.value == exercises[active.id][1]) {
 
 		            active.style.border = "thick solid rgba(0,200,0, 0.5)";
-					
+					active.style.background = "rgba(0,200,0, 0.1)";
 					sol.style.color = "green";
 					sol.innerHTML = "<b>Super!!!</b>";
 
@@ -173,7 +171,8 @@
 		        } else{	
 
 		            active.style.border = "thick solid rgba(200,0,0, 0.5)";
-					
+					active.style.background = "rgba(200,0,0, 0.1)";
+
 					var pre = document.createElement("pre");
 					pre.style.cssText = 'color: red';
 
