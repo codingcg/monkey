@@ -31,96 +31,7 @@
                     <h3 class="float-left">Aufgaben</h3>
                 </div>
                 <div class="card-body">
-                    <ol class="mx-5" id="ex_easy">
-                    	<li>
-                    		<div class="form-group shadow-textarea green-border-focus ">
-  								<span for="exampleFormControlTextarea5">
-  									Schreibe das Grundgerüst einer Webseite auf. Die Sprache soll deutsch sein, Meta Tags schreibe bitte keine auf. Verzichte ebenso auf den title Tag. Als Text soll auf der Seite in einem Paragraphen Hallo Welt erscheinen.<br><br>
-  									<details>
-	  									<summary>
-	  										<b> WICHTIGER Hinweis zur Formatierung</b>
-	  									</summary>
-  										<ol class="mx-5">
-  											<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
-
-  											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
-
-  											<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
-  										</ol>
-	  								</details>
-	  								<br>
-  								</span>
-  								<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off autofocus /></textarea>
-
-  								<br>
-  								<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateFirst()">Weiter</button>
-							</div>
-                    	</li>
-
-                    	<br><br><br>
-
-
-                    	<li>
-                    		<div class="form-group shadow-textarea green-border-focus ">
-  								<span for="exampleFormControlTextarea5">
-  									Erstelle eine von eins bis drei nummerierte Liste mit den Namen Lovelace, Turing und Dijstra.<br><br>
-  									<details>
-	  									<summary>
-	  										<b> WICHTIGER Hinweis zur Formatierung</b>
-	  									</summary>
-  										<ol class="mx-5">
-  											<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
-
-  											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
-
-  											<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
-  										</ol>
-	  								</details>
-	  								<br> 
-  								</span>
-  								<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off/></textarea>
-  								<br>
-  								<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateFirst()">Weiter</button>
-							</div>
-                    	</li>
-
-                    	<br><br><br>
-
-                    	<li>
-                    		<div class="form-group shadow-textarea green-border-focus ">
-  								<span for="exampleFormControlTextarea5">
-  									Füge ein Bild ein. Das Bild heißt <b>komischesBild</b>, es handelt sich um ein GIF Bild. Es liegt im selben Ordner wie diese Datei.<br><br>
-  									<details>
-	  									<summary>
-	  										<b> WICHTIGER Hinweis zur Formatierung</b>
-	  									</summary>
-  										<ol class="mx-5">
-  											<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
-
-  											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
-
-  											<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
-  										</ol>
-	  								</details>
-	  								<br> 
-  								</span>
-  								<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off/></textarea>
-  								<br>
-									<details>
-  									<summary>
-  										<b style="color:orange"> Hilfestellung?</b>
-  									</summary>
-									<ol class="mx-5">
-  										<li>Achte auf die Groß- und Kleinschreibung.</li>
-
-  										<li>In den Anführungszeichen nach src sollte stehen: komischesBild.gif.</li>
-									</ol>
-  								</details>
-  								<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateFirst()">Weiter</button>
-							</div>
-                    	</li>
-
-                    </ol>
+                    <ol class="mx-5" id="ex_easy"></ol>
                 </div>
                
             </div>
@@ -132,41 +43,140 @@
 
         <script>
 
-        	const textarea = document.querySelector('textarea')
+        	/********** show the exercise texts **************/
+        	let ex_easy = document.getElementById("ex_easy");
 
-			textarea.addEventListener('keydown', (e) => {
-			  if (e.keyCode === 9) {
-			    e.preventDefault()
+			let exercises = [
+				[`Schreibe das Grundgerüst einer Webseite auf. Die Sprache soll deutsch sein, Meta Tags schreibe bitte keine auf. Verzichte ebenso auf den title Tag. Als Text soll auf der Seite in einem Paragraphen Hallo Welt erscheinen.`,
+`<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+    	<p>Hallo Welt</p>
+    </body>
+</html>`,
+				],
 
-			    textarea.setRangeText(
-			      '    ',
-			      textarea.selectionStart,
-			      textarea.selectionStart,
-			      'end'
-			    )
-			  }
-			})
 
 
-			function validateFirst() {
-				let input = document.getElementById("exampleFormControlTextarea6").value;
+        		[`Erstelle eine von eins bis drei nummerierte Liste mit den Namen Lovelace, Turing und Dijstra.`, 
+`<ol>
+    <li>Lovelace</li>
+    <li>Turing</li>
+    <li>Dijstra</li>
 
-				let answer = `<html>
-    <title>`;
+</ol>`
+				],
 
+
+
+				[
+        		`Füge ein Bild ein. Das Bild heißt <b>komischesBild</b>, es handelt sich 
+        		um ein GIF Bild. Es liegt im selben Ordner wie diese Datei.
+        		<br><br>
+        		<details>
+					<summary>
+						<b style="color:orange"> Hilfestellung?</b>
+					</summary>
+					<ol class="mx-5">
+						<li>Achte auf die Groß- und Kleinschreibung.</li>
+
+						<li>In den Anführungszeichen nach src sollte stehen: komischesBild.gif.</li>
+					</ol>
+				</details>`,
+`<img src="komischesBild.gif">`
+				]
+			]
+
+
+			for (let i = 0; i < exercises.length; i++) {
+				ex_easy.innerHTML += `<li>
+                    	<form method="post">
+                    		<div class="form-group shadow-textarea green-border-focus ">
+  								<span for="exampleFormControlTextarea5">`+
+  									exercises[i][0] +`<br><br>
+  								</span>
+  								<!--<textarea class="form-control z-depth-1" id="`+ i +`" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off autofocus /></textarea>-->
+									<textarea class="form-control z-depth-1" id="`+ i +`" rows="10" placeholder="HTML Code" autofocus /></textarea>
+  								<br>
+  								<details style="position: absolute">
+	  									<summary>
+	  										<b> WICHTIGE Hinweise zur Formatierung</b>
+	  									</summary>
+  										<ol class="mx-5">
+  											<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
+
+  											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
+
+  											<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
+
+  											<li>Drücke STRG + ENTER um deine Ergebnisse zu überprüfen </li>.
+  										</ol>
+	  								</details>
+
+	  								<br>
+  								<!--<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateForm()">Weiter</button>-->
+							</div>
+						</form>
+                    </li>
+
+                    <br><br><br><br>
+				`
+			}
+			/*********************/
+
+
+
+
+
+        	/***** make it possible to use the TAB key inside the textarea *****/
+        	const textareas = document.querySelectorAll('textarea');
+			for (let i = 0; i < textareas.length; i++) {
+			
+				textareas[i].addEventListener('keydown', (e) => {
+				  if (e.keyCode === 9) {
+				    e.preventDefault()
+
+				    textareas[i].setRangeText(
+				      '    ',
+				      textareas[i].selectionStart,
+				      textareas[i].selectionStart,
+				      'end'
+				    )
+				  }
+				});
+			}
+			/*********************/
+
+
+
+
+
+
+			/***** validate the textareas input ******/
+			function validateForm() {
+				//let input = document.getElementById("exampleFormControlTextarea6").value;
+				
+				let input = document.activeElement.value;
+				let number = document.activeElement.id;
 				console.log(input);
-				console.log(answer);
-				if(input == answer) {
+				console.log(exercises[number][1]);
+				if(input == exercises[number][1]) {
 		            alert("Congratulation");
 		        }
 		        else{
 		            alert("Wrong");
 		        }
-					}
-        </script>
+			    
+			}
+			/*********************/
 
 
-        <script>
+
+
+
+			/******* keyboardevents *************/
 			document.addEventListener('keydown', function(event) {
 				// on I go back to higher layer
 			    /*if(event.keyCode == 73) { 
@@ -175,9 +185,11 @@
     			
     			// on cmd + Enter (or crlt + Enter) validate
     			if (event.which == 13 && (event.ctrlKey||event.metaKey)|| (event.which == 19)) {
-			        validateFirst();
+			        validateForm();
 			    }
 			});
+			/*********************/
+
 		</script>
 
 	</body>
