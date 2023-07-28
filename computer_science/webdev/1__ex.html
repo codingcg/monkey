@@ -92,22 +92,6 @@
 
             <br><br><br><br>
 
-            <div class="card alert alert-danger" style="margin: 0px; padding: 10px">
-                <div class="card-header border" style="margin: 0px; padding: 10px;">
-                    <h3 class="float-left">Nächste Stunde</h3>
-                </div>
-                <div class="card-body">
-                    Nimm an den gebenenen <code>HTML</code> Dateien folgende Änderungen vor. Markiere die Aufgabenteile, die du erledigt hast.
-                    Nimm gerne das gegebene <i>Cheat Sheet</i> zur Hilfe.
-                    Klicke auf <b>Weiter</b> wenn du fertig bist.
-                    <br><br>
-                    <ol class="mx-5" id="ex_next"></ol>
-                </div>
-                <button class="btn btn btn-outline-secondary float-right" type="button">Weiter</button>
-            </div>
-
-            <br><br><br><br>
-
 
 
 		<script>
@@ -116,7 +100,6 @@
 			let ex_middle = document.getElementById("ex_middle");
 			let ex_diff = document.getElementById("ex_diff");
 			let ex_ha = document.getElementById("ex_ha");
-			let ex_next = document.getElementById("ex_next");
 
 
 			let easy = [
@@ -180,21 +163,6 @@
 			]
 
 
-			let next = [
-				"Verändere die Öffnungszeiten in der Tabelle der Tourist Info so, dass sie Mittwochs Mittag geschlossen ist.",
-
-				"Die Balkenanzeige soll anzeigen, dass das Kontaktformular zu 80% ausgefüllt ist.",
-
-				"Erstelle eine neue Tabelle. Überlege dir kreative Inhalte."
-			]
-
-
-
-
-
-
-
-
 			for (let i = 0; i < easy.length; i++) {
 				ex_easy.innerHTML += "<li>" + easy[i] + "<input id='checkbox1' name='checkbox' type='checkbox' class='float-right'></li><br>";
 			}
@@ -212,9 +180,6 @@
 				ex_ha.innerHTML += "<li>" + ha[i] + "<input id='checkbox1' name='checkbox' type='checkbox' class='float-right'></li><br>";
 			}
 
-			for (let i = 0; i < next.length; i++) {
-				ex_next.innerHTML += "<li>" + next[i] + "<input id='checkbox1' name='checkbox' type='checkbox' class='float-right'></li><br>";
-			}
 
 		</script>
 
