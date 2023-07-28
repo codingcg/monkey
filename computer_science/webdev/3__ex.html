@@ -23,6 +23,7 @@
 
 	</head>
 
+
 	<body>
 		<div class="container">
 
@@ -99,6 +100,7 @@
   								</span>
   								<!--<textarea class="form-control z-depth-1" id="`+ i +`" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off autofocus /></textarea>-->
 									<textarea class="form-control z-depth-1" id="`+ i +`" rows="10" placeholder="HTML Code" autofocus /></textarea>
+  									<br><p id="sol_`+ i +`"></p>
   								<br>
   								<details style="position: absolute">
 	  									<summary>
@@ -156,18 +158,32 @@
 
 			/***** validate the textareas input ******/
 			function validateForm() {
-				//let input = document.getElementById("exampleFormControlTextarea6").value;
-				
-				let input = document.activeElement.value;
-				let number = document.activeElement.id;
-				console.log(input);
-				console.log(exercises[number][1]);
-				if(input == exercises[number][1]) {
-		            document.activeElement.style.border = "thick solid rgba(0,200,0, 0.5)";
 
-		        }
-		        else{	
-		            document.activeElement.style.border = "thick solid rgba(200,0,0, 0.5)";
+				let active = document.activeElement;
+				let sol = document.getElementById("sol_" + active.id);
+
+				if(active.value == exercises[active.id][1]) {
+
+		            active.style.border = "thick solid rgba(0,200,0, 0.5)";
+					
+					sol.style.color = "green";
+					sol.innerHTML = "<b>Super!!!</b>";
+
+
+		        } else{	
+
+		            active.style.border = "thick solid rgba(200,0,0, 0.5)";
+					
+					var pre = document.createElement("pre");
+					pre.style.cssText = 'color: red';
+
+					var text = document.createTextNode(exercises[active.id][1]);
+					pre.appendChild(text);
+
+					sol.innerHTML = "<strong>Lösung</strong> <br>";
+					sol.appendChild(pre);
+
+
 		        }
 			    
 			}
@@ -192,6 +208,8 @@
 			/*********************/
 
 		</script>
+
+
 
 	</body>
 </html>
