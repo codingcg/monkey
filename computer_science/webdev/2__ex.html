@@ -41,7 +41,7 @@
 	  										<b> WICHTIGER Hinweis zur Formatierung</b>
 	  									</summary>
   										<ol class="mx-5">
-  											<li>Eine korrekte Einrückung ist teil der Auswertung.</li>
+  											<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
 
   											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
 
@@ -50,7 +50,7 @@
 	  								</details>
 	  								<br>
   								</span>
-  								<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off/></textarea>
+  								<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off autofocus /></textarea>
 
   								<br>
   								<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateFirst()">Weiter</button>
@@ -69,7 +69,7 @@
 	  										<b> WICHTIGER Hinweis zur Formatierung</b>
 	  									</summary>
   										<ol class="mx-5">
-  											<li>Eine korrekte Einrückung ist teil der Auswertung.</li>
+  											<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
 
   											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
 
@@ -95,7 +95,7 @@
 	  										<b> WICHTIGER Hinweis zur Formatierung</b>
 	  									</summary>
   										<ol class="mx-5">
-  											<li>Eine korrekte Einrückung ist teil der Auswertung.</li>
+  											<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
 
   											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
 
@@ -139,7 +139,7 @@
 			    e.preventDefault()
 
 			    textarea.setRangeText(
-			      '      ',
+			      '    ',
 			      textarea.selectionStart,
 			      textarea.selectionStart,
 			      'end'
@@ -151,7 +151,8 @@
 			function validateFirst() {
 				let input = document.getElementById("exampleFormControlTextarea6").value;
 
-				let answer = "<html>    <title>";
+				let answer = `<html>
+    <title>`;
 
 				console.log(input);
 				console.log(answer);
@@ -168,8 +169,13 @@
         <script>
 			document.addEventListener('keydown', function(event) {
 				// on I go back to higher layer
-			    if(event.keyCode == 73) { 
+			    /*if(event.keyCode == 73) { 
 			        window.location.href = "../../computer_science.html";
+			    }*/
+    			
+    			// on cmd + Enter (or crlt + Enter) validate
+    			if (event.which == 13 && (event.ctrlKey||event.metaKey)|| (event.which == 19)) {
+			        validateFirst();
 			    }
 			});
 		</script>
