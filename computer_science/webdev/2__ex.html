@@ -34,16 +34,95 @@
                     <ol class="mx-5" id="ex_easy">
                     	<li>
                     		<div class="form-group shadow-textarea green-border-focus ">
-  								<label for="exampleFormControlTextarea5">
-  									Schreibe das Grundgerüst einer Webseite auf. Achte auf eine korrekte Formatierung.
-  								</label>
+  								<span for="exampleFormControlTextarea5">
+  									Schreibe das Grundgerüst einer Webseite auf. Die Sprache soll deutsch sein, Meta Tags schreibe bitte keine auf. Verzichte ebenso auf den title Tag. Als Text soll auf der Seite in einem Paragraphen Hallo Welt erscheinen.<br><br>
+  									<details>
+	  									<summary>
+	  										<b> WICHTIGER Hinweis zur Formatierung</b>
+	  									</summary>
+  										<ol class="mx-5">
+  											<li>Eine korrekte Einrückung ist teil der Auswertung.</li>
+
+  											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
+
+  											<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
+  										</ol>
+	  								</details>
+	  								<br>
+  								</span>
   								<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off/></textarea>
+
+  								<br>
+  								<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateFirst()">Weiter</button>
+							</div>
+                    	</li>
+
+                    	<br><br><br>
+
+
+                    	<li>
+                    		<div class="form-group shadow-textarea green-border-focus ">
+  								<span for="exampleFormControlTextarea5">
+  									Erstelle eine von eins bis drei nummerierte Liste mit den Namen Lovelace, Turing und Dijstra.<br><br>
+  									<details>
+	  									<summary>
+	  										<b> WICHTIGER Hinweis zur Formatierung</b>
+	  									</summary>
+  										<ol class="mx-5">
+  											<li>Eine korrekte Einrückung ist teil der Auswertung.</li>
+
+  											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
+
+  											<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
+  										</ol>
+	  								</details>
+	  								<br> 
+  								</span>
+  								<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off/></textarea>
+  								<br>
+  								<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateFirst()">Weiter</button>
+							</div>
+                    	</li>
+
+                    	<br><br><br>
+
+                    	<li>
+                    		<div class="form-group shadow-textarea green-border-focus ">
+  								<span for="exampleFormControlTextarea5">
+  									Füge ein Bild ein. Das Bild heißt <b>komischesBild</b>, es handelt sich um ein GIF Bild. Es liegt im selben Ordner wie diese Datei.<br><br>
+  									<details>
+	  									<summary>
+	  										<b> WICHTIGER Hinweis zur Formatierung</b>
+	  									</summary>
+  										<ol class="mx-5">
+  											<li>Eine korrekte Einrückung ist teil der Auswertung.</li>
+
+  											<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
+
+  											<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
+  										</ol>
+	  								</details>
+	  								<br> 
+  								</span>
+  								<textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off/></textarea>
+  								<br>
+									<details>
+  									<summary>
+  										<b style="color:orange"> Hilfestellung?</b>
+  									</summary>
+									<ol class="mx-5">
+  										<li>Achte auf die Groß- und Kleinschreibung.</li>
+
+  										<li>In den Anführungszeichen nach src sollte stehen: komischesBild.gif.</li>
+									</ol>
+  								</details>
+  								<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateFirst()">Weiter</button>
 							</div>
                     	</li>
 
                     </ol>
                 </div>
-                <button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateFirst()">Weiter</button>
+               
             </div>
 
             <br><br><br><br>
@@ -84,6 +163,16 @@
 		        }
 					}
         </script>
+
+
+        <script>
+			document.addEventListener('keydown', function(event) {
+				// on I go back to higher layer
+			    if(event.keyCode == 73) { 
+			        window.location.href = "../../computer_science.html";
+			    }
+			});
+		</script>
 
 	</body>
 </html>
