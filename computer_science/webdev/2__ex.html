@@ -47,7 +47,7 @@
         	let ex_easy = document.getElementById("ex_easy");
 
 			let exercises = [
-				[`Schreibe das Grundgerüst einer Webseite auf. Die Sprache soll deutsch sein, Meta Tags schreibe bitte keine auf. Verzichte ebenso auf den title Tag. Als Text soll auf der Seite in einem Paragraphen Hallo Welt erscheinen.`,
+				[`Schreibe das Grundgerüst einer Website auf. Die Sprache soll deutsch sein, Meta Tags schreibe bitte keine auf. Verzichte ebenso auf den title Tag. Als Text soll auf der Seite in einem Paragraphen Hallo Welt erscheinen.`,
 `<!doctype html>
 <html>
     <head>
@@ -93,7 +93,7 @@
 			for (let i = 0; i < exercises.length; i++) {
 				ex_easy.innerHTML += `<li>
                     	<form method="post">
-                    		<div class="form-group shadow-textarea green-border-focus ">
+                    		<div class="form-group">
   								<span for="exampleFormControlTextarea5">`+
   									exercises[i][0] +`<br><br>
   								</span>
@@ -163,10 +163,11 @@
 				console.log(input);
 				console.log(exercises[number][1]);
 				if(input == exercises[number][1]) {
-		            alert("Congratulation");
+		            document.activeElement.style.border = "thick solid rgba(0,200,0, 0.5)";
+
 		        }
-		        else{
-		            alert("Wrong");
+		        else{	
+		            document.activeElement.style.border = "thick solid rgba(200,0,0, 0.5)";
 		        }
 			    
 			}
