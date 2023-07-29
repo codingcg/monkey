@@ -1,214 +1,169 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="My Copy Monkey">
-		<meta name="author" content="Vera Christ">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="stylesheet" href="../../Reveal/dist/reset.css">
-		<link rel="stylesheet" href="../../Reveal/dist/reveal.css">
-		<link rel="stylesheet" href="../../Reveal/dist/theme/black.css" id="theme">
-		<link rel="stylesheet" href="../../Reveal/plugin/highlight/monokai.css">
-		<link rel="stylesheet" href="../../Reveal/plugin/chalkboard/style.css">
-		<link rel="stylesheet" href="../../Reveal/plugin/customcontrols/style.css">
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
-
-		<link rel="stylesheet" href="../../exercises.css" type="text/css" media="screen" />
-
-	</head>
-
-
-	<body>
-		<div class="container">
-
-			<div class="card alert alert-info" style="margin: 0px; padding: 10px">
-                <div class="card-header border" style="margin: 0px; padding: 10px;">
-                    <h3 class="float-left">Aufgaben</h3>
-                </div>
-                <div class="card-body">
-                	<details>
-                		<summary>
-							<b> WICHTIGE Hinweise zur Formatierung</b>
-						</summary>
-						<ol class="mx-5">
-							<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
-
-							<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
-
-							<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
-
-							<li>Drücke STRG + ENTER um deine Ergebnisse zu überprüfen </li>.
-						</ol>
-					</details>
-					<br><br>
-                    <ol class="mx-5" id="ex_easy"></ol>
-                </div>
-               
-            </div>
-
-            <br><br><br><br>
-			
-	
-        </div>
-
-        <script>
-
-        	/********** show the exercise texts **************/
-        	let ex_easy = document.getElementById("ex_easy");
-
-			let exercises = [
-				[`Schreibe das Grundgerüst einer Website auf. Die Sprache soll deutsch sein, Meta Tags schreibe bitte keine auf. Verzichte ebenso auf den title Tag. Als Text soll auf der Seite in einem Paragraphen Hallo Welt erscheinen.`,
-`<!doctype html>
 <html>
-    <head>
-    </head>
-    <body>
-    	<p>Hallo Welt</p>
-    </body>
-</html>`,
-				],
+<header id='header'></header>
+<body>
+	<div class="container">
 
-
-
-        		[`Erstelle eine von eins bis drei nummerierte Liste mit den Namen Lovelace, Turing und Dijstra.`, 
-`<ol>
-    <li>Lovelace</li>
-    <li>Turing</li>
-    <li>Dijstra</li>
-
-</ol>`
-				],
-
-
-
-				[
-        		`Füge ein Bild ein. Das Bild heißt <b>komischesBild</b>, es handelt sich 
-        		um ein GIF Bild. Es liegt im selben Ordner wie diese Datei.
-        		<br><br>
-        		<details>
-					<summary>
-						<b style="color:darkblue"> Hilfestellung?</b>
+		<div class="card alert alert-info" style="margin: 0px; padding: 10px">
+            <div class="card-header border" style="margin: 0px; padding: 10px;">
+                <h3 class="float-left">Aufgaben</h3>
+            </div>
+            <div class="card-body">
+            	<details>
+            		<summary>
+						<b> WICHTIGE Hinweise zur Formatierung</b>
 					</summary>
 					<ol class="mx-5">
-						<li>Achte auf die Groß- und Kleinschreibung.</li>
+						<li>Eine korrekte Einrückung ist Teil der Auswertung.</li>
 
-						<li>In den Anführungszeichen nach src sollte stehen: komischesBild.gif.</li>
+						<li>Die Einrückungen <u>müssen</u> immer mit TAB erfolgen.</li>
+
+						<li>Wichtig:</b> Verwende KEINE Leerzeichen.</li>
+
+						<li>Drücke STRG + ENTER um deine Ergebnisse zu überprüfen </li>.
 					</ol>
-				</details>`,
+				</details>
+				<br><br>
+                <ol class="mx-5" id="ex_easy"></ol>
+            </div>
+           
+        </div>
+
+        <br><br><br><br>
+		
+
+    </div>
+
+    <script>
+
+    	/********** show the exercise texts **************/
+    	let ex_easy = document.getElementById("ex_easy");
+
+		let exercises = [
+			[`Schreibe das Grundgerüst einer Website auf. Die Sprache soll deutsch sein, Meta Tags schreibe bitte keine auf. Verzichte ebenso auf den title Tag. Als Text soll auf der Seite in einem Paragraphen Hallo Welt erscheinen.`,
+`<!doctype html>
+<html>
+<head>
+</head>
+<body>
+	<p>Hallo Welt</p>
+</body>
+</html>`,
+			],
+
+
+
+    		[`Erstelle eine von eins bis drei nummerierte Liste mit den Namen Lovelace, Turing und Dijstra.`, 
+`<ol>
+<li>Lovelace</li>
+<li>Turing</li>
+<li>Dijstra</li>
+
+</ol>`
+			],
+
+
+
+			[
+    		`Füge ein Bild ein. Das Bild heißt <b>komischesBild</b>, es handelt sich 
+    		um ein GIF Bild. Es liegt im selben Ordner wie diese Datei.
+    		<br><br>
+    		<details>
+				<summary>
+					<b style="color:darkblue"> Hilfestellung?</b>
+				</summary>
+				<ol class="mx-5">
+					<li>Achte auf die Groß- und Kleinschreibung.</li>
+
+					<li>In den Anführungszeichen nach src sollte stehen: komischesBild.gif.</li>
+				</ol>
+			</details>`,
 `<img src="komischesBild.gif">`
-				]
 			]
+		]
 
 
-			for (let i = 0; i < exercises.length; i++) {
-				ex_easy.innerHTML += `<li>
-                    	<form method="post">
-                    		<div class="form-group">
-  								<span for="exampleFormControlTextarea5">`+
-  									exercises[i][0] +`<br><br>
-  								</span>
-  								<!--<textarea class="form-control z-depth-1" id="`+ i +`" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off autofocus /></textarea>-->
-									<textarea class="form-control z-depth-1" id="`+ i +`" rows="5" placeholder="HTML Code" autofocus /></textarea>
-  									<br><span id="sol_`+ i +`"></span>
-  								<!--<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateForm()">Weiter</button>-->
-							</div>
-						</form>
-                    </li>
+		for (let i = 0; i < exercises.length; i++) {
+			ex_easy.innerHTML += `<li>
+                	<form method="post">
+                		<div class="form-group">
+								<span for="exampleFormControlTextarea5">`+
+									exercises[i][0] +`<br><br>
+								</span>
+								<!--<textarea class="form-control z-depth-1" id="`+ i +`" rows="10" placeholder="HTML Code" onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off autofocus /></textarea>-->
+								<textarea class="form-control z-depth-1" id="`+ i +`" rows="5" placeholder="HTML Code" autofocus /></textarea>
+									<br><span id="sol_`+ i +`"></span>
+								<!--<button class="btn btn btn-outline-secondary float-right" type="button" onclick="validateForm()">Weiter</button>-->
+						</div>
+					</form>
+                </li>
 
-                    
-				`
-			}
-			/*********************/
-
-
-
-
-
-        	/***** make it possible to use the TAB key inside the textarea *****/
-        	const textareas = document.querySelectorAll('textarea');
-			for (let i = 0; i < textareas.length; i++) {
-			
-				textareas[i].addEventListener('keydown', (e) => {
-				  if (e.keyCode === 9) {
-				    e.preventDefault()
-
-				    textareas[i].setRangeText(
-				      '    ',
-				      textareas[i].selectionStart,
-				      textareas[i].selectionStart,
-				      'end'
-				    )
-				  }
-				});
-			}
-			/*********************/
+                
+			`
+		}
+		/*********************/
 
 
 
 
 
+    	/***** make it possible to use the TAB key inside the textarea *****/
+    	const textareas = document.querySelectorAll('textarea');
+		for (let i = 0; i < textareas.length; i++) {
+		
+			textareas[i].addEventListener('keydown', (e) => {
+			  if (e.keyCode === 9) {
+			    e.preventDefault()
 
-			/***** validate the textareas input ******/
-			function validateForm() {
-
-				let active = document.activeElement;
-				let sol = document.getElementById("sol_" + active.id);
-
-				if(active.value == exercises[active.id][1]) {
-
-		            active.style.border = "thick solid rgba(0,200,0, 0.5)";
-					active.style.background = "rgba(0,200,0, 0.1)";
-					sol.style.color = "green";
-					sol.innerHTML = "<b>Super!!!</b>";
-
-
-		        } else{	
-
-		            active.style.border = "thick solid rgba(200,0,0, 0.5)";
-					active.style.background = "rgba(200,0,0, 0.1)";
-
-					var pre = document.createElement("pre");
-					pre.style.cssText = 'color: red';
-
-					var text = document.createTextNode(exercises[active.id][1]);
-					pre.appendChild(text);
-
-					sol.innerHTML = "<strong>Lösung</strong> <br>";
-					sol.appendChild(pre);
-
-
-		        }
-			    
-			}
-			/*********************/
-
-
-
-
-
-			/******* keyboardevents *************/
-			document.addEventListener('keydown', function(event) {
-				// on I go back to higher layer
-			    /*if(event.keyCode == 73) { 
-			        window.location.href = "../../computer_science.html";
-			    }*/
-    			
-    			// on cmd + Enter (or crlt + Enter) validate
-    			if (event.which == 13 && (event.ctrlKey||event.metaKey)|| (event.which == 19)) {
-			        validateForm();
-			    }
+			    textareas[i].setRangeText(
+			      '    ',
+			      textareas[i].selectionStart,
+			      textareas[i].selectionStart,
+			      'end'
+			    )
+			  }
 			});
-			/*********************/
-
-		</script>
-
+		}
+		/*********************/
 
 
-	</body>
+
+
+
+
+		/***** validate the textareas input ******/
+		function validateForm() {
+
+			let active = document.activeElement;
+			let sol = document.getElementById("sol_" + active.id);
+
+			if(active.value == exercises[active.id][1]) {
+
+	            active.style.border = "thick solid rgba(0,200,0, 0.5)";
+				active.style.background = "rgba(0,200,0, 0.1)";
+				sol.style.color = "green";
+				sol.innerHTML = "<b>Super!!!</b>";
+
+
+	        } else{	
+
+	            active.style.border = "thick solid rgba(200,0,0, 0.5)";
+				active.style.background = "rgba(200,0,0, 0.1)";
+
+				var pre = document.createElement("pre");
+				pre.style.cssText = 'color: red';
+
+				var text = document.createTextNode(exercises[active.id][1]);
+				pre.appendChild(text);
+
+				sol.innerHTML = "<strong>Lösung</strong> <br>";
+				sol.appendChild(pre);
+
+
+	        }
+		    
+		}
+	</script>
+	<footer id='footer'></footer>
+	<script src="../frameworks/fw_exercises.js"></script>
+</body>
 </html>
