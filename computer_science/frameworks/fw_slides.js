@@ -98,6 +98,147 @@ var header_content = `
       
 `;
 
+var side = `
+
+<a href="../../computer_science.html style="z-index: 10">
+      <span class="badge badge-pill bg-secondary" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 1%; right: 1%; padding: 1px; height: 6%; width:3%">
+        <img src="../../general_img/back.png" width="40px" style="margin: 0px">
+      </span>
+    </a>
+    <a href="#" onclick="toggle('random');" style="z-index: 10">
+      <span class="badge badge-pill bg-primary" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 8%; right: 1%; padding: 1px; height: 6%; width:3%">
+        <img src="../../general_img/random.png" width="25px" style="margin: 0px">
+      </span>
+    </a>
+    <a href="#" onclick="toggle('noise');" style="z-index: 10">
+      <span class="badge badge-pill bg-info" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 15%; right: 1%; padding: 1px; height: 6%; width:3%">
+        <img src="../../general_img/noise.png" width="25px" style="margin: 0px">
+      </span>
+    </a>
+    <a href="#" onclick="toggle('soundeffect');" style="z-index: 10">
+      <span class="badge badge-pill bg-danger" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 22%; right: 1%; padding: 1px; height: 6%; width:3%">
+        <img src="../../general_img/soundeffect.png" width="20px" style="margin: 0px">
+      </span>
+    </a>
+    <a href="#" onclick="toggle('rule');" style="z-index: 10">
+      <span class="badge badge-pill bg-success" style="box-shadow: 0px 0px 3px 0px #fff;border: 3px solid #fff; position: fixed; top: 29%; right: 1%; padding: 1px; height: 6%; width:3%">
+        <img src="../../general_img/rule.png" width="20px" style="margin: 0px">
+      </span>
+    </a>
+
+    <!-- RANDOM -->
+    <div class="row floating-box img-thumbnail" id="random">
+      <div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-primary">
+          Zufall .... 
+      </div>
+      <div class="col-lg-12 col-sm-12 col-12 box-lower-section">
+          Auswahl
+      </div>
+      <div class="label">
+        <h4><span class="badge badge-pill bg-primary">Zufall</span></h4>
+      </div>
+    </div>
+
+
+    <!-- NOISE -->
+    <div class="row floating-box img-thumbnail" id="noise">
+      <div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-info">
+        Noise ....
+      </div>
+      <div class="col-lg-12 col-sm-12 col-12 box-lower-section">
+          Level???
+      </div>
+      <div class="label">
+        <h4><span class="badge badge-pill bg-info">Lautstärke</span></h4>
+      </div>
+    </div>
+
+    <!-- NOISE -->
+    <div class="row floating-box img-thumbnail" id="soundeffect">
+      <div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-danger">
+        Soundeffect ....
+      </div>
+      <div class="col-lg-12 col-sm-12 col-12 box-lower-section">
+          Music 1
+      </div>
+      <div class="label">
+        <h4><span class="badge badge-pill bg-danger">Soundeffect</span></h4>
+      </div>
+    </div>
+
+
+    <!-- RULES -->
+    <div class="row floating-box img-thumbnail" id="rule">
+      <div class="col-lg-12 col-sm-12 col-12 box-upper-section bg-success">
+        <ol>
+          <li>Kurz</li>
+          <li>Klar</li>
+          <li>Einfach</li>
+        </ol>
+      </div>
+      <div class="col-lg-12 col-sm-12 col-12 box-lower-section">
+          Mehr???
+      </div>
+      <div class="label">
+        <h4><span class="badge badge-pill bg-success">Was ist wichtig?</span></h4>
+      </div>
+    </div>
+`
+
+var first = `
+<section data-background-size="contain" data-background="../../general_img/spiral_slow.gif">
+      </section>
+`
+
+var questions = `
+Welche Fragen habt ihr noch? <br>
+<img width="200" data-src="../../general_img/question.png">
+<br>
+`
+
+var summary = `
+<blockquote style="display: inline-block;">
+  <br>
+    Was habt ihr gemacht? 
+  <br>
+  <img width="70" data-src="../../general_img/learned.png">
+
+  <br>
+  <p style="color: red">
+    Erkentnisse? 
+  </p>
+  <img width="70" data-src="../../general_img/learned.png">
+
+  <br>
+    Was merkt ihr euch?
+  <br><br>
+  
+</blockquote>
+`
+
+
+var last = `
+<section>
+  <blockquote>
+    <p style="font-size: 30pt;">
+      ... und weiter geht es nächste Stunde ... 
+    </p>
+    <br>
+  </blockquote>
+
+  <aside class="notes">
+
+    <p style="color: red">
+      
+      Bitte denkt an die Hausaufgaben
+
+    </p>
+  </aside>
+</section>
+`
+
+
+
 
 var footer_content = `
 
@@ -107,9 +248,19 @@ var footer_content = `
 
 `
 var header_element = document.getElementById('header');
+var side_element = document.getElementById('side');
+var first_element = document.getElementById('first');
+var questions_element = document.getElementById('questions');
+var summary_element = document.getElementById('summary');
+var last_element = document.getElementById('last');
 var footer_element = document.getElementById('footer');
 
 header_element.innerHTML = header_content;
+side_element.innerHTML = side;
+first_element.innerHTML = first;
+questions_element.innerHTML = questions;
+summary_element.innerHTML = summary;
+last_element.innerHTML = last;
 footer_element.innerHTML = footer_content;
 
 
