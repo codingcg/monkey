@@ -50,12 +50,21 @@ Reveal.initialize({
   hash: true,
 
   // Learn about plugins: https://revealjs.com/plugins/
-  plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChalkboard],
+  plugins: [ RevealMenu, RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChalkboard],
 
   dependencies: [
     
-    //{ src: '../../node_modules/reveal.js-toolbar/toolbar.js' }
-  ]
+    // Works too
+    //{ src: '../../node_modules/reveal.js-toolbar/toolbar.js' },
+
+    { src: '../../Reveal/plugins/toolbar/toolbar.js' }
+
+  ],
+
+  menu: {
+    
+  }
+
 });
 
 
