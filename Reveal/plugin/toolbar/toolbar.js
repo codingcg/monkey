@@ -186,7 +186,7 @@ var RevealToolbar =
         if (captureMenu) {
           // handle async loading of plugins
           var id_menu = setInterval(function() {
-            if (RevealMenu && RevealMenu.isInit()) {
+            if (RevealMenu ) {
               dom.menu = document.querySelector('div.slide-menu-button');
               if (dom.menu) {
                 console.log('Moving menu button');

@@ -56,3 +56,8 @@ a:hover {
 	text-decoration:  none !important;
 
 }
+
+h2, h3, h4, h5 {
+	text-transform: none !important;
+
+}
