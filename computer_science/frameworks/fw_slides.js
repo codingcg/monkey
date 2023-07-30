@@ -50,7 +50,7 @@ Reveal.initialize({
   hash: true,
 
   // Learn about plugins: https://revealjs.com/plugins/
-  plugins: [ RevealMenu, RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChalkboard, RevealCustomControls],
+  plugins: [ RevealMenu, RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChalkboard, RevealCustomControls,/* RevealChart, RevealSeminar, RevealPoll, RevealQnA*/],
 
   dependencies: [
     
@@ -60,6 +60,13 @@ Reveal.initialize({
     { src: '../../Reveal/plugin/toolbar/toolbar.js' }
 
   ],
+
+  /*seminar: {
+    server: 'https://seminar.eu.openode.io', // change server as necessary
+    room: 'Some room name', // put your room name here
+    hash: '$2a$05$hhgakVn1DWBfgfSwMihABeYToIBEiQGJ.ONa.HWEiNGNI6mxFCy8S', // a hash is required for every seminar room and can be generated on the URL of the socket.io server
+    autoJoin: true // set to true to auto,matically join the seminar room
+  },*/
 
   menu: {
     // Specifies which side of the presentation the menu will
@@ -234,7 +241,7 @@ Reveal.initialize({
         src: null,
         readOnly: undefined,
         transition: 800,
-        theme: "chalkboard",
+        theme: "whiteboard",
         background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
         grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
         eraser: { src: path + 'img/sponge.png', radius: 20},
@@ -333,6 +340,10 @@ var header_content = `
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+
+    <link rel="stylesheet" href="../../Reveal/plugin/poll/style.css">
+    <link rel="stylesheet" href="../../Reveal/plugin/questions/style.css">
+
 
     <link rel="stylesheet" href="../../slides.css" type="text/css" media="screen" />
   </head>
