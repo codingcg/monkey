@@ -49,6 +49,12 @@ Reveal.initialize({
   center: true,
   hash: true,
 
+
+  // Factor of the display size that should remain empty around
+  // the content
+  margin: 0.04,
+
+
   // Learn about plugins: https://revealjs.com/plugins/
   plugins: [ RevealMenu, RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChalkboard, RevealCustomControls,/* RevealChart, RevealSeminar, RevealPoll, RevealQnA*/],
 

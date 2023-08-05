@@ -16,63 +16,67 @@
 			
 
 
-			<section data-background-size="contain" data-background="img/bluetooth.png" data-background-color="white">
+			<section data-background-size="contain" data-background="img/bluetooth_speaker.jpeg" data-background-color="white">
+				<img src="img/bluetooth.png" width="20%" style="margin-top: -30%">
       		</section>
 
 
 			
-      		<section>
+      		<section style="margin-top: -100px">
+				<button class="btn btn primary" onclick="show(`<br> <img src='img/speaker.jpg' width='100px'> Lautsprecher`)" style="height: 15px">
+				</button>
+				<button class="btn btn success" onclick="show(`<br> <img src='img/speaker.jpg' width='100px'>  Verstärkerboard`)" style="height: 15px">
+				</button>
+				<button class="btn btn danger" onclick="show(`<br> <img src='img/speaker.jpg' width='100px'> Bluetoothempfänger`)" style="height: 15px">
+				</button>
+				<button class="btn btn info" onclick="show(`<br> <img src='img/speaker.jpg' width='100px'> Batteriehalterung & Batterien`)" style="height: 15px">
+				</button>
 
-      			<div id="first">Lautsprecher</div>
+      			<h2>Was brauchen wir?</h2>
+      			<div id="content_list" style="font-size: 16pt"></div>
 
-      			<table style="font-size: 11pt; width: 100%">
-      				<tr>
-      					<td>
+      			<br><br>
+      			<h5 class="fragment" style="color:blue">Nehmt euch bitte jetzt jeder diese Bauteile....<br>
+      			... außerdem ein <b>Blatt</b> und <b>bunte Stifte.</b></h5>
 
-							<p> Was brauchen wir?</p>
-							<ul>
-								<li id="second">Verstärkerboard</li>
-								<li id="third">Bluetoothempfänger</li>
-								<li id="fourth">Batteriehalterung & Batterien </li>
-							</ul>
-						</td>
-
-
-						<td class="fragment">
-							<p class="fragment">
-								<p>Werkzeuge</p>
-								<ul>
-									<li> Lötkolben, Halterung, Schwamm, Lötzinn </li>
-									<li> Zange, Entmantelzange </li>
-									<li> 'Helfende Hände' </li>
-									<li> Kabel </li>
-									<li> Nähset </li>
-								</ul>
-							</p>
-						</td>
-					</tr>
-				</table>
 				<aside class="notes">
 
+						Lautsprecher<br>
+						Verstärkerboard <br>
+						Bluetoothempfänger <br>
+						Batteriehalterung & Batterien
 
-					<p> Was brauchen wir?</p>
-					<ul>
-						<button onclick="document.getElementById('first').innerHTML ='Test'">Lautsprecher</button>
-						<button onclick="alert('second')">Verstärkerboard</button>
-						<button onclick="alert('third')">Bluetoothempfänger</button>
-						<button onclick="alert('fourth')">Batteriehalterung & Batterien</button>
-					</ul>
 				</aside>
+			</section>
+
+			<section style="margin-top: -100px">
+
+      			<h3>Wie werden die Bauteile verbunden?</h3>
+				<br>
+      			<h4 class="fragment"> Zeichnet die Verbindungen auf. </h4>
+      		</section>			
+			
+
+			<section>
+
+      			<h4>Nehmt euch bitte folgende Werkzeuge:</h4>
+
+				<ul class="r-frame" style="font-size: 16pt; padding-left: 5%; padding-right: 2%">
+					
+					<li> Lötkolben, Halterung, Schwamm, Lötzinn </li>
+					<li> Zange, Entmantelzange </li>
+					<li> 'Helfende Hände' </li>
+					<li> Kabel </li>
+					<li> Nähset </li>
+				</ul>
 			</section>
 
 
 			<section data-background-size="contain" data-background="../general/soldering.png"data-background-color="white">
       		</section>
-			
 
-			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
-			
+
+
 			<section>
 				<div id="questions"></div>
 
@@ -112,25 +116,11 @@
 
 	<script>
 
-		function toggle(id) {
-		  let el = document.getElementById(id);
-		  el.style.display = (el.style.display == "block") ? "none" : "block";
+		function show(word) {
+			document.getElementById('content_list').innerHTML += word;
 		}
 
-		document.addEventListener('keydown', function(event) {
-		 	
-
-		    if(event.keyCode == 49) { 
-		        toggle('first');
-		    }
-		    if(event.keyCode == 50) { 
-		        toggle('second');
-		    }
-
-		    if(event.keyCode == 51) { 
-		        toggle('third');
-		    }
-		});
+		
 
 	</script>
 
