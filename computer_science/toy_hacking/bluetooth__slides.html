@@ -22,31 +22,47 @@
 
 			
       		<section>
-      			<table style="font-size: 13pt; width: 100%">
+
+      			<div id="first">Lautsprecher</div>
+
+      			<table style="font-size: 11pt; width: 100%">
       				<tr>
       					<td>
 
 							<p> Was brauchen wir?</p>
-							
-							<p>Lautsprecher</p>
-							<p>Verstärkerboard</p>
-							<p>Bluetoothempfänger</p>
-							<p>Batteriehalterung & Batterien </p>
+							<ul>
+								<li id="second">Verstärkerboard</li>
+								<li id="third">Bluetoothempfänger</li>
+								<li id="fourth">Batteriehalterung & Batterien </li>
+							</ul>
 						</td>
 
 
-						<td>
-							<p>Werkzeuge</p>
-							<ul>
-								<li> Lötkolben, Halterung, Schwamm, Lötzinn </li>
-								<li> Zange, Entmantelzange </li>
-								<li> 'Helfende Hände' </li>
-								<li> Kabel </li>
-								<li> Nähset </li>
-							</ul>
+						<td class="fragment">
+							<p class="fragment">
+								<p>Werkzeuge</p>
+								<ul>
+									<li> Lötkolben, Halterung, Schwamm, Lötzinn </li>
+									<li> Zange, Entmantelzange </li>
+									<li> 'Helfende Hände' </li>
+									<li> Kabel </li>
+									<li> Nähset </li>
+								</ul>
+							</p>
 						</td>
 					</tr>
 				</table>
+				<aside class="notes">
+
+
+					<p> Was brauchen wir?</p>
+					<ul>
+						<button onclick="document.getElementById('first').innerHTML ='Test'">Lautsprecher</button>
+						<button onclick="alert('second')">Verstärkerboard</button>
+						<button onclick="alert('third')">Bluetoothempfänger</button>
+						<button onclick="alert('fourth')">Batteriehalterung & Batterien</button>
+					</ul>
+				</aside>
 			</section>
 
 
@@ -93,6 +109,32 @@
 		
 		</div>
 	</div>
+
+	<script>
+
+		function toggle(id) {
+		  let el = document.getElementById(id);
+		  el.style.display = (el.style.display == "block") ? "none" : "block";
+		}
+
+		document.addEventListener('keydown', function(event) {
+		 	
+
+		    if(event.keyCode == 49) { 
+		        toggle('first');
+		    }
+		    if(event.keyCode == 50) { 
+		        toggle('second');
+		    }
+
+		    if(event.keyCode == 51) { 
+		        toggle('third');
+		    }
+		});
+
+	</script>
+
+
 	<script src="../../Reveal/dist/reveal.js"></script>
 	<script src="../../Reveal/plugin/highlight/highlight.js"></script>
 	<script src="../../Reveal/plugin/menu/menu.js"></script>
