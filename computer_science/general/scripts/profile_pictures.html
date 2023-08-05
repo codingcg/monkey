@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="My Copy Monkey">
+		<meta name="author" content="Vera Christ">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins/menu/font-awesome/css/fontawesome.css">
+
+
+		<link rel="stylesheet" href="../../../general.css" type="text/css" media="screen" />
+		<style>
+			table.dataTable thead .sorting:after,
+			table.dataTable thead .sorting:before,
+			table.dataTable thead .sorting_asc:after,
+			table.dataTable thead .sorting_asc:before,
+			table.dataTable thead .sorting_asc_disabled:after,
+			table.dataTable thead .sorting_asc_disabled:before,
+			table.dataTable thead .sorting_desc:after,
+			table.dataTable thead .sorting_desc:before,
+			table.dataTable thead .sorting_desc_disabled:after,
+			table.dataTable thead .sorting_desc_disabled:before {
+			  bottom: .5em;
+			}
+
+
+
+
+
+		</style>
+	</head>
+
+	<body>
+	<div class="container">
+
+
+		<div class="alert alert-success">
+		    <div class="icon hidden-xs">
+		      <i class="bi bi-asterisk"></i>
+		    </div>
+		    <h4>Generierungstool Profilbilder und Kürzel</h4>
+		    <br> 
+
+
+
+			<div class="mb-3">
+				<div class="btn-group" role="group" aria-label="Basic example">
+			   		<input class="form-control" type="file" id="pictures_input" multiple>
+  					<button type="button" class="btn btn-secondary" onclick='upload_pictures()'>Bilder Hochladen</button>
+  				</div>
+			</div>
+			<br><br>
+			<div class="mb-3">
+				<div class="btn-group" role="group" aria-label="Basic example">
+			   		<input class="form-control" type="file" id="csv_input">
+  					<button type="button" class="btn btn-secondary" onclick='upload_csv()'>CSV Liste Hochladen</button>
+  				</div>
+			</div>
+			<br><br>
+
+
+
+			<table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+				  <thead>
+				    <tr>
+				      <th class="th-sm">Profilbild
+				      </th>
+				      <th class="th-sm">Vorname
+				      </th>
+				      <th class="th-sm">Nachname
+				      </th>
+				      <th class="th-sm">Kürzel
+				      </th>
+				      
+				    </tr>
+				  </thead>
+				  <tbody id="students_tbody"> 
+				  </tbody>   
+			</table>
+		</div>
+
+
+
+		<div class="mb-3">
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<button type="button" class="btn btn-secondary" onclick='store()'>Tabelle in Datenbank sichern</button>			
+				<button type="button" class="btn btn-secondary" onclick='make_pdf()'>Tabelle als PDF</button>
+				</div>
+		</div>
+	</div>
+
+
+
+
+	
+
+	<script>
+
+		add_row();
+		add_row();
+
+
+		function upload_pictures() {
+	        var file = document.getElementById('pictures_input').files[0];
+	        var reader  = new FileReader();
+	        reader.onload = function(e)  {
+	            var image = document.createElement("img");
+	            image.src = e.target.result;
+	            document.body.appendChild(image);
+	         }
+	         reader.readAsDataURL(file);
+	     }
+
+
+	     function upload_csv() {
+	        var file = document.getElementById('csv_input').files[0];
+	        var reader  = new FileReader();
+	        reader.onload = function(e)  {
+	            var image = document.createElement("img");
+	            image.src = e.target.result;
+	            document.body.appendChild(image);
+	         }
+	         reader.readAsDataURL(file);
+	     }
+
+
+
+	     function add_row() {
+
+	     	let tbody = document.getElementById('students_tbody');
+
+			let row = tbody.insertRow();
+	     	var td_pic = document.createElement("td");
+	     	td_pic.innerHTML = "Test";
+
+	     	var td_first = document.createElement("td");
+	     	td_first.innerHTML = "Test";
+
+	     	var td_last = document.createElement("td");
+	     	td_last.innerHTML = "Test";
+
+	     	var td_short = document.createElement("td");
+	     	td_short.innerHTML = "Test";
+
+	     	row.appendChild(td_pic);
+	     	row.appendChild(td_first);
+	     	row.appendChild(td_last);
+	     	row.appendChild(td_short);
+
+	     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		document.addEventListener('keydown', function(event) {
+		    if(event.keyCode == 73) { // I
+		        window.location.href = "../../computer_science.html";
+
+		    }
+		});
+	</script>
+	</body>
+</html>
