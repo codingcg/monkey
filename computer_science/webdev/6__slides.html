@@ -1,0 +1,438 @@
+<html>
+<header id='header'></header>
+
+<style>
+	.pulse {
+		background: red;
+		width: 25px;
+	  	height: 25px;
+	  	border-radius: 50%;
+	  	box-shadow: 0px 0px 1px 1px #FF00001a;
+	  	animation: pulse-animation 2s infinite;
+	  	display: inline-block;
+	  	margin:  0 30px;
+	}
+
+	@keyframes pulse-animation {
+	  	0% {
+	    	box-shadow: 0 0 0 0px rgba(1, 0, 0, 0.2);
+		}
+		  100% {
+		    box-shadow: 0 0 0 20px rgba(1, 0, 0, 0);
+		}
+	}
+</style>
+<body>	
+
+	<div class="reveal">
+		<div id="side"></div>
+		<div class="slides">
+
+
+
+			<section id="first"></section>
+
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+
+			<section data-transition="zoom">
+				<h4>Was können wir bis jetzt noch nicht? <br> Was fehlt in HTML?</h4>
+
+
+				<aside class="notes">
+					 Hier sammeln mit <b>Chalkboard</b>:
+					 <br><br>
+					 Farben, Hintergünde, Ränder, Schatten, Links nicht unterstreichen, Bewegung etc.
+				</aside>
+			</section>
+
+			
+			<section data-transition="fade-in slide-out">
+				<img data-src="websites/pictures/CSS.png" width="200" style="background: rgba(255,255,255,0.3); padding: 20px;">
+
+				<br>
+				CSS - Cascading Style Sheets
+
+				<aside class="notes">
+					 Jetzt kommt eine weiter Skriptsprache ins Spiel ....
+				</aside>
+			</section>
+
+
+
+
+
+
+
+			<section>
+
+				<div>
+					<span class="pulse"></span>
+					<a href="websites/peniche_pure_html.html">Peniche (nur HTML)</a>
+					<span class="pulse"></span>
+				</div>
+				<br><br>
+				<h6> Öffnen .... (Editor) </h6>
+
+
+				<a href="websites/peniche_with_css_intro_inline.html" target="_blank">Inline Results</a>
+
+				
+				<aside class="notes">
+					
+					CSS LIVE zeigen --- <b> INLINE </b>
+
+					<br><br>
+
+					Beispiel:
+
+					....... peniche_with_css_intro_inline.html
+
+				</aside>
+			</section>
+
+
+
+			<section>
+
+				<h2> Aktuell </h2>
+				<img src="img/html.png" style="float: left; width: 50%; margin-left: -20%">
+				<pre style="float: right; width: 80%; margin-right: -20%"><code><header>
+	<div id="top">
+
+		<img src="pictures/logo.jpeg" width="9%" alt="Logo von Peniche">
+
+		<h1>Die Halbinsel Peniche</h1>
+
+		<p>
+    		Peniche liegt in Portugals <b>Região Centro (Region Mitte)</b> an der Atlantikküste. Durch die zentrale Lage sowie den ausgezeichneten Strände ist Peniche eine beliebte Destination bei Surfern. Aber auch für Nicht-Surfer hat der Ort faszinierende Sehenswürdigkeiten zu bieten, wobei die Berlengas Insel sicher das Highlight der Region ist. <br> Was es genau aber noch in Peniche zu besichtigen gibt und warum sich auch ein längerer Aufenthalt in Peniche lohnt erfährst Du in diesem Beitrag.
+		</p>
+	</div>
+</header></code></pre>
+
+
+
+			<aside class="notes">
+					
+					Vorgehen: Nur den header Teil herausnehmen und daran alles zeigen.
+
+					<br><br>
+
+					<b>Beginne mit p:</b>
+					<br>
+					<code>style="color: lightseagreen; font-size: 16pt; font-family: fantasy;"</code>
+					<br><br>
+
+					<b>Weiter mit h1:</b>
+					<br>
+					<code>style="color: darkgreen; font-family: fantasy;"</code>
+					<br><br>
+
+					<b>Weiter mit img:</b>
+					<br>
+					<code>style="border:3px solid grey; border-radius:90px 0px 90px 0px; box-shadow: 2px 2px 7px 1px #CE5937;"</code>
+					<br><br>
+
+
+					<b>Weiter mit img:</b>
+					<br>
+					<code>style="float: left" & auch widht auf 20% setzen</code>
+					<br><br>
+
+
+					<b>Weiter mit h1 und p:</b>
+					<br>
+					<code>style="margin-left: 25%; margin-right: 20%"</code>
+					<br><br>
+
+
+					<b>Und p noch:</b>
+					<br>
+					<code>style="text-align: justify;"</code>
+					<br><br>
+					
+
+					<b>Zusammenfassen der margins:</b>
+					<br>
+					<code>style="margin: 0 20% 0 25%;"</code>
+					<br><br>
+					
+
+				</aside>
+
+	   		</section>
+
+			
+	   		
+			<section>
+				<h2> Mit etwas CSS </h2>
+			
+				<pre><code><header>
+	<div id="top">
+
+		<img src="pictures/logo.jpeg" width="20%" alt="Logo von Peniche" style="border:3px solid grey; border-radius:90px 0px 90px 0px; box-shadow: 2px 2px 7px 1px #CE5937; float: left">
+
+		<h1 style="color: darkgreen; font-family: fantasy; margin-left: 25%; margin-right: 20%">Die Halbinsel Peniche</h1>
+
+		<p style="color: lightseagreen; font-size: 16pt; font-family: fantasy; margin-left: 25%; margin-right: 20%; text-align: justify;">
+    		Peniche liegt in Portugals <b>Região Centro (Region Mitte)</b> an der Atlantikküste. Durch die zentrale Lage sowie den ausgezeichneten Strände ist Peniche eine beliebte Destination bei Surfern. Aber auch für Nicht-Surfer hat der Ort faszinierende Sehenswürdigkeiten zu bieten, wobei die Berlengas Insel sicher das Highlight der Region ist. <br> Was es genau aber noch in Peniche zu besichtigen gibt und warum sich auch ein längerer Aufenthalt in Peniche lohnt erfährst Du in diesem Beitrag.
+		</p>
+	</div>
+</header></code></pre>
+
+	   		</section>
+
+
+	   		<section>
+				<img src="img/css_1.png">
+
+	   		</section>
+
+
+
+			<section>
+				<img src="img/margin.jpeg">
+			</section>
+
+			
+
+<section>
+				<h2> Mit etwas mehr CSS </h2>
+			
+				<pre><code><style>
+			* {
+				margin:  0px;
+				padding:  0px;
+			}
+		</style>
+	</head>
+
+  	<body bgcolor="white" style="margin: 0px; padding: 0px"> 
+
+
+  		<nav style="background-color: black; font-family: fantasy; font-size: 14pt;text-decoration: none; margin: 0px; padding:  0px; width: 100%">
+            <!--<h4>Kurzlinks zu allen Themen</h4>-->
+            <center>
+            <ul>
+            	<li style="display: inline-block; color: white; margin: 20px 40px 20px 5px">
+              		<a href="#sec_top" style="text-decoration: none; color: white; font-size: 18pt">
+              			Home
+              		</a>
+              	</li>
+              	<li style="display: inline-block; color: white; margin: 20px 40px">
+              		<a href="#sec_klippen" style="text-decoration: none; color: white;">
+              			Klippen
+              		</a>
+              	</li>
+              	<li style="display: inline-block; color: white; margin: 20px 40px">
+              		<a href="#sec_fische" style="text-decoration: none; color: white;">
+              			Fischerei
+              		</a>
+              	</li>
+              	<li style="display: inline-block; color: white; margin: 20px 40px">
+              		<a href="#sec_sufer" style="text-decoration: none; color: white;">
+              			Surfer
+              		</a>
+              	</li>
+              	<li style="display: inline-block; color: white; margin: 20px 40px">
+              		<a href="#sec_language" style="text-decoration: none; color: white;">
+              			Sprache
+              		</a>
+              	</li>
+              	<li style="display: inline-block; color: white; margin: 20px 40px">
+              		<a href="#sec_region" style="text-decoration: none; color: white;">
+              			Großregion
+              		</a>
+              	</li>
+              	<li style="display: inline-block; color: white; margin: 20px 40px">
+              		<a href="#sec_interessant" style="text-decoration: none; color: white;">
+              			Fakten
+              		</a>
+              	</li>
+              	<li style="display: inline-block; color: white; margin: 20px 5px 20px 120px">
+              		<a href="peniche_pure_html_kontakt.html" style="text-decoration: none; color: white;">
+              			Formulare & Kontakt
+              		</a>
+              	</li>
+            </ul>
+            </center>
+      	</nav>
+
+
+      	<img src="pictures/cliffs.jpeg" width="100%" alt="Bild der Klippen"
+      	style="  filter: brightness(120%); filter: contrast(120%)">
+
+      	<header style="margin: 30px">
+        	<div id="top">
+
+	        	<img src="pictures/logo.jpeg" width="20%" alt="Logo von Peniche" style="border:3px solid grey; border-radius:90px 0px 90px 0px; box-shadow: 2px 2px 7px 1px #CE5937; float: left">
+
+				<h1 style="color: darkgreen; font-family: fantasy; margin-left: 25%; margin-right: 20%">Die Halbinsel Peniche</h1>
+
+	        	<p style="color: lightseagreen; font-size: 16pt; font-family: fantasy; margin-left: 25%; margin-right: 20%; text-align: justify;">
+	        		Peniche liegt in Portugals <b>Região Centro (Region Mitte)</b> an der Atlantikküste. Durch die zentrale Lage sowie den ausgezeichneten Strände ist Peniche eine beliebte Destination bei Surfern. Aber auch für Nicht-Surfer hat der Ort faszinierende Sehenswürdigkeiten zu bieten, wobei die Berlengas Insel sicher das Highlight der Region ist. 
+	        		<br>
+	        		Was es genau aber noch in Peniche zu besichtigen gibt und warum sich auch ein längerer Aufenthalt in Peniche lohnt erfährst Du in diesem Beitrag.
+	        	</p>
+	    	</div>
+	   	</header>
+
+	   	<br><br><br>
+</code></pre>
+
+	   		</section>
+
+
+	   		<section>
+				<img src="img/css_2.png">
+
+	   		</section>
+
+
+	   		<section>
+				<h2> Das geht auch übersichtlicher</h2>
+
+	   		</section>
+
+
+	   		<section>
+				<ol>
+					<li>
+						Neue Datei mit der Endung <code>.css</code> anlegen. <br>Zum Beipsiel:
+						<code>suchDirEinenNamenAus.css</code>
+						<br><br>
+					</li>
+					<li>
+						Verlinken im Header der HTML Datei
+						<pre style="width: 100%"><code><link rel="stylesheet" type="text/css" href="peniche.css"></code></pre>
+						<br>
+					</li>
+					<li>
+						CSS Code in der neuen Datei schreiben
+					</li>
+				</ol>
+			</section>
+
+
+
+			<section>
+
+				<div>
+					<span class="pulse"></span>
+					<a href="websites/peniche_with_css.html">Peniche HTML</a>
+					<br>
+					<a href="websites/peniche.css">Peniche CSS</a>
+
+					<span class="pulse"></span>
+				</div>
+				<br><br>
+
+
+				
+				<aside class="notes">
+					
+					CSS LIVE zeigen --- <b> EXTERN </b>
+
+				</aside>
+			</section>
+
+
+
+
+			
+
+
+
+
+
+			<section>
+				<a href="websites/penice_with_css.html">Peniche (in hübsch mit CSS)</a>
+
+				<br><br>
+				<h6>
+					<a href="penice_with_css.zip" download>
+						Downloadlink der ZIP Datei
+					</a>
+					<br>
+					<a href="../general/general_cheat_sheet.html"><span style="font-size: 10pt; text-transform: none; color: white">(Wie öffne ich ZIP Datein?)</span></a>
+				</h6>
+				<aside class="notes">
+					Hier einmal eine <b>hübsche</b> Variante unserer Peniche Seite ....
+
+					<br><br>
+
+					Damit kommen wir etwas näher an das heutige, state-of-the-art Webdesign heran ....
+
+					<br><br>
+
+					
+				</aside>
+			</section>
+
+			
+			
+
+
+
+
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+			
+			<section>
+				<div id="questions"></div>
+
+				<p class="fragment">
+					<a href="7__ex.html" >
+						Dann viel Spaß beim selbst ausprobieren ....
+					</a>
+					<br>
+					<a href="7__cheat_sheet_css.html" style="font-size: 15pt; color: white">
+						(verwendet gerne das Cheat Sheet mit den Erklärungen)
+					</a>
+				</p>
+
+			</section>
+
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+					
+			<section>
+				<div id="summary"></div>
+				<aside class="notes">
+					<p style="color: red">
+						Syntax, Semantik
+						<br>
+						Einrückung, Formatierung erzwingen
+					</p>
+				</aside>
+			</section>
+
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+			<!--§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§-->
+			
+			<section id="last"></section>
+		
+		</div>
+	</div>
+	
+
+	<script src="../../Reveal/dist/reveal.js"></script>
+	<script src="../../Reveal/plugin/highlight/highlight.js"></script>
+	<script src="../../Reveal/plugin/menu/menu.js"></script>
+	<script src="../../Reveal/plugin/zoom/zoom.js"></script>
+	<script src="../../Reveal/plugin/notes/notes.js"></script>
+	<script src="../../Reveal/plugin/search/search.js"></script>
+	<script src="../../Reveal/plugin/markdown/markdown.js"></script>
+	<script src="../../Reveal/plugin/customcontrols/plugin.js"></script>
+	<script src="../../Reveal/plugin/chalkboard/plugin.js"></script>
+	<!--<script src="../../Reveal/plugin/seminar/plugin.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+	<script src="../../Reveal/plugin/chart/plugin.js"></script>
+	<script src="../../Reveal/plugin/poll/plugin.js"></script>
+	<script src="../../Reveal/plugin/questions/plugin.js"></script>-->
+
+	<footer id='footer'></footer>
+	<script src="../frameworks/fw_slides.js"></script>
+</body>
+</html>

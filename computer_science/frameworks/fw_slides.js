@@ -39,10 +39,6 @@ function toggle(id) {
 
 
 
-
-
-
-
 Reveal.initialize({
   controls: true,
   progress: true,
@@ -54,7 +50,7 @@ Reveal.initialize({
   // the content
   margin: 0.04,
 
-
+  
   // Learn about plugins: https://revealjs.com/plugins/
   plugins: [ RevealMenu, RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChalkboard, RevealCustomControls,/* RevealChart, RevealSeminar, RevealPoll, RevealQnA*/],
 

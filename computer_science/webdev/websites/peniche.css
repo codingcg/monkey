@@ -1,34 +1,62 @@
-p {
-	color: green;
+* {
+	margin:  0px;
+	padding:  0px;
 }
 
-
-
-h1 {
-	text-decoration: underline;
-	color: red;
+nav {
+	background-color: black; 
+	font-family: fantasy; 
+	font-size: 14pt;
+	text-decoration: none; 
+	margin: 0px; 
+	padding:  0px; 
+	width: 100%
 }
+           
+li {
+	display: inline-block; 
+	color: white; 
+	margin: 20px 40px 20px 5px
 
-img {
-	border: 5px solid orange;
 }
-
 
 a {
-	text-decoration: none;
-	color: cyan;
+	text-decoration: none; 
+	color: white; 
+	font-size: 18pt
+}
+              			
+
+
+img {
+	filter: brightness(120%); 
+	filter: contrast(120%)
 }
 
-body {
-	text-align:  center;
-	background-color: rgba(100, 0, 0, 0.2);
+      
+#logo {
+	border:3px solid grey; 
+	border-radius:90px 0px 90px 0px; 
+	box-shadow: 2px 2px 7px 1px #CE5937; 
+	float: left
 }
 
-section#sec_klippen {
-	background-color: green;
+h1 {
+	color: darkgreen; 
+	font-family: fantasy; 
+	margin-left: 25%; 
+	margin-right: 20%
 }
 
-section#sec_fische {
-	background-color: yellow;
+p {
+	color: lightseagreen; 
+	font-size: 16pt; 
+	font-family: fantasy; 
+	margin-left: 25%; 
+	margin-right: 20%; 
+	text-align: justify;
 }
+
+
+
 
