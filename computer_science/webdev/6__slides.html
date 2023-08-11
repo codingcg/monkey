@@ -40,9 +40,14 @@
 
 
 				<aside class="notes">
-					 Hier sammeln mit <b>Chalkboard</b>:
-					 <br><br>
-					 Farben, Hintergünde, Ränder, Schatten, Links nicht unterstreichen, Bewegung etc.
+
+					Stundenziel: <br><br>
+
+					Inline CSS zum ersten mal sehen und einige Kleinigkeiten verändern.
+					<br><br>
+					<b>Chalkboard</b>, gemeinsam sammeln:
+					<br>
+					<i>Farben, Hintergünde, Ränder, Schatten, Links nicht unterstreichen, Bewegung etc.</i>
 				</aside>
 			</section>
 
@@ -54,39 +59,68 @@
 				CSS - Cascading Style Sheets
 
 				<aside class="notes">
-					 Jetzt kommt eine weiter Skriptsprache ins Spiel ....
+					 Um diese Dinge zu realisieren reicht HTML nicht aus, wir brauchen eine  weitere Skriptsprache ....
 				</aside>
 			</section>
 
 
+			<section data-transition="fade-in slide-out">
+
+				CSS beschreibt wie HTML <b>Elemente</b> auf einem Bildschirm <b>dargestellt</b> werden. 
+				<br><br>
+				<p class="fragement">CSS gehört zum W3C-Standard für alle Browser.</p>
+				
+
+			</section>
 
 
+			<section data-transition="fade-in slide-out">
+
+				<img class="r-frame" data-src="img/w3c.png" width="250" style="background: rgba(255,255,255,0.3); padding: 20px;"><br>
+
+				<h3>World Wide Web Consortium </h3>
 
 
+				<h5>Beispiele für Standards des W3C: HTML, CSS, SVG</h5>
 
+				<aside class="notes">
+					Es handelt sich um ein Gremium, das die Standards für alle Techniken im WWW festlegt und wurde 1994 in Cambridge gegründet. 
+
+					<br><br>
+
+					Vorsitzender ist Tim-Berness Lee, der als Erfinder des Internets gilt.
+				</aside>
+			</section>
+
+
+			<section>
+				<iframe width="100%" height="500px" src="https://www.youtube.com/embed/0mhpQd3GNDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+				<aside class="notes">
+					Ok, schauen wir uns CSS eimal an.
+				</aside>
+
+			</section>
 			<section>
 
 				<div>
 					<span class="pulse"></span>
-					<a href="websites/peniche_pure_html.html">Peniche (nur HTML)</a>
+					<a href="websites/peniche_pure_html.html">Unsere Website bis jetzt (Editor)</a>
 					<span class="pulse"></span>
 				</div>
-				<br><br>
-				<h6> Öffnen .... (Editor) </h6>
-
-
-				<a href="websites/peniche_with_css_intro_inline.html" target="_blank">Inline Results</a>
 
 				
 				<aside class="notes">
 					
-					CSS LIVE zeigen --- <b> INLINE </b>
+					CSS LIVE zeigen --- <b> INLINE </b> (hier muss noch der Repl.it oder Sublime Link hin)
+					<br><br>
+
+					<a href="websites/peniche_with_css_intro_inline.html" target="_blank">Das soll rauskommen .... (hier muss noch der Repl.it oder Sublime Link hin)</a>
 
 					<br><br>
 
-					Beispiel:
+					Genaues Vorgehen in den Notizen der nächsten Folie.
 
-					....... peniche_with_css_intro_inline.html
 
 				</aside>
 			</section>
@@ -165,7 +199,7 @@
 			
 	   		
 			<section>
-				<h2> Mit etwas CSS </h2>
+				<a href="websites/peniche_with_css_intro_inline.html"><h2> Mit etwas CSS </h2></a>
 			
 				<pre><code><header>
 	<div id="top">
@@ -184,7 +218,7 @@
 
 
 	   		<section>
-				<img src="img/css_1.png">
+				<a href="websites/peniche_with_css_intro_inline.html"><img src="img/css_1.png"></a>
 
 	   		</section>
 
@@ -196,95 +230,98 @@
 
 			
 
+
+
+
+
+
+
+
 <section>
-				<h2> Mit etwas mehr CSS </h2>
-			
-				<pre><code><style>
-			* {
-				margin:  0px;
-				padding:  0px;
-			}
-		</style>
-	</head>
-
-  	<body bgcolor="white" style="margin: 0px; padding: 0px"> 
-
-
-  		<nav style="background-color: black; font-family: fantasy; font-size: 14pt;text-decoration: none; margin: 0px; padding:  0px; width: 100%">
-            <!--<h4>Kurzlinks zu allen Themen</h4>-->
-            <center>
-            <ul>
-            	<li style="display: inline-block; color: white; margin: 20px 40px 20px 5px">
-              		<a href="#sec_top" style="text-decoration: none; color: white; font-size: 18pt">
-              			Home
-              		</a>
-              	</li>
-              	<li style="display: inline-block; color: white; margin: 20px 40px">
-              		<a href="#sec_klippen" style="text-decoration: none; color: white;">
-              			Klippen
-              		</a>
-              	</li>
-              	<li style="display: inline-block; color: white; margin: 20px 40px">
-              		<a href="#sec_fische" style="text-decoration: none; color: white;">
-              			Fischerei
-              		</a>
-              	</li>
-              	<li style="display: inline-block; color: white; margin: 20px 40px">
-              		<a href="#sec_sufer" style="text-decoration: none; color: white;">
-              			Surfer
-              		</a>
-              	</li>
-              	<li style="display: inline-block; color: white; margin: 20px 40px">
-              		<a href="#sec_language" style="text-decoration: none; color: white;">
-              			Sprache
-              		</a>
-              	</li>
-              	<li style="display: inline-block; color: white; margin: 20px 40px">
-              		<a href="#sec_region" style="text-decoration: none; color: white;">
-              			Großregion
-              		</a>
-              	</li>
-              	<li style="display: inline-block; color: white; margin: 20px 40px">
-              		<a href="#sec_interessant" style="text-decoration: none; color: white;">
-              			Fakten
-              		</a>
-              	</li>
-              	<li style="display: inline-block; color: white; margin: 20px 5px 20px 120px">
-              		<a href="peniche_pure_html_kontakt.html" style="text-decoration: none; color: white;">
-              			Formulare & Kontakt
-              		</a>
-              	</li>
-            </ul>
-            </center>
-      	</nav>
+				<a href="websites/peniche_with_css_intro_inline_2.html"><h2> Mit etwas mehr CSS </h2></a>
+<pre><code><nav style="background-color: black; font-family: fantasy; font-size: 14pt;text-decoration: none; margin: 0px; padding:  0px; width: 100%">
+<!--<h4>Kurzlinks zu allen Themen</h4>-->
+<center>
+<ul>
+	<li style="display: inline-block; color: white; margin: 20px 40px 20px 5px">
+  		<a href="#sec_top" style="text-decoration: none; color: white; font-size: 18pt">
+  			Home
+  		</a>
+  	</li>
+  	<li style="display: inline-block; color: white; margin: 20px 40px">
+  		<a href="#sec_klippen" style="text-decoration: none; color: white;">
+  			Klippen
+  		</a>
+  	</li>
+  	<li style="display: inline-block; color: white; margin: 20px 40px">
+  		<a href="#sec_fische" style="text-decoration: none; color: white;">
+  			Fischerei
+  		</a>
+  	</li>
+  	<li style="display: inline-block; color: white; margin: 20px 40px">
+  		<a href="#sec_sufer" style="text-decoration: none; color: white;">
+  			Surfer
+  		</a>
+  	</li>
+  	<li style="display: inline-block; color: white; margin: 20px 40px">
+  		<a href="#sec_language" style="text-decoration: none; color: white;">
+  			Sprache
+  		</a>
+  	</li>
+  	<li style="display: inline-block; color: white; margin: 20px 40px">
+  		<a href="#sec_region" style="text-decoration: none; color: white;">
+  			Großregion
+  		</a>
+  	</li>
+  	<li style="display: inline-block; color: white; margin: 20px 40px">
+  		<a href="#sec_interessant" style="text-decoration: none; color: white;">
+  			Fakten
+  		</a>
+  	</li>
+  	<li style="display: inline-block; color: white; margin: 20px 5px 20px 120px">
+  		<a href="peniche_pure_html_kontakt.html" style="text-decoration: none; color: white;">
+  			Formulare & Kontakt
+  		</a>
+  	</li>
+</ul>
+</center>
+</nav>
 
 
-      	<img src="pictures/cliffs.jpeg" width="100%" alt="Bild der Klippen"
-      	style="  filter: brightness(120%); filter: contrast(120%)">
+<img src="pictures/cliffs.jpeg" width="100%" alt="Bild der Klippen"
+style="  filter: brightness(120%); filter: contrast(120%)">
 
-      	<header style="margin: 30px">
-        	<div id="top">
+<header style="margin: 30px">
+<div id="top">
 
-	        	<img src="pictures/logo.jpeg" width="20%" alt="Logo von Peniche" style="border:3px solid grey; border-radius:90px 0px 90px 0px; box-shadow: 2px 2px 7px 1px #CE5937; float: left">
+	<img src="pictures/logo.jpeg" width="20%" alt="Logo von Peniche" style="border:3px solid grey; border-radius:90px 0px 90px 0px; box-shadow: 2px 2px 7px 1px #CE5937; float: left">
 
-				<h1 style="color: darkgreen; font-family: fantasy; margin-left: 25%; margin-right: 20%">Die Halbinsel Peniche</h1>
+	<h1 style="color: darkgreen; font-family: fantasy; margin-left: 25%; margin-right: 20%">Die Halbinsel Peniche</h1>
 
-	        	<p style="color: lightseagreen; font-size: 16pt; font-family: fantasy; margin-left: 25%; margin-right: 20%; text-align: justify;">
-	        		Peniche liegt in Portugals <b>Região Centro (Region Mitte)</b> an der Atlantikküste. Durch die zentrale Lage sowie den ausgezeichneten Strände ist Peniche eine beliebte Destination bei Surfern. Aber auch für Nicht-Surfer hat der Ort faszinierende Sehenswürdigkeiten zu bieten, wobei die Berlengas Insel sicher das Highlight der Region ist. 
-	        		<br>
-	        		Was es genau aber noch in Peniche zu besichtigen gibt und warum sich auch ein längerer Aufenthalt in Peniche lohnt erfährst Du in diesem Beitrag.
-	        	</p>
-	    	</div>
-	   	</header>
+	<p style="color: lightseagreen; font-size: 16pt; font-family: fantasy; margin-left: 25%; margin-right: 20%; text-align: justify;">
+		Peniche liegt in Portugals <b>Região Centro (Region Mitte)</b> an der Atlantikküste. Durch die zentrale Lage sowie den ausgezeichneten Strände ist Peniche eine beliebte Destination bei Surfern. Aber auch für Nicht-Surfer hat der Ort faszinierende Sehenswürdigkeiten zu bieten, wobei die Berlengas Insel sicher das Highlight der Region ist. 
+		<br>
+		Was es genau aber noch in Peniche zu besichtigen gibt und warum sich auch ein längerer Aufenthalt in Peniche lohnt erfährst Du in diesem Beitrag.
+	</p>
+</div>
+</header>
 
-	   	<br><br><br>
 </code></pre>
 
 	   		</section>
 
 
+
+
+
+
+
+
+
+
+
 	   		<section>
-				<img src="img/css_2.png">
+				<a href="websites/peniche_with_css_intro_inline_2.html"><img src="img/css_2.png"></a>
 
 	   		</section>
 
@@ -319,9 +356,11 @@
 
 				<div>
 					<span class="pulse"></span>
-					<a href="websites/peniche_with_css.html">Peniche HTML</a>
-					<br>
-					<a href="websites/peniche.css">Peniche CSS</a>
+					<a href="websites/peniche_with_css_intro_extern.html">HTML Datei</a>
+					<span class="pulse"></span>
+					<br><br>
+					<span class="pulse"></span>
+					<a href="websites/peniche.css">Externe CSS Datei</a>
 
 					<span class="pulse"></span>
 				</div>
@@ -333,41 +372,82 @@
 					
 					CSS LIVE zeigen --- <b> EXTERN </b>
 
+					<br><br>
+
+					Vorgehen:
+					<b>Neue Datei anlegen</b>
+					<br><br>
+
+					<b>Header hinzufügen </b>
+					<pre style="width: 100%"><code><link rel="stylesheet" type="text/css" href="peniche.css"></code></pre>
+
+					<br>
+					Ich habe die <a href="websites/peniche.css">CSS Datei</a> schon einmal vorbereitet...<br>
+					gemeinsam durchsprechen.
+					<br><br>
+
+
+					Damit kommen wir jetzt etwas näher an das heutige, state-of-the-art Webdesign heran ....
+
 				</aside>
 			</section>
-
-
-
-
-			
-
-
 
 
 
 			<section>
-				<a href="websites/penice_with_css.html">Peniche (in hübsch mit CSS)</a>
 
+				<div>
+					Wo ist der Unterschied?<br><br>
+					<a href="websites/peniche_with_css_intro_intern_2.html">Inline Variante</a>
+					<br><br>
+					<a href="websites/peniche_with_css_intro_extern.html">Externe Variante</a>
+
+
+				</div>
 				<br><br>
-				<h6>
-					<a href="penice_with_css.zip" download>
-						Downloadlink der ZIP Datei
-					</a>
-					<br>
-					<a href="../general/general_cheat_sheet.html"><span style="font-size: 10pt; text-transform: none; color: white">(Wie öffne ich ZIP Datein?)</span></a>
-				</h6>
+
+
+				
 				<aside class="notes">
-					Hier einmal eine <b>hübsche</b> Variante unserer Peniche Seite ....
-
-					<br><br>
-
-					Damit kommen wir etwas näher an das heutige, state-of-the-art Webdesign heran ....
-
-					<br><br>
-
 					
+					Umschalten zwischen den beiden Varianten: 
+
+					<br><br>
+
+					Es sollte auffallen ...
+
+					<br>
+
+					... dass das Logo auch die beiden Filter drauf hat.
+					<br>
+					... das die Menüitems alle gleich sind.
+
+					<br>
+
+					... das auch unten das sich verändert hat.
+
+
+					<br><br>
+					<b>Chalkboard</b> gemeinsam: <br>
+					Vorteile und Nachteile, sowie Besonderheiten von CSS <b>Mindmap</b>.
+
 				</aside>
 			</section>
+			
+
+
+			<section>
+
+				<div>
+					Korrigierte Version:<br><br>
+					<a href="websites/peniche_with_css_intro_extern_2.html">HTML Datei</a>
+					<br><br>
+					<a href="websites/peniche_2.css">Externe CSS Datei</a>
+
+				</div>
+				<br><br>
+			</section>
+			
 
 			
 			

@@ -17,24 +17,36 @@ nav {
 	width: 100%
 }
            
-li {
+li.menu {
 	display: inline-block; 
-	color: white; 
-	margin: 20px 40px 20px 5px
+	margin: 20px 40px;
+	font-size: 14pt;
 
 }
 
 a {
 	text-decoration: none; 
 	color: white; 
-	font-size: 14pt
 }
+
+li#home {
+	display: inline-block; 
+	margin: 20px 40px 20px 5px;
+	font-size: 18pt;
+
+}
+
+li#contact {
+	display: inline-block; 
+	margin:  20px 5px 20px 120px;
+}
+
               			
 
 
-img {
+img#Titelbild {
 	filter: brightness(120%); 
-	filter: contrast(120%)
+	filter: contrast(120%);
 }
 
       
@@ -42,7 +54,7 @@ img {
 	border:3px solid grey; 
 	border-radius:90px 0px 90px 0px; 
 	box-shadow: 2px 2px 7px 1px #CE5937; 
-	float: left
+	float: left;
 }
 
 h1 {
