@@ -1,0 +1,1069 @@
+<!--<header id='header'></header>-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+
+  </head> 
+<body>		
+	<div class="container">
+		<div class="card alert alert-warning" style="margin: 0px; padding: 10px">
+            <div class="card-header border" style="margin: 0px; padding: 10px;">
+                <h3 class="float-left">HTML Cheat Sheet</h3>
+            </div>
+
+            <div class="card-body">
+            
+                <h5>HTML - Hyper Text Markup Language</h5>
+
+                <br>
+                
+                <b>Allgemein: </b>
+
+		   		Es gibt <code>TAGS</code> die geöffnet und irgendwann wieder geschlossen werden. Es gibt auch <code>TAGS</code>, die nicht geschlossen werden müssen. Der Unterschied wird meißt aus dem Kontext ersichtlich.
+				
+				<br><br>
+                
+                <table class="table table-striped">
+				  	<thead class="thead-dark">
+					    <tr>
+					      	<th scope="col" style="width:50%">HTML</th>
+					      	<th scope="col">Beschreibung</th>
+					    </tr>
+				  	</thead>
+				  	<tbody>
+				  		<tr>
+				  			<td>
+				  				<div class="myDiv">
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html lang="de"&gt;<br>
+									&lt;head&gt;<br>
+									&lt;title&gt; Hello &lt;/title&gt;<br>
+									&lt;/head&gt;<br>
+									<br>
+
+									&lt;body&gt;<br>
+									<br>
+
+									&lt;h1&gt;Hello world!&lt;/h2&gt;<br>
+									&lt;p&gt;...&lt;/p&gt;<br>
+									&lt;a href="https://www.w3schools.com"&gt;<br>Beste Quelle
+									<br>&lt;/a&gt;<br>
+									<br>
+									&lt;/body&gt;<br>
+									&lt;/html&gt;
+								</div>
+				  			</td>
+				  			<td>
+				  				Grundgrüst
+				  			</td>
+				    	<tr>
+				      		<td> 
+				  				<div class="myDiv">
+									&lt;!DOCTYPE html&gt;<br>
+									&lt;html lang="de"&gt;
+									 ... &lt;/html&gt;
+								</div>
+				      		</td>
+				      		<td>
+				      			Diese beiden Tags eröffnen das HTML Dokument und stehen immer am Anfang.<br><br>
+		   					 
+		   					 	Das <code>LANG</code> Attribut bezeichnet die Sprache. Hier können en (Englisch), de (Deutsch) und so weiter ausgewählt werden. Der zweite HTML Tag muss in der allerletzten Zeile des Dokuments wieder geschlossen werden.<br><br>
+
+		    					HTML Dokumente sind ab hier in <mark>KOPF</mark> und <mark>KÖRPER</mark> eingeteilt. Der Kopf denkt nur, er enthält all die <b>META Informationen</b>, aber bewirkt im Grunde nichts. Der Körper führt aus. Nur was im Körper Teil steht erscheint auch auf deiner Webseite.
+		    				</td>
+				    	</tr>
+
+
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;head&gt; .... &lt;/head&gt;</div>
+				      		</td>
+				      		<td>
+				      			Der <code>HEAD</code> Tag ist der Kopf mit den <b>META Informationen</b>. META Tags sind für das automatische Lesen von Webseiten notwendig. Z.B. Suchmaschinen suchen nach META Tags, aber auch Text-to-Speach Software. Hier sind folgende META Tags enthalten:
+		    				</td>
+				    	</tr>
+
+
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;meta charset="utf-8"&gt;</div>
+				      		</td>
+				      		<td>
+				      			Das Attribut <code>CHARSET</code> legt die Kodierung fest. In <code>UTF-8</code> sind nicht nur alle Zeichen des lateinischen Alphabets, sondern auch z.B. unserer deutschen Sonderzeichen enthalten.
+		    				</td>
+				    	</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;meta name="description" content="WorumGehtEsHier"&gt;</div>
+							</td>
+				      		<td>
+				      			Hier wird der Inhalt der Seite kurz erklärt.
+				      		</td>
+				      	</tr>
+				      	<tr>
+				      		<td>
+								<div class="myDiv">&lt;meta name="author" content="HierStehtDeinName"&gt;</div>
+							</td>
+				      		<td>
+				      			Hier steht dein Name.
+				      		</td>
+				      	</tr>
+				      	<tr>
+				      		<td>
+								<div class="myDiv">&lt;meta name="viewport" 
+								content="width=device-width, initial-scale=1.0"&gt;</div>
+							</td>
+				      		<td>
+				      			Der Viewport sagt aus, auf welchem Gerät die Seite am besten dargestellt wird. Diese Einstellung hier ist Standard.
+				      		</td>
+				      	</tr>
+				      	<tr>
+				      		<td>
+								<div class="myDiv">&lt;title&gt; Hier steht der Titel, der aber nicht angezeigt wird. &lt;/title&gt;</div>
+							</td>
+				      		<td>
+				      			Dieser Titel taucht in der Suchleiste oben im Browser auf, nicht auf der Webseite selbst.
+				      		</td>
+				      	</tr>
+				      	
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;body&gt; ... &lt;/body&gt;</div>
+				      		</td>
+				      		<td>
+				      			Der <code>BODY</code> Tag enthält alles .... wirklich alles was jetzt folgt.
+		    				</td>
+				    	</tr>
+
+						<tr>
+				      		<td> 
+								<div class="myDiv">&lt;body bgcolor="eineFarbe"&gt; ... &lt;/body&gt;</div>
+				      		</td>
+				      		<td>
+				      			Es besteht die Option mit bgcolor eine Hintergrundfarbe für den Body Tag festzulegen.
+		 						
+		 						Lerne mehr über Farben <a href="TODO.html"> 
+		 						TODO </a>.
+		    				</td>
+				    	</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;div id="Irgendwas"&gt; .... &lt;/div&gt;</div>
+				      		</td>
+				      		<td>
+				      			Der <code>DIV</code> Tag ist immer eine Box, ein Container, der andere Dinge enthalten kann.
+				      			<br>
+				      			Das <code>ID Attribut</code> sogt dafür, dass man egal wo man sich auf der Seite befindet an diese Stelle springen kann indem man die ID, hier Irgendwas, angibt. 
+		    				</td>
+				    	</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;header&gt; ... &lt;/header&gt;</div>
+				      		</td>
+				      		<td>
+				      			Der <code>HEADER</code> Tag wird nur zur Strukturierung benötigt, er hat keinerlei Auswirkung auf die Seite. Hier werden allgemeine Informationen, wie z.B. das Logo, die Überschrift, der Autor etc. plaziert. Durch Drücken der Bild hoch Taste kann man hierhin springen.
+
+		    				</td>
+				    	</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;img src="DerOrdnerInDemDasBildLiegt/ derNameDerDatei.DieDateiendung" width="eine Zahl mit % - Zeichen" alt="Die Beschreibung des Bildes"&gt;</div>
+				      		</td>
+				      		<td>
+				      			Der <code>IMG</code> Tag ist ein Tag der nicht wieder geschlossen werden muss. Mit dem SRC (kurz für Source also Quelle) Attribut wird die Bilddatei geladen. Hier muss auf den richtigen Ordner und die richtige Dateiendung geachtet werden. ACHTUNG: Groß- und Kleinschreibung ist relevant.
+				      			<br>
+	 							Das <code>WIDTH</code> Attribut gibt die Breite an. Am besten man wählt hier eine Prozentangabe, da diese sich dann dynamisch an kleinere Displays wie Handys oder Tabletts anpassen kann.
+	 							<br>
+	 							Das <code>ALT</code> Attribut beschreibt jedes Bild. Dies ermöglicht blinden Personen mit Hilfe der Vorlesefunktion die Webseite zu verstehen.
+		    				</td>
+				    	</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;figure&gt;<br>
+									&lt;img src="OrdnerName/BildName.jpeg" 
+									width="40%" alt="Beschreibung"&gt;
+									    <br>&lt;figcaption&gt;
+									        <br>Hier steht die Bildunterschrift.
+									    <br>&lt;/figcaption&gt;<br>
+									&lt;/figure&gt;</div>
+				      		</td>
+				      		<td>
+				      			Mit dem <code>FIGURE</code> Tag in Kombination mit dem <code>FIGCAPTION</code> Tag können Bilder ein wenig abgesettz formatiert werden und es ist möglich eine Bildunterschrift hinzuzufügen, die auch immer unterhalb des Bildes erscheinen wird.
+		    				</td>
+				    	</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;h1&gt; ..... &lt;/h1&gt;<br>
+							 	&lt;h2&gt; ..... &lt;/h2&gt;<br>
+							 	&lt;h3&gt; ..... &lt;/h3&gt;<br>
+							 	&lt;h4&gt; ..... &lt;/h4&gt;<br>
+							 	&lt;h5&gt; ..... &lt;/h5&gt;<br>
+							 	&lt;h6&gt; ..... &lt;/h6&gt;</div>
+				      		</td>
+				      		<td>
+		 						Der <code>H1</code> Tag bezeichnet eine Überschrift. Sie ist größer und fett gedruckt. Es gibt die Tags <code>H1, H2, H3, H4, H5, H6</code> für verschiedene größen.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">
+		 							&lt;p&gt; ... &lt;/p&gt;</div>
+				      		</td>
+				      		<td>
+		 						Paragraphen teilen Texte in logische Abschnitte ein. Sie sollten eine Idee enthalten und aus wenigen Sätzen bestehen. Sie sind in keiner menschnlichen Sprache syntaktisch verpflichtend, aber in jeder Sprache üblich zur Strukturierung von Texten.
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;br&gt;</div>
+				      		</td>
+				      		<td>
+									Der <code>BR</code> Tag (kurz für BREAK) erzeugt einen Zeilenumbruch, sodass der nachfolgende Text in die nächste Zeile rutscht.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;hr&gt;</div>
+				      		</td>
+				      		<td>
+		 						Der <code>HR</code> Tag (kurz für HORIZONTAL) zeichnet eine horizontale Linie. Hier wurde er der Übersichtlichkeit halber verwendet.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;nav&gt; ... &lt;/nav&gt;</div>
+				      		</td>
+				      		<td>
+		 						Im <code>NAV</code> Tag platzieren wir die Navigationselemente, also eine Liste mit Links.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;ul&gt; ... &lt;/ul&gt;</div>
+				      		</td>
+				      		<td>
+        						Der <code>UL</code> Tag leitet eine unsortierte Liste (UNORDERED LIST, also Bulletpoints) ein.
+        						Sein Äquivalent die sortierte Liste (ORDERED LIST, also 1, 2, 3, 4 ...) ist:
+		 					</td>
+		 				</tr>
+		 									    	
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;ol&gt; ... &lt;/ol&gt;</div>
+				      		</td>
+				      		<td>
+
+        						Innerhalb von <code>UL</code> und <code>OL</code> werden nun die einzelnen Listenelemente mit <code>LI</code> gekennzeichnet.
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;li&gt; Element 1 &lt;/li&gt;<br>
+						            &lt;li&gt; Element 2 &lt;/li&gt;<br>
+					            	&lt;li&gt; Element 3 &lt;/li&gt;
+					            </div>
+				      		</td>
+				      		<td>
+        						Listen können verschachtelt werden, und verschiedene Aufzähungszeichen enthalten. Hier ein Überblick ..... 
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;ol type="1"&gt;<br>
+							                &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                &lt;li&gt;<br>
+							                  List Item 2<br>
+							                  &lt;ol type="A"&gt;<br>
+							                    &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                    &lt;li&gt;<br>
+							                      List Item 2<br>
+							                      &lt;ol type="a"&gt;<br>
+							                        &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                        &lt;li&gt;<br>
+							                          List Item 2<br>
+							                          &lt;ol type="I"&gt;<br>
+							                            &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                            &lt;li&gt;<br>
+							                              List Item 2<br>
+							                              &lt;ol type="i"&gt;<br>
+							                                &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                                &lt;li&gt;List Item 2&lt;/li&gt;<br>
+							                                &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							                              &lt;/ol&gt;<br>
+							                            &lt;/li&gt;<br>
+							                            &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							                          &lt;/ol&gt;<br>
+							                        &lt;/li&gt;<br>
+							                        &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							                      &lt;/ol&gt;<br>
+							                    &lt;/li&gt;<br>
+							                    &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							                  &lt;/ol&gt;<br>
+							                &lt;/li&gt;<br>
+							                &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							              &lt;/ol&gt;<br>
+							              --------<br>
+							              &lt;ul&gt;<br>
+							                &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                &lt;li&gt;<br>
+							                  List Item 2<br>
+							                  &lt;ul&gt;<br>
+							                    &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                    &lt;li&gt;<br>
+							                      List Item 2<br>
+							                      &lt;ul&gt;<br>
+							                        &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                        &lt;li&gt;<br>
+							                          List Item 2<br>
+							                          &lt;ul&gt;<br>
+							                            &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                            &lt;li&gt;<br>
+							                              List Item 2<br>
+							                              &lt;ul&gt;<br>
+							                                &lt;li&gt;List Item 1&lt;/li&gt;<br>
+							                                &lt;li&gt;List Item 2&lt;/li&gt;<br>
+							                                &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							                              &lt;/ul&gt;<br>
+							                            &lt;/li&gt;<br>
+							                            &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							                          &lt;/ul&gt;<br>
+							                        &lt;/li&gt;<br>
+							                        &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							                      &lt;/ul&gt;<br>
+							                    &lt;/li&gt;<br>
+							                    &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							                  &lt;/ul&gt;<br>
+							                &lt;/li&gt;<br>
+							                &lt;li&gt;List Item 3&lt;/li&gt;<br>
+							              &lt;/ul&gt;</div>
+				      		</td>
+				      		<td>  
+				      			<ol type="1">
+					                <li>List Item 1</li>
+					                <li>
+					                  List Item 2
+
+					                  <ol type="A">
+					                    <li>List Item 1</li>
+					                    <li>
+					                      List Item 2
+
+					                      <ol type="a">
+					                        <li>List Item 1</li>
+					                       	<li>
+					                          List Item 2
+
+					                          <ol type="I">
+					                            <li>List Item 1</li>
+					                            <li>
+					                              List Item 2
+
+					                              <ol type="i">
+					                                <li>List Item 1</li>
+					                                <li>List Item 2</li>
+					                                <li>List Item 3</li>
+					                              </ol>
+					                            </li>
+					                           <li>List Item 3</li>
+					                          </ol>
+					                        </li>
+					                        <li>List Item 3</li>
+					                      </ol>
+					                    </li>
+					                    <li>List Item 3</li>
+					                  </ol>
+					                </li>
+					                <li>List Item 3</li>
+					              </ol>
+							              --------<br>
+							              <ul>
+							                <li>List Item 1</li>
+							                <li>
+							                  List Item 2
+							                  <ul>
+							                    <li>List Item 1</li>
+							                    <li>
+							                      List Item 2
+							                      <ul>
+							                        <li>List Item 1</li>
+							                        <li>
+							                          List Item 2
+							                          <ul>
+							                            <li>List Item 1</li>
+							                            <li>
+							                              List Item 2
+							                              <ul>
+							                                <li>List Item 1</li>
+							                                <li>List Item 2</li>
+							                                <li>List Item 3</li>
+							                              </ul>
+							                            </li>
+							                            <li>List Item 3</li>
+							                          </ul>
+							                        </li>
+							                        <li>List Item 3</li>
+							                      </ul>
+							                    </li>
+							                    <li>List Item 3</li>
+							                  </ul>
+							                </li>
+							                <li>List Item 3</li>
+							              </ul>
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;a href="#NameEinerSektionHier"&gt; .... &lt;/a&gt;<br>
+						           	&lt;a href="https://wikipedia.org"&gt; .... &lt;/a&gt;<br>
+						           	&lt;a href="einOrdner/NameEinerAnderenDatei.html"&gt; .... &lt;/a 
+						           &gt;</div>
+				      		</td>
+				      		<td>
+					            Ein Link wird mit dem <code>A</code> Tag eingeleitet. Das <code>HREF</code> Attribut zeigt worauf verlinkt wird.
+					            In Fall eins wird auf eine Sektion auf der gleichen Seite verlinkt (die iregendwo mit id gekennzeichnet ist).
+					            In Fall zwei verlinken wir auf eine externe Seite, hier Wikipedia.
+					            In Fall drei verlinken wir auf eine unsere eigenen Seiten, die im Ornder einOrdner liegt und einen Namen hat. Die Datei hat die Dateiendung .html.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;a href="https://wikipedia.org" target="_blank"&gt; .... &lt;/a&gt;</div>
+				      		</td>
+				      		<td>
+           						Mit dem <code>TARGET</code>-Attribut bestimmt man wo der Link sich öffnen soll, z.B. in einem neuen Tab, neuen Fenster etc. Alle Optionen findest du hier: <code>https://www.w3schools.com/tags/att_a_target.asp </code>
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;a href="Ordnername/Dateiname.pdf" download&gt; ... &lt;/a&gt;</div>
+				      		</td>
+				      		<td>
+            					Mit Hilfe des Attributes <code>DOWNLOAD</code> können auch z.B. PDF Dateien zum Download zur Verfügung gestellt werden.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;code&gt; ... &lt;/code&gt;</div>
+				      		</td>
+				      		<td>
+            					Der <code>CODE</code> Tag erlaubt uns einen Text so aussehen zu lassen als ob es ein programmierter Text wäre.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;main&gt; ... &lt;/main&gt;</div>
+				      		</td>
+				      		<td>
+		 						Mit dem <code>MAIN</code> Tag leiten wir sozusagen den Hauptteil der Seite ein. Hier stehen fast alle Inhalte.
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;center&gt; .... &lt;/center&gt;</div>
+				      		</td>
+				      		<td>
+		 						Der <code>CENTER</code> Tag ist extrem wichtig, denn hiermit können wir Text zentriert, also mittig auf der Seite plazieren.
+		 					</td>
+		 				</tr>
+		 				
+		 	
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;em&gt;Betonter Text&lt;/em&gt;<br><br>
+
+
+					              	Der &lt;b&gt;b Tag&lt;/b&gt; druckt den Text fett.<br><br>
+
+					              	Der &lt;i&gt;i Tag&lt;/i&gt; druckt den Text kursiv.<br><br>
+					              	Der &lt;u&gt;u Tag&lt;/u&gt; unterstreicht den Text.<br><br>
+					              	&lt;del&gt;Das gelöschte&lt;/del&gt; Element wird durchgestrichen.<br><br>
+					              	Wir können auch Formeln schreiben, wie H&lt;sub&gt;2&lt;/sub&gt;O.<br><br>
+					              	&lt;small&gt;Dieser Text ist kleiner gedruckt&lt;/small&gt;<br><br>
+					              	Abkürzung: &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;<br><br>
+						            &lt;q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q"&gt;Das ist ein kurzes inline Zitat.&lt;/q&gt;<br><br>
+						            &lt;mark&gt;Markierter Text&lt;/mark&gt; findet sich hier.<br><br>
+						            Das hier ist ein Kommentar &lt;!--der aber natürlich nicht angezeigt wird--&gt;<br><br>
+									In einem Kommentar kann echt alles stehen, auch Tags, er kann sich auch über viele Zeilen erstecken. Wir nutzen ihn um für uns selbst kleine Hinweise im Code zu hinterlassen.<br><br>
+									&lt;!--Z.B. könnten wir aufschreiben, dass hier die Informationen für die Textformatierung endet und jetzt mit dem &lt;table&gt; Tag Tabellen erklärt werden.
+									--&gt;</div>
+				      		</td>
+				      		<td>
+				      			<b>Textformatierung:</b><br><br>
+				      				<em>Betonter Text</em><br><br>
+					              	<p>Der <b>b Tag</b> druckt den Text fett.</p>
+					              	<p>Der <i>i Tag</i> druckt den Text kursiv.</p>
+					              	<p>Der <u>u Tag</u> unterstreicht den Text.</p>
+					              	<p><del>Das gelöschte</del> Element wird durchgestrichen.</p>
+					              	<p>Wir können auch Formeln schreiben, wie H<sub>2</sub>O.</p>
+					              	<p><small>Dieser Text ist kleiner gedruckt</small></p>
+					              	<p>Abkürzung: <abbr title="HyperText Markup Language">HTML</abbr></p>
+						            <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">Das ist ein kurzes inline Zitat.</q></p>
+						            <p><mark>Markierter Text</mark> findet sich hier.</p>
+						            <p>Das hier ist ein Kommentar <!--der aber natürlich nicht angezeigt wird--></p>
+									<p>In einem Kommentar kann echt alles stehen, auch Tags, er kann sich auch über viele Zeilen erstecken. Wir nutzen ihn um für uns selbst kleine Hinweise im Code zu hinterlassen.
+									<!--Z.B. könnten wir aufschreiben, dass hier die Informationen für die Textformatierung endet und jetzt mit dem <table> Tag Tabellen erklärt werden.
+									-->
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;table border="4"&gt; ... &lt;/table&gt;</div>
+				      		</td>
+				      		<td>
+		 						Der <code>TABLE</code> Tag leitet eine Tabelle ein. Mit dem Border Attribut kann man die Breite des Rahmens bestimmen.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;thead&gt; .... &lt;/thead&gt;</div>
+				      		</td>
+				      		<td>
+		 						<code>THEAD</code> (table head) bezeichnet die Kopfzeile der Tabelle.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;tr&gt; ... &lt;/tr&gt;</div>
+				      		</td>
+				      		<td>
+		 						Zeilen einer Tabelle: <code>TABLE ROW</code>
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;td&gt; ... &lt;/td&gt;</div>
+				      		</td>
+				      		<td>
+		 						Spalten einer Tabelle
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;details&gt;<br>
+						              &lt;summary&gt;<br>Datenschutzrichtlinien anzeigen&lt;<br>/summary&gt;<br>
+						              &lt;p&gt;<br>
+						              	Hier könnte ein langer Text zum Datenschutz in Peniche stehen, aber eigentlich ist uns das ziemlich egal, wir möchten nur, dass die Leute Spaß haben.<br>
+						              &lt;/p&gt;<br>
+						            &lt;/details&gt;</div>
+				      		</td>
+				      		<td>
+           	 					Der <code>DETAILS</code> Tag zusammen mit dem <code>SUMMARY</code> Tag erlaubt das Ausklappen von Informationen.
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;address&gt; ... &lt;/address&gt;</div>
+				      		</td>
+				      		<td>
+            					Mit <code>ADDRESS</code> können wir Adressen schön darstellen.
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;audio controls autoplay muted&gt; ... &lt;/audio&gt;<br>
+							        &lt;audio controls autoplay> ... &lt;/audio&gt;<br>
+							        &lt;audio controls&gt; ... &lt;/audio&gt;<br>
+							        &lt;audio> ... &lt;/audio&gt;</div>
+				      		</td>
+				      		<td>
+	        					Der <code>AUDIO</code> Tag spiel Audiodatein, man kann wählen ob ohne Kontrollelemente (Play, stop etc.), ob automatisch abgespielt wird, ob auf stumm geschaltet ist etc.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;audio controls autoplay muted&gt;<br>
+					  						&lt;source src="hello.ogg" type="audio/ogg"&gt;<br>
+					  						&lt;source src="hello.mp3" type="audio/mpeg"&gt;<br>
+											Dein Browser untersützt dieses Audioelement nicht.&lt;/audio 
+								&gt;</div>
+				      		</td>
+				      		<td>
+								Es sollte immer eine Fehlermeldung anzeigbar sein.
+								<br>
+								Mit dem <code>SOURCE</code> Tag können jetzt die Dateien geladen werden. Hier gibt es die Option mp3 (also audio/mpeg) oder ogg (also audio/ogg) Dateien zu laden.
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;video controls width="600" autoplay&gt;<br>
+									  	&lt;source src="pictures/surfer.mp4" type="video/mp4"&gt;<br>
+										Dein Browser untersützt dieses Audioelement nicht.&lt;/video 
+								&gt;</div>
+				      		</td>
+				      		<td>
+								Der <code>VIDEO</code> Tag erlaubt die Verwendung von Videos. Die Verwendung entspricht der von Audio Dateien.
+
+								<br><br>
+								<b>YOUTUBE VIDEOS</b>
+								Wenn du Youtube Videos einbinden möchtest, schaue dir diese Seite an: <code>https://www.w3schools.com/html/html_youtube.asp</code>
+								Die einfchste Variante ist es unter dem Youtube Video auf Teilen, dann auf Einbetten zu klicken und dann en iframe zu kopieren.
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;svg width="315" height="315"&gt;<br>
+						         		&lt;circle cx="157.5" cy="157.5" r="100" fill="#1fa3ec"&gt;&lt;/circle&gt;<br>
+						         		&lt;circle cx="157.5" cy="157.5" r="40" stroke="green" stroke-width="4" fill="yellow"&gt;&lt;/circle&gt;<br>
+						         	&lt;/svg&gt;</div>
+				      		</td>
+				      		<td>
+				      			Mit dem <code>SVG</code> Tags in Kombination mit <code>CIRCLE</code>, <code>RECT</code> und <code>POLYGON</code> können interessante Formen erzeugt werden, wie z.B. hier
+				      			<br>
+         						Für mehr Beispiele ist diese Seite empfehlenswert: 
+         						<code>https://www.w3schools.com/html/html5_svg.asp</code>
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;canvas&gt; ... &lt;/canvas&gt;</div>
+				      		</td>
+				      		<td>
+								Der <code>CANVAS</code> Tag ist neu in HTML5. Hier können Zeichnungen eingefügt werden. Genaueres kannst du hier nachlesen: 
+								<code>https://www.w3schools.com/html/html5_canvas.asp</code>
+								<br>
+								Wir benötigen JavaScript für dieses Element, also schauen wir uns das erst später an.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;progress&gt;&lt;/progress&gt;</div>
+				      		</td>
+				      		<td>
+         						Kann z.B. genutzt werden um das Laden eines bestimmten Elements anzuzeigen.
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;meter value="2" min="0" max="10"&gt; .... &lt;/meter&gt;</div>
+				      		</td>
+				      		<td>
+          						Der <code>METER</code> Tag kann genutzt werden um den Fortschritt anzuzeigen.
+		 					</td>
+		 				</tr>
+		 				
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;form&gt; ... &lt;/form&gt;</div>
+				      		</td>
+				      		<td>
+          						Alle Optionen für Formulare sind in der Beispielseite zu Peniche ausführlich dargestellt.
+
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">&lt;footer&gt; ... &lt;/footer&gt;</div>
+				      		</td>
+				      		<td>
+		 						Der <code>FOOTER</code> Tag beinhaltet noch einmal einige abschließende Informationen, wie ersteller, Impressum, Datenschutz, Kontakt etc.
+		 						<br>
+		 						Durch Drücken der <code>Bild hoch</code> Taste kann man hierhin springen.
+		 					</td>
+		 				</tr>
+
+				    	<tr>
+				      		<td> 
+								<div class="myDiv">
+		 							& nbsp;
+		 						</div>
+				      		</td>
+				      		<td>
+		 						Erzeugt ein Leerzeichen. (kein Leerzeichen zwischen & und dem ersten Buchstaben, das ist nur hier für die Darstellung nötig)
+		 					</td>
+		 				</tr>
+		 				
+		 				<tr>
+				      		<td> 
+								<div class="myDiv"> & ensp; </div>
+				      		</td>
+				      		<td>
+		 						Erzeugt zwei Leerzeichen.
+		 					</td>
+		 				</tr>
+
+		 				<tr>
+				      		<td> 
+								<div class="myDiv">& emsp; </div>
+				      		</td>
+				      		<td>
+		 						Erzeugt vier Leerzeichen.
+		 					</td>
+		 				</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>		
+	</div>
+	<!--<script src="../frameworks/fw_cheat_sheets.js"></script>-->
+	<script>
+
+
+		var elements = document.getElementsByClassName("myDiv");
+		for (var i = 0; i < elements.length; i++) {
+		   w3CodeColor(elements.item(i));
+		}
+
+		function w3CodeColor(elmnt, mode) {
+		  var lang = (mode || "html");
+		  var elmntObj = elmnt;
+		  var elmntTxt = elmntObj.innerHTML;
+		  var tagcolor = "mediumblue";
+		  var tagnamecolor = "brown";
+		  var attributecolor = "red";
+		  var attributevaluecolor = "mediumblue";
+		  var commentcolor = "green";
+		  var cssselectorcolor = "brown";
+		  var csspropertycolor = "red";
+		  var csspropertyvaluecolor = "mediumblue";
+		  var cssdelimitercolor = "black";
+		  var cssimportantcolor = "red";  
+		  var jscolor = "black";
+		  var jskeywordcolor = "mediumblue";
+		  var jsstringcolor = "brown";
+		  var jsnumbercolor = "red";
+		  var jspropertycolor = "black";
+		  elmntObj.style.fontFamily = "Consolas,'Courier New', monospace";
+		  if (!lang) {lang = "html"; }
+		  if (lang == "html") {elmntTxt = htmlMode(elmntTxt);}
+		  if (lang == "css") {elmntTxt = cssMode(elmntTxt);}
+		  if (lang == "js") {elmntTxt = jsMode(elmntTxt);}
+		  elmntObj.innerHTML = elmntTxt;
+
+		  function extract(str, start, end, func, repl) {
+		    var s, e, d = "", a = [];
+		    while (str.search(start) > -1) {
+		      s = str.search(start);
+		      e = str.indexOf(end, s);
+		      if (e == -1) {e = str.length;}
+		      if (repl) {
+		        a.push(func(str.substring(s, e + (end.length))));      
+		        str = str.substring(0, s) + repl + str.substr(e + (end.length));
+		      } else {
+		        d += str.substring(0, s);
+		        d += func(str.substring(s, e + (end.length)));
+		        str = str.substr(e + (end.length));
+		      }
+		    }
+		    this.rest = d + str;
+		    this.arr = a;
+		  }
+		  function htmlMode(txt) {
+		    var rest = txt, done = "", php, comment, angular, startpos, endpos, note, i;
+		    comment = new extract(rest, "&lt;!--", "--&gt;", commentMode, "W3HTMLCOMMENTPOS");
+		    rest = comment.rest;
+		    while (rest.indexOf("&lt;") > -1) {
+		      note = "";
+		      startpos = rest.indexOf("&lt;");
+		      if (rest.substr(startpos, 9).toUpperCase() == "&LT;STYLE") {note = "css";}
+		      if (rest.substr(startpos, 10).toUpperCase() == "&LT;SCRIPT") {note = "javascript";}        
+		      endpos = rest.indexOf("&gt;", startpos);
+		      if (endpos == -1) {endpos = rest.length;}
+		      done += rest.substring(0, startpos);
+		      done += tagMode(rest.substring(startpos, endpos + 4));
+		      rest = rest.substr(endpos + 4);
+		      if (note == "css") {
+		        endpos = rest.indexOf("&lt;/style&gt;");
+		        if (endpos > -1) {
+		          done += cssMode(rest.substring(0, endpos));
+		          rest = rest.substr(endpos);
+		        }
+		      }
+		      if (note == "javascript") {
+		        endpos = rest.indexOf("&lt;/script&gt;");
+		        if (endpos > -1) {
+		          done += jsMode(rest.substring(0, endpos));
+		          rest = rest.substr(endpos);
+		        }
+		      }
+		    }
+		    rest = done + rest;
+		    for (i = 0; i < comment.arr.length; i++) {
+		        rest = rest.replace("W3HTMLCOMMENTPOS", comment.arr[i]);
+		    }
+		    return rest;
+		  }
+		  function tagMode(txt) {
+		    var rest = txt, done = "", startpos, endpos, result;
+		    while (rest.search(/(\s|<br>)/) > -1) {    
+		      startpos = rest.search(/(\s|<br>)/);
+		      endpos = rest.indexOf("&gt;");
+		      if (endpos == -1) {endpos = rest.length;}
+		      done += rest.substring(0, startpos);
+		      done += attributeMode(rest.substring(startpos, endpos));
+		      rest = rest.substr(endpos);
+		    }
+		    result = done + rest;
+		    result = "<span style=color:" + tagcolor + ">&lt;</span>" + result.substring(4);
+		    if (result.substr(result.length - 4, 4) == "&gt;") {
+		      result = result.substring(0, result.length - 4) + "<span style=color:" + tagcolor + ">&gt;</span>";
+		    }
+		    return "<span style=color:" + tagnamecolor + ">" + result + "</span>";
+		  }
+		  function attributeMode(txt) {
+		    var rest = txt, done = "", startpos, endpos, singlefnuttpos, doublefnuttpos, spacepos;
+		    while (rest.indexOf("=") > -1) {
+		      endpos = -1;
+		      startpos = rest.indexOf("=");
+		      singlefnuttpos = rest.indexOf("'", startpos);
+		      doublefnuttpos = rest.indexOf('"', startpos);
+		      spacepos = rest.indexOf(" ", startpos + 2);
+		      if (spacepos > -1 && (spacepos < singlefnuttpos || singlefnuttpos == -1) && (spacepos < doublefnuttpos || doublefnuttpos == -1)) {
+		        endpos = rest.indexOf(" ", startpos);      
+		      } else if (doublefnuttpos > -1 && (doublefnuttpos < singlefnuttpos || singlefnuttpos == -1) && (doublefnuttpos < spacepos || spacepos == -1)) {
+		        endpos = rest.indexOf('"', rest.indexOf('"', startpos) + 1);
+		      } else if (singlefnuttpos > -1 && (singlefnuttpos < doublefnuttpos || doublefnuttpos == -1) && (singlefnuttpos < spacepos || spacepos == -1)) {
+		        endpos = rest.indexOf("'", rest.indexOf("'", startpos) + 1);
+		      }
+		      if (!endpos || endpos == -1 || endpos < startpos) {endpos = rest.length;}
+		      done += rest.substring(0, startpos);
+		      done += attributeValueMode(rest.substring(startpos, endpos + 1));
+		      rest = rest.substr(endpos + 1);
+		    }
+		    return "<span style=color:" + attributecolor + ">" + done + rest + "</span>";
+		  }
+		  function attributeValueMode(txt) {
+		    return "<span style=color:" + attributevaluecolor + ">" + txt + "</span>";
+		  }
+		  function commentMode(txt) {
+		    return "<span style=color:" + commentcolor + ">" + txt + "</span>";
+		  }
+		  function cssMode(txt) {
+		    var rest = txt, done = "", s, e, comment, i, midz, c, cc;
+		    comment = new extract(rest, /\/\*/, "*/", commentMode, "W3CSSCOMMENTPOS");
+		    rest = comment.rest;
+		    while (rest.search("{") > -1) {
+		      s = rest.search("{");
+		      midz = rest.substr(s + 1);
+		      cc = 1;
+		      c = 0;
+		      for (i = 0; i < midz.length; i++) {
+		        if (midz.substr(i, 1) == "{") {cc++; c++}
+		        if (midz.substr(i, 1) == "}") {cc--;}
+		        if (cc == 0) {break;}
+		      }
+		      if (cc != 0) {c = 0;}
+		      e = s;
+		      for (i = 0; i <= c; i++) {
+		        e = rest.indexOf("}", e + 1);
+		      }
+		      if (e == -1) {e = rest.length;}
+		      done += rest.substring(0, s + 1);
+		      done += cssPropertyMode(rest.substring(s + 1, e));
+		      rest = rest.substr(e);
+		    }
+		    rest = done + rest;
+		    rest = rest.replace(/{/g, "<span style=color:" + cssdelimitercolor + ">{</span>");
+		    rest = rest.replace(/}/g, "<span style=color:" + cssdelimitercolor + ">}</span>");
+		    for (i = 0; i < comment.arr.length; i++) {
+		        rest = rest.replace("W3CSSCOMMENTPOS", comment.arr[i]);
+		    }
+		    return "<span style=color:" + cssselectorcolor + ">" + rest + "</span>";
+		  }
+		  function cssPropertyMode(txt) {
+		    var rest = txt, done = "", s, e, n, loop;
+		    if (rest.indexOf("{") > -1 ) { return cssMode(rest); }
+		    while (rest.search(":") > -1) {
+		      s = rest.search(":");
+		      loop = true;
+		      n = s;
+		      while (loop == true) {
+		        loop = false;
+		        e = rest.indexOf(";", n);
+		        if (rest.substring(e - 5, e + 1) == "&nbsp;") {
+		          loop = true;
+		          n = e + 1;
+		        }
+		      }
+		      if (e == -1) {e = rest.length;}
+		      done += rest.substring(0, s);
+		      done += cssPropertyValueMode(rest.substring(s, e + 1));
+		      rest = rest.substr(e + 1);
+		    }
+		    return "<span style=color:" + csspropertycolor + ">" + done + rest + "</span>";
+		  }
+		  function cssPropertyValueMode(txt) {
+		    var rest = txt, done = "", s;
+		    rest = "<span style=color:" + cssdelimitercolor + ">:</span>" + rest.substring(1);
+		    while (rest.search(/!important/i) > -1) {
+		      s = rest.search(/!important/i);
+		      done += rest.substring(0, s);
+		      done += cssImportantMode(rest.substring(s, s + 10));
+		      rest = rest.substr(s + 10);
+		    }
+		    result = done + rest;    
+		    if (result.substr(result.length - 1, 1) == ";" && result.substr(result.length - 6, 6) != "&nbsp;" && result.substr(result.length - 4, 4) != "&lt;" && result.substr(result.length - 4, 4) != "&gt;" && result.substr(result.length - 5, 5) != "&amp;") {
+		      result = result.substring(0, result.length - 1) + "<span style=color:" + cssdelimitercolor + ">;</span>";
+		    }
+		    return "<span style=color:" + csspropertyvaluecolor + ">" + result + "</span>";
+		  }
+		  function cssImportantMode(txt) {
+		    return "<span style=color:" + cssimportantcolor + ";font-weight:bold;>" + txt + "</span>";
+		  }
+		  function jsMode(txt) {
+		    var rest = txt, done = "", esc = [], i, cc, tt = "", sfnuttpos, dfnuttpos, compos, comlinepos, keywordpos, numpos, mypos, dotpos, y;
+		    for (i = 0; i < rest.length; i++)  {
+		      cc = rest.substr(i, 1);
+		      if (cc == "\\") {
+		        esc.push(rest.substr(i, 2));
+		        cc = "W3JSESCAPE";
+		        i++;
+		      }
+		      tt += cc;
+		    }
+		    rest = tt;
+		    y = 1;
+		    while (y == 1) {
+		      sfnuttpos = getPos(rest, "'", "'", jsStringMode);
+		      dfnuttpos = getPos(rest, '"', '"', jsStringMode);
+		      compos = getPos(rest, /\/\*/, "*/", commentMode);
+		      comlinepos = getPos(rest, /\/\//, "<br>", commentMode);      
+		      numpos = getNumPos(rest, jsNumberMode);
+		      keywordpos = getKeywordPos("js", rest, jsKeywordMode);
+		      dotpos = getDotPos(rest, jsPropertyMode);
+		      if (Math.max(numpos[0], sfnuttpos[0], dfnuttpos[0], compos[0], comlinepos[0], keywordpos[0], dotpos[0]) == -1) {break;}
+		      mypos = getMinPos(numpos, sfnuttpos, dfnuttpos, compos, comlinepos, keywordpos, dotpos);
+		      if (mypos[0] == -1) {break;}
+		      if (mypos[0] > -1) {
+		        done += rest.substring(0, mypos[0]);
+		        done += mypos[2](rest.substring(mypos[0], mypos[1]));
+		        rest = rest.substr(mypos[1]);
+		      }
+		    }
+		    rest = done + rest;
+		    for (i = 0; i < esc.length; i++) {
+		      rest = rest.replace("W3JSESCAPE", esc[i]);
+		    }
+		    return "<span style=color:" + jscolor + ">" + rest + "</span>";
+		  }
+		  function jsStringMode(txt) {
+		    return "<span style=color:" + jsstringcolor + ">" + txt + "</span>";
+		  }
+		  function jsKeywordMode(txt) {
+		    return "<span style=color:" + jskeywordcolor + ">" + txt + "</span>";
+		  }
+		  function jsNumberMode(txt) {
+		    return "<span style=color:" + jsnumbercolor + ">" + txt + "</span>";
+		  }
+		  function jsPropertyMode(txt) {
+		    return "<span style=color:" + jspropertycolor + ">" + txt + "</span>";
+		  }
+		  function getDotPos(txt, func) {
+		    var x, i, j, s, e, arr = [".","<", " ", ";", "(", "+", ")", "[", "]", ",", "&", ":", "{", "}", "/" ,"-", "*", "|", "%"];
+		    s = txt.indexOf(".");
+		    if (s > -1) {
+		      x = txt.substr(s + 1);
+		      for (j = 0; j < x.length; j++) {
+		        cc = x[j];
+		        for (i = 0; i < arr.length; i++) {
+		          if (cc.indexOf(arr[i]) > -1) {
+		            e = j;
+		            return [s + 1, e + s + 1, func];
+		          }
+		        }
+		      }
+		    }
+		    return [-1, -1, func];
+		  }
+		  function getMinPos() {
+		    var i, arr = [];
+		    for (i = 0; i < arguments.length; i++) {
+		      if (arguments[i][0] > -1) {
+		        if (arr.length == 0 || arguments[i][0] < arr[0]) {arr = arguments[i];}
+		      }
+		    }
+		    if (arr.length == 0) {arr = arguments[i];}
+		    return arr;
+		  }
+		  function getKeywordPos(typ, txt, func) {
+		    var words, i, pos, rpos = -1, rpos2 = -1, patt;
+		    if (typ == "js") {
+		      words = ["abstract","arguments","boolean","break","byte","case","catch","char","class","const","continue","debugger","default","delete",
+		      "do","double","else","enum","eval","export","extends","false","final","finally","float","for","function","goto","if","implements","import",
+		      "in","instanceof","int","interface","let","long","NaN","native","new","null","package","private","protected","public","return","short","static",
+		      "super","switch","synchronized","this","throw","throws","transient","true","try","typeof","var","void","volatile","while","with","yield"];
+		    }
+		    for (i = 0; i < words.length; i++) {
+		      pos = txt.indexOf(words[i]);
+		      if (pos > -1) {
+		        patt = /\W/g;
+		        if (txt.substr(pos + words[i].length,1).match(patt) && txt.substr(pos - 1,1).match(patt)) {
+		          if (pos > -1 && (rpos == -1 || pos < rpos)) {
+		            rpos = pos;
+		            rpos2 = rpos + words[i].length;
+		          }
+		        }
+		      } 
+		    }
+		    return [rpos, rpos2, func];
+		  }
+		  function getPos(txt, start, end, func) {
+		    var s, e;
+		    s = txt.search(start);
+		    e = txt.indexOf(end, s + (end.length));
+		    if (e == -1) {e = txt.length;}
+		    return [s, e + (end.length), func];
+		  }
+		  function getNumPos(txt, func) {
+		    var arr = ["<br>", " ", ";", "(", "+", ")", "[", "]", ",", "&", ":", "{", "}", "/" ,"-", "*", "|", "%", "="], i, j, c, startpos = 0, endpos, word;
+		    for (i = 0; i < txt.length; i++) {
+		      for (j = 0; j < arr.length; j++) {
+		        c = txt.substr(i, arr[j].length);
+		        if (c == arr[j]) {
+		          if (c == "-" && (txt.substr(i - 1, 1) == "e" || txt.substr(i - 1, 1) == "E")) {
+		            continue;
+		          }
+		          endpos = i;
+		          if (startpos < endpos) {
+		            word = txt.substring(startpos, endpos);
+		            if (!isNaN(word)) {return [startpos, endpos, func];}
+		          }
+		          i += arr[j].length;
+		          startpos = i;
+		          i -= 1;
+		          break;
+		        }
+		      }
+		    }  
+		    return [-1, -1, func];
+		  }  
+		}
+
+
+
+	</script>
+</body>
+</html>

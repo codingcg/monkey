@@ -73,7 +73,7 @@ Reveal.initialize({
   menu: {
     // Specifies which side of the presentation the menu will
     // be shown. Use 'left' or 'right'.
-    side: 'left',
+    side: 'right',
 
     // Specifies the width of the menu.
     // Can be one of the following:
@@ -273,26 +273,26 @@ Reveal.initialize({
 
   toolbar: {
     // Specifies where the toolbar will be shown: 'top' or 'bottom'
-    position: 'top',
+    position: 'bottom',
 
     // Add button to toggle fullscreen mode for the presentation
-    fullscreen: true,
+    fullscreen: false,
 
     // Add button to toggle the overview mode on and off
-    overview: true,
+    overview: false,
 
     // Add button to pause (hide) the presentation display
-    pause: true,
+    pause: false,
 
     // Add button to show the speaker notes
-    notes: true,
+    notes: false,
 
     // Add button to show the help overlay
     help: false,
 
     // If true, the reveal.js-menu will be moved into the toolbar.
     // Set to false to leave the menu on its own.
-    captureMenu: true,
+    captureMenu: false,
 
     // If true, the playback control will be moved into the toolbar.
     // This is only relevant if the presentation is configured to autoSlide.
